@@ -1,0 +1,17 @@
+			Algumas Considerações de Acessibilidade para Fundos
+			
+No Web Design, os fundos desempenham um papel vital na definição da aparencia e sensação geral de uma página web.
+
+No entanto, ao projetar com fundos, é crucial considerar a acessibilidade para garantir que seu conteúdo seja utilizavel e legível por todos os usuários, incuindo aqueles com deficiências visuais.
+
+Uma da principais preocupações de acessibilidade relacionadas a fundos é garantir que haja contraste suficiente entre o fundo e o texto.
+
+Sem contraste adequado, usuários com defeciências visuais, incluindo aqueles com baixa visão ou daltonismo, podem ter dificuldades para ler o conteúdo de sua página.
+
+Contraste refere-se à diferença de claridade ou escuridão entre duas cores. Contraste suficiente entre a cor de fundo e a cor do texto é essencial para a legibilidade.
+
+As diretrizes de Acessibilidade para Conteúdo Web (WCAG) recomendam uma razão minima de contraste de 4.5:1 para texto normal e 3:1 para texto grande.
+
+Por exemplo, colocar textto branco em um fundo cinza-claro resultaria em baixo contraste, tornando o texto dificil de ler. No entanto, texto branco em um fundo azul-escuro proporcionaria bom contraste, melhorando a lagibilidade para todos os usuários.
+
+		*Seguindo para o primeiro exemplo*

@@ -1,0 +1,77 @@
+			O 	que é um Bakcground Gradient e como funcionam?
+			
+Um gradiente de fundo em CSS é uma transição suave entre duas ou mais cores que pode ser aplicada a fundo de um elemento. Gradientes parmitem que criemos fundos visualmente atraentes sem precisar de imagens.
+
+Existem dois tiºos principais de gradientes em CSS: gradientes lineares e gradientes radiais.
+
+Um gradiente linear faz a transição das cores ao longo de uma linha reta. Podemos definir a direção das cores envolvidas.
+
+Vejamos sua sintaxe básica aplica a propriedade background:
+
+	background: linear-gradient(direction, color-stop1, color-stop2, ...);
+	
+Neste exemplo, estamos usando a propriedade CSS backgroundcom um valor de linear gradient.
+
+A direção especifica a direção do gradiente. Pode ser um ângulo (como 45deg), uma plavra-chave (como to-right e to-bottom) ou um lado/canto.
+
+color-stop especifica as cores e as posições onde ocorrem as transições do gradiente.
+
+Para entendermos melhor como os gradientes lineares funcionam, vamos dar uma olhada no seguinte exemplo:
+
+	Gradiente Linear
+
+HTML
+	<link rel="stylesheet" href="styles.css">
+	
+	<div class="linear-gradient></div>
+
+CSS
+	.linear-gradient {
+		background: linear-gradient(to right, red, yellow);
+		height: 40vh;
+	}
+	
+Este CSS cria um gradiente linear que transita de vermelho ao lado esquerdo para amarelo a direita (to right, red, yellow).
+O gradiente é aplicado a um elemento com altura de 40% da altura da viewport. Iremos aprender mais a cerca da viewport no decorrer de proximas lições.
+
+A direção "to right" significa que o gradiente precorre horizontalmente da esquerda para a direita.
+
+Outro tipo de gradiente seria o: Gradiente Radial.
+
+Um Gradiente Radial faz a transição de cores irradiano de ima origem (geralmente o centro) para fora em uma forma circular elíptica.
+
+Aqui está a sitnaxe básica:
+
+	Background: radial-gradient(shape size at position, color-stop1, color-stop2, ...)
+	
+Na sintaxe, o shape especifica a forma do gradiente que pode ser circle ou ellipse.
+
+O size determina o tamanho da forma final do gradiente que pode ser "closest-side", "closest-corner", "farthest-side" ou "farthest-corner".
+
+position determina a posição do centro do gradient que pode ser especificada usando palavras-chave (como center, top-left, bottom right) ou valores precisos (como 50% 50%, 10px 20px).
+
+Por fim os color-stops são uma lista de cores pelas quais o gradient faz a transição. Cada parada de cor pode opcionalmente incluir um valor de posição (porcentagem ou comprimento) indicando onde a cor deve ser colocada.
+
+Um exemplo seria:
+
+		Radial Gradient
+		
+HTML
+	<link rel="stylesheet" href="styles.css"
+	
+	<div class="radial-gradient"></div>
+	
+CSS
+
+	.radial-gradient {
+		background: radial-gradient(circle closest-side at center, red, yellow 50%, green);
+		height: 60vh;
+	}
+	
+Este CSS cria um gradiente radial circular no elemento. Começa com red no centro, transita para yellow em 50% do raio e temrina com green.
+
+A palavra-chave closest-side faz com que a forma final do gradiente se ajuste ao lado mais próximo do elemento. O gradiente é aplicado a um elemento com altura de 60% da altura da viewport.
+
+Entender como trabalhar com gradientes em CSS pode melhorar significativamente seus designs ao fornecer fundos visualmente atraentes sem a necessidade de imagens.
+
+Com opções como gradientes lineares para transições suaves e gradientes radiais para efeitos circulares, eles oferecem flexibilidade e criatividade no design web.
