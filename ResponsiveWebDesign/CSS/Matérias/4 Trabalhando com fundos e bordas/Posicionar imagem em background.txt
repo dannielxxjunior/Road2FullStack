@@ -101,7 +101,7 @@ Este código CSS posiciona a imagem de fundo no centro do elemento horizontalmen
 
 Por fim, background-attachment determina se a imagem de fundo rola com o conteúdo ou permanece fixa quadno a página é rolada.
 
-Os valores pirncipais são :scroll(padrão), onde a image, de fundo rola com o conteúdo, e :fixed, onde a imagem de fundo permanece na mesma posição na tela.
+Os valores pirncipais são :scroll(padrão), onde a imagem, de fundo rola com o conteúdo, e :fixed, onde a imagem de fundo permanece na mesma posição na tela.
 
 Aqui está o exemplo usando o valor :fixed para a propriedade background-attachment:
 
@@ -113,3 +113,20 @@ CSS
 		background-attachment: fixed;
 	  }
 	</style>
+	
+Este código CSS define que a imagem de fundo permaneça fixa no lugar mesmo quando a página for rolada.
+
+Se você quiser combinar algumas daas porpriedades em uma linha, pode fazer isso usando a propriedade abreviada background: ; .
+
+Aqui está um exemplo:
+
+<style>
+	body {
+		background: center top fixed
+			url("https:www.example.com")
+	}
+</style>
+
+O exemplo acima combina o backgroun-image, background-position e background-attachment em uma única linha.
+
+Ao dominar essas propriedades, você terá grande controle sobre como as imagens de fundo são exibidas em seus designs web, permitidno layouts mais visualmente ataentes e funcionais.	
