@@ -3,6 +3,11 @@
 
 Este é um projeto que pode ser bastante interessante, podes criar o teu proprio site com um catálogo de livros que mais te motivaram ensinaram e ajudaram a seguir esta carreira e aqueles livros que de entre todos esses achaste mais interessantes !!
 
+A baixo tens o código de partida, como em todos os meus projetos, sempre é fornecido um código de partida, as bases de onde o projeto parte para começar a criar a sua propria identidade.
+
+Desfruta, estuda, baixa para ti, e se quiseres contribui.
+
+Cumprimentos, Dan "Junior" Marinho.
 
 <!DOCTYPE html>
 <html lang="en">
