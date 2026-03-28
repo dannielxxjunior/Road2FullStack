@@ -14,4 +14,26 @@ As diretrizes de Acessibilidade para Conteúdo Web (WCAG) recomendam uma razão 
 
 Por exemplo, colocar textto branco em um fundo cinza-claro resultaria em baixo contraste, tornando o texto dificil de ler. No entanto, texto branco em um fundo azul-escuro proporcionaria bom contraste, melhorando a lagibilidade para todos os usuários.
 
-		*Seguindo para o primeiro exemplo*
+• Aqui temos um exemplo do que é um mau contraste:
+
+	<p style="color: lightgray; background-color: whitesmoke;">
+		Isto é um exemplo de mau contraste!
+	</p>
+	
+• E agora um exemplo do que é bom contraste:
+
+	<p style="color: white; background: darkslategray;">
+		Este é um exemplo de bom contraste!
+	</p>
+	
+Outra consideração é evitar colocar texto sobre fundos ocupados ou complexos, como imagens ou gradientes com múltiplas cores. Fundos ocupados podem dificultar a distinção do texto em relação ao fundo, independentemente do contraste.
+
+Ao projetar fundos, evite usar a cor como o único meio de transmitir informações. Por exemplo, usar apenas cor para indicar uma mensagem de erro ou sucesso (como vermelho para erro e verde para sucesso) pode ser problemático para usuários com daltonismo.
+
+Além da cor, você deve usar símbolos ou texto para transmitir informações. Por exemplo, junto com uma mensagem de erro vermelha, podemos usar um ícone ou texto em negrito para deixar claro que há um erro.
+
+Embora menos comum, aúdio ou videos de fundo também podem afetar a acessibilidade.
+
+Música de fundo ou vídeos que tocam automaticamente podem ser distrativos para alguns usuários, particularmente aqueles com deficiências cognitivas. Se você incluir áudio de fundo, forneça sempre uma maneira para os usuários silenciarem ou pausarem o áudio.
+
+Ao levar em conta essas considerações de acessibilidade, você pode criar designs mais inclusivos que garantam que seu conteúdo seja legível e utilizavel por todos os usuários, independentemente de suas habilidades.
