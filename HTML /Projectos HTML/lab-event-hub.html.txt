@@ -1,0 +1,67 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Event Hub</title>
+</head>
+
+<body>
+    <header>
+        <h1>Event Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#upcoming-events">Upcoming Events</a></li>
+                <li><a href="#past-events">Past Events</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="upcoming-events">
+            
+            <h2>Upcoming Events</h2>
+            
+            <article>
+                <h3>Hackers ARRISE</h3>
+                <p>
+                    The Hackers ARRISE Event will be a meet and greet event made for hackers, <strong>invitation only</strong>
+                </p>
+            </article>
+
+            <article>
+                <h3>Takin Systems Down</h3>
+                <p>
+                    This is the Event where we focus mainly in what can be used to break a system, what type of system you ask? Guess only our attendies will find out about it.
+                </p>
+            </article>
+        </section>
+
+        <section id="past-events">
+
+            <h2>Past Events</h2>
+            
+            <article>
+                <h3>Web Developers Swiss Army Knife</h3>
+                <p>
+                    During this event we have discussed the tools used by collegues in the field and how some of this tools can improve our coding, our day at the office, or even our callendar managing skills.
+                </p>
+                <img src="https://cdn.freecodecamp.org/curriculum/labs/past-event1.jpg" alt="Old personal computer image" />
+            </article>
+
+            <article>
+                <h3>What to expect for this new year in Web Hacking</h3>
+                <p>
+                    This event meeting was a way we have found to get people together in order to discuss things like New Vulnerabilities in our field of studies and what is coming for us this year
+                </p>
+                <img src="https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg" alt="Image of the quantic cubes" />
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
+
+** end of index.html **
+

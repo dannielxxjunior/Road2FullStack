@@ -1,0 +1,16 @@
+			Recursos de linkagem
+			
+	atributos				detalhes
+	
+	charset			Especifica os caracteres de codificação do documento
+	crossorigin		Especifica como o elemento lida com pedidos de origem exterior
+	href				Especifica a localização do documento linkado
+	hreflang			Especifica a linguagem usada no documento linkado
+	media			Eslpecifica em que tipo de dispositivo o documento será exibido
+	rel				Especifica a relação entre o documento corrente e o documento linkado
+	rev				Especifica a relação do ponto de vista inverso ao atributo rel
+	sizes			Especifica o tamanho do recurso linkado, apenas quando temos: rel="icon"
+	target			Especifica onde o documento linkado será aberto EX: Nova aba/janela
+	type				Especifica o tipo de midia do documento linkado
+	integrity		Especifica  uma hash base64 para verificar se o documento linkado foi alterado
+	

@@ -1,0 +1,58 @@
+		O que são Margins e Paddings e como funcionam?
+		
+Margin e padding são propriedades essenciais em CSS para criar páginas web bem estruturadas, legíveis e visualmente atraentes.
+
+As margens controlam o espaço fora de um elemento, ajudando a separá-lo de outros elementos e a definir a estrutura do layout, enquanto o padding controla o espaço dentro de um elemento, melhorando a legibilidade do conteúdo e o apelo estético.
+
+Para entender melhor as diferenças entre margin e padding, vamos dar uma olhada em alguns exemplos.
+
+Aqui está um exemplo em HTML de três elementos de parágrafo na página:
+
+	<p>Paragraph one</p>
+	<p>Paragraph two</p>
+	<p>Paragraph three</p>
+	
+Para aplicar espaçamento na parte superior de cada elemento de parágrafo, você pode usar a propriedade margin-top assim:
+
+	<link rel="stylesheet" href="styles.css">
+
+	<p>Paragraph one</p>
+	<p>Paragraph two</p>
+	<p>Paragraph three</p>
+
+	p {
+	  margin-top: 20px;
+	  border: 2px solid black;
+	}
+
+Neste exemplo, estamos aplicando 20px de margem apenas ao topo de cada elemento de parágrafo.
+
+Também temos uma borda preta sólida em todos os quatro lados para que você possa ver melhor a margem.
+
+As quatro propriedades diferentes de margin são margin-top, margin-right, margin-bottom e margin-left.
+
+Outra forma de usar a propriedade margin é com a notação abreviada. Você pode especificar um, dois, três ou quatro valores de uma vez. Vamos explorar essas opções juntos.
+
+Ao usarmos um valor singular no atalho margin, esse valor exato será aplicado a todos os quatro lados do elemento alvo.
+
+Ao usarmos dois valores, o primeiro valor se aplica ao TOP e BOTTOM, enquanto o segundo valor se aplica aos lados LEFT e RIGHT do elemento.
+
+Aqui está um exemplo de uso de dois valores para o atalho margin:
+
+	p {
+		margin: 10px 20px;
+	}
+	
+Isto define as margens TOP e BOTTOM para 10px, e 20px para as margens LEFT e RIGHT do elemento. 
+
+Se três valores forem fornecidos, o primeiro valor se aplica à margem top, o segundo valor às margens left e right e o terceiro valor à margem bottom.
+
+Ao usar quatro valores, isso lhe dá mais controle, pois você pode especificar independentemente cada valor de margem para cada lado do elemento alvo.
+
+O primeiro valor aponta para o top, o segundo valor aponta para o right, o terceiro valor aponta para o bottom e o quarto valor aponta para o left.
+------------------------------------
+
+A propriedade padding é usada para aplicar espaço dentro do elemento, entre o conteúdo e sua borda.
+
+Ambos usam exatamente a mesma sintaxe na hora de serem aplicados a um elemento, o que significa que o que serve para um serve para outro.
+

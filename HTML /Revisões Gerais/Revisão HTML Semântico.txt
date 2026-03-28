@@ -1,0 +1,15 @@
+			Revisão HTML Semântico
+			
+	Elementos Semânticos do HTML5
+
+<header>: Usado parra definir o cabeçalho de uma página ou secção.
+<main>: Contém o conteúdo principal da página web.
+<section>: Usado para dividir o conteúdo principal em várias secções menores.
+<nav>: Representa uma secção com links de navegação.
+<figure>: Usado para conter ilustrações e diagramas.
+<address>: Usado para expor informações de contacto.
+<time datetime="">: Time é usado para representar Data ou Hora, já o atributo (datetime="") traduz datas e horas para formato legivel por maquina.
+	ISO8601 (datetime) tem como formato padrão o seguinte: yyyy-mm-ddThh:mm:ss
+
+ Links Internos: Usados para vincular a outra secção da página usando o atributo href="#id" em um elemento <a> e atribuindo o mesmo id ao elemento de destino.
+ Isto é comumente usado para links de pular, sumário, ou páginas longas com multiplas secções.

@@ -1,0 +1,115 @@
+		Como Funcionam 'Background Image Size', 'Repeat', 'Position', e 'Attachment'?
+
+
+Ao trabalharmos com imagens de fundo em CSS, temos várias propriedades à nossa disposição para controlar como essas imagens são exibidas.
+
+As principais propriedades em que vamos focar são: background-size, background-repeat, background position e background-attachment.
+
+Vamos primeiro dar uma olhada na propriedade background-image :
+
+CSS
+	style>
+	  body {
+		background-image: url("https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg");
+	  }
+	</style>
+	
+O CSS acima define uma imagem de fundo de gato para o elemento body.
+
+Se quisermos definir o tamanho da imagem de fundo, podemos usar a propriedade background-size.
+
+Podemos também usar contain para dimensionar a imagem o máximo possivel sem cortar ou esticar.
+
+Vejamos agora um exemplo com o background-size: contain;
+
+CSS
+	<style>
+		body {
+			background-image: url("https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg")
+			background-size: contain;
+			min-height: 100px;
+		}
+	</style>
+	
+Estamos definindo o min-height para 100px para que a imagem de fundo seja vísivel e o layout mantenha uma altura base, garantindo que mesmo com conteúdo minimo, o design pareça equilibrado e visualmente atraente.
+
+Se alterarmos a propriedade background size para usar o valor: cover, entáo a imagem de fundo será redimensionada para cobrir todo o elemento body mantendo sua porporção.
+Vejamos:
+
+CSS
+	<style>
+	  body {
+		background-image: url("https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg");
+		background-size: cover;
+		min-height: 100px;
+	  }
+	</style>
+	
+Nos exemplos anteriores,percebemos que a imagem de fundo se repetia continuamente.
+
+Por padrão, as imagens de fundo repetem-se tanto horizontalmente quando verticalmente para preencher todo o elemento. No entanto, nós podemos controlar este comportamento.
+
+Podemos usar a propriedade: background-repeat: no-repeat, e a imagem não repetirá.
+Ora vejamos:
+
+CSS
+	<style>
+		body{
+			background-image: url("https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg");
+			background-size: contain;
+			background-repeat: no-repeat;
+			min-height: 100px;
+		}
+		
+Com o background-size definido como: contain, e o background-repeat: no-repeat, a imagem não se repitirá mais na tela.
+
+Caso queiramos repetir a imagem de fundo verticalmente basta usarmos o valor: repeat-x; para a propriedade background-repeat.
+Vejamos o exemplo:
+
+CSS
+	<style>
+		body {
+			background-image: url("https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg")
+			background-size: contain;
+			background-repeat: repeat-x;
+			min-height: 100px;
+		}
+		
+Para repetirmos a imagem de fundo verticalmente basta trocar o repeat-x por repeat-y.
+-----------------------------------------------------
+
+Para posicionar uma imagem de fundo na tela, podemos usar a propriedade background-position:;
+
+A propriedade background-position premite que você defina onde no elemento a imagem de fundo aparece.
+Podemos usar para isso palavras-chave como: top, bottom, left, right e center ou valores especificos em pixels ou porcentagens.
+
+Aqui está um exemplo usando o center e o top para o background-position.
+
+CSS
+	<style>
+	  body {
+		background-image: url("https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center top;
+		min-height: 100px;
+	  }
+	</style>
+	
+Este código CSS posiciona a imagem de fundo no centro do elemento horizontalmente e no topo verticalmente.
+------------------------------------------------------
+
+Por fim, background-attachment determina se a imagem de fundo rola com o conteúdo ou permanece fixa quadno a página é rolada.
+
+Os valores pirncipais são :scroll(padrão), onde a image, de fundo rola com o conteúdo, e :fixed, onde a imagem de fundo permanece na mesma posição na tela.
+
+Aqui está o exemplo usando o valor :fixed para a propriedade background-attachment:
+
+CSS
+	<style>
+	  body {
+		background-image: url("https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg");
+		background-position: center top;
+		background-attachment: fixed;
+	  }
+	</style>

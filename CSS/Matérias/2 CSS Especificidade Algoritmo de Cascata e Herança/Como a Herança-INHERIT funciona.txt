@@ -1,0 +1,40 @@
+			Como a Herança funciona em Css de nível alto?
+			
+Herança é um conceito chave em CSS que determina como os estilos são transmitidos dos elementos pai para seus elementos filhos.
+
+Assim como no Mundo real, onde crianças frequentemente herdam caracteristicas dos seus pais, no CSS, certas propriedades podem ser herdadas pelos elementos filhos dos seus elementos pais.
+
+Isso permite uma maneira mais consistente de aplicar estilos em todo o documento.
+
+No CSS, nem todas as propriedades são herdadas por padrão. Por exemplo, propriedades como color, font-family e line-height são herdadas. Isso significa que se você definir a cor do texto em um elemento pai,  todos os seus elementos filhos herdarão essa cor a menos que você a substitua especificamente.
+
+Por exemplo, considere o seguinte exemplo onde um elemento pai div tem sua cor definida usando um estilo inline e o elemento filho p herda essa cor:
+
+	<div style="color: blue;">
+		Este é o elemento pai.
+		<p>Este é o elemento filho que herda a cor.</p>
+	</div>
+
+Neste caso tanto o <div> pai quanto o <p> filho exibirão seu texto em azul porque a cor é herdada.
+
+Por outro lado, propriedades como margin, padding, border e background não são herdadas por padrão. Se você quiser que um elemento filho herde esses estilos, você precisa defini-los explicitamente, seja diretamente no elemento filho ou usando a palavra-chave: inherit.
+
+A palavra-chave inherit pode ser usada para forçar a herança de uma propriedade de um elemento pai, mesmo se essa propriedade normalmente não for herdada.
+
+Por exemplo, se quisermos que um elemento filho especifico tenha o mesmo padding que seu pai, você pode definir padding: inherit; no elemento filho:
+
+	<div style="padding: 20px;">
+		Este é o elemento pai com padding.
+		<p style="padding: inherit;">
+			Este é o filho que herda o padding.
+		</p>
+	</div>
+
+Neste caso, o elemento filho <p> herdará 20px de padding do seu elemento pai <div>.
+
+Herança é especialmente útil para manter a consistencia e reduzir a redundancia em suas folhas de estilo.
+
+Em vez de escrevermos a mesma regra de estilos mútliplas vezes para múltiplos elementos, podemos defini-la uma vez em um elemento pai e os elementos filhos irão herda-la. Isso pode tornar nosso CSS mais conciso e facil de gerenciar.
+
+No entanto é importante lembrar que a herança funciona apenas em uma direção - do pai para o filho. Se você substituir uma estilo em um elemento filho, isso não afectará o elemento pai.
+

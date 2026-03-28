@@ -1,0 +1,67 @@
+			Porque os estilos padrão dos links são importantes para a Usabilidade na Web?
+
+			
+ Os estilos padrão de link desempenham um papel crucial na melhoria da usabilidade e acessibilidade na web.
+
+Esses estilos, tipicamente azul para links não visitados e roxo para links visitados, tornaram-se um padrão que os usuários passaram a esperar e confiar ao navegar em sites.
+
+O propósito principal dos estilos padrão de link é fornecer indicações visuais claras que ajudam os usuários a distinguir entre elementos interativos e não interativos em uma página da web.
+
+Essa distinção é fundamental para criar uma experiência de navegação intuitiva e amigável ao usuário.
+
+Vamos considerar os estilos padrão básicos para links:
+
+HTML
+	<a href="/">Link de exemplo</a>
+	
+CSS
+	a:link {
+		color: blue;
+		text-decoration: underline;
+	}
+	
+	a:visited {
+		color: purple;
+	}
+	
+Estes estilos servem a várias funções importantes.
+
+Primeiramente, a cor azul para links não visitados se destaca contra a maioria das cores de fundo e texto, tornando os links facilmente identificáveis. Esse contraste é crucial para que os usuários possam rapidamente escanear uma página e encontrar elementos de navegação ou informações importantes.
+
+O sublinhado enfatiza ainda mais que o texto é clicável, fornecendo uma indicação visual adicional. Isso é particularmente útil para usuários que podem ser daltônicos ou ter dificuldade em distinguir cores.
+
+A mudança de cor para links visitados (normalmente para roxo) ajuda os usuários a acompanhar onde eles estiveram. Este recurso é inestimável para navegar em sites grandes ou realizar pesquisas, pois evita que os usuários revisitem inadvertidamente as mesmas páginas.
+
+Considere este exemplo de HTML:
+
+	<p>Learn more about <a href="https://www.exemple.com/cats">cats</a> and <a href="https://www.example.com/dogs>dogs</a>.</p>
+	
+Embora seja comum que designers modifiquem esses estilos padrão para combinar com a estética de um site, é crucial manter os princípios fundamentais por trás deles.
+
+Se você optar por alterar os estilos padrão, certifique-se de que os links ainda sejam claramente distinguíveis do texto comum, haja uma diferença visível entre links visitados e não visitados e as cores escolhidas forneçam contraste suficiente com o fundo.
+
+Por exemplo, você pode usar um estilo personalizado assim:
+
+HTML
+	<a href="/">Example Link</a>
+	
+CSS
+	a:link {
+		color: blue;
+		text-decoration: none;
+		border-bottom: 1px solid blue;
+	}
+	
+	a:visited {
+		color: purple;
+		border-bottom: 1px solid purple;
+	}
+	
+			
+			Os Diferentes Estados dos Links
+			
+Os estados de links fornecem feedback imediato aos usúarios enquanto eles interagem com links, melhorando a usabilidade geral do site.
+
+Além dos estados padrão e visitado, os links normalmente têm estados hover e active.
+
+Sempre priorize clareza e experiência do usuário ao projetar estilos de link para seus sites.

@@ -1,0 +1,64 @@
+			Anatomia Básica de uma regra CSS
+			
+CSS é responsável pelos estilos de uma página web. Todos esses estilos são compostos por várias regras CSS.
+
+Uma regra CSS é composta por duas partes principais: um selector e um bloco de declaration.
+
+Vamos dar uma olhada na sintaxe básica:
+
+ seletor {
+ 	property: value;
+ }
+ 
+ Um seletor é um padrão usado em CSS para identificar e direcionar elementos HTML especificos para estilização.
+ 
+ Exemplos de selectores incluem selectores de tipo, seletores de classe e seletores de ID.
+ 
+ As chaves fornecidas na sintaxe básica são conhecidas como um bloco de declaração. Um bloco de declaração aplica um conjunto de estilos para um dado seletor ou seletores.
+ 
+ Dentro do bloco de declaração, você terá uma serie de declarações. Cada declaração consiste em uma propriedade e um valor.
+ 
+ A propriedade é o identificador CSS que especifica qual recurso está sendo estilizado. Um exemplo de uma propriedade seria a propriedade: background-color.
+ 
+ O valor seria a configuração especifica aplicada a essa propriedade. Por exemplo, se a propriedade for: background-color, um valor poderia ser: purple, que define a cor de fundo como roxa.
+ 
+ Após cada nome de propriedade você precisa colocar dois pontos e após cada valor, deve haver um ponto e virgula.
+ 
+ Agora que conheces a sintaxe, vamos dar uma olhada em um exemplo.
+ 
+HTML - index.html
+ <link rel="stylesheet" href="style.css">
+ 
+ <h1>Aprendendo CSS</h1>
+ <p>Este é um paragrafo de exemplo</p>
+ <p>E este é outro paragrafo de exemplo</p>
+
+CSS - style.css
+ p {
+ 	color: blue;
+ }
+ 
+ Nesta regra CSS, um seletor de tipo seleciona todos os elementos de paragrafo na página.
+ 
+ Dentro do bloco de declaração, há uma declaração.
+
+ A declaração consiste na propriedade color com um valor definido como blue. Isso vai mudar a cor do texto de todos os elementos de parágrafo para: blue.
+ 
+ Se quizermos aplicar o mesmo conjunto de estilos a múltiplos seletores, você pode criar uma lista de seletores com cada seletor separado por uma vírgula.
+ 
+ Vejamos agora um exemplo de estilização de multiplos seletores.
+ 
+ HTML - index.html
+ <link rel="stylesheet" href="style.css"/>
+ 
+ <h1 id="titulo">Titulo de Exemplo</h1>
+ <h2 class="sub-titulo">Sub-titulo de Exemplo</h2>
+ <p>Este parágrafo não é afetado pelo seletor</p>
+ 
+ CSS - style.css
+ #titulo, .sub-titulo {
+ 	color: azul-marinho;
+ }
+ 
+ Todos os seletores ID devem começar com o símbolo hash (#).
+ Todos os seletores de class devem começar com um (.).

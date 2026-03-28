@@ -1,0 +1,109 @@
+			Tecnicas modernas para Tabelas
+
+
+ Existem algumas tecnicas muito usadas em CSS para tabelas modernas. 
+ Elas aparecem muito em dashboards, painéis administrativos e tabelas de dados.
+
+ Iremos ver aqui 3 das tecnicas mais usadas.
+
+
+1. Border-collapse - para tabelas limpas
+
+ Por padrão as bordas das tabelas ficam duplicadas (cada célula tem sua borda).
+
+ A propriedade CSS border-collapse resolve isso. Vejamos:
+
+CSS
+
+table {
+	border-collapse: collapse;
+}
+
+td, th {
+	border: 1px solid black;
+	padding: 8px;
+}
+
+
+*Elimina bordas duplicadas
+*Aparencia mais moderna
+*Muito usado em iterfaces profissionais
+
+
+2. Zebra stripes(linhas alternadas)
+
+Usa-se :nth-child() para alternar a cor das linhas.
+
+Isso melhora muito a legebilidade. Vejamos o uso da pseudo-classe nth-child para criarmos o padrão de zebra em nossa tabela.
+
+CSS
+
+tr:nth-child(even){  /*(uneven)(Par ou Impar)*/
+	background-color: light-grey;
+}
+
+E a tabelas completa usando-se desta mesma propriedade.
+
+table {
+	border-collapse: collapse;
+}
+
+td, th {
+	padding: 8px;
+}
+
+tr:nth-chil(even) {
+	background-color: light-grey;
+}
+
+
+*Mais fácil de ler tabelas grandes
+*Usado em dashboards
+*Muito comum em UI moderna
+
+
+
+3.Hover nas linhas
+
+ Para quando o usuario passar o rato em cima de determinada linha de nossa tabela a mesma ter um destaque.
+ Vejamos:
+
+CSS
+
+tr:hover {
+	background-color: dark-grey;
+}
+
+Muito usado em:
+*Tabelas de dados
+*Sistemas administrativos
+*CRM's
+*Paneis de controle
+
+*Melhora a interação
+*Facilita seguir a linha com os olhos
+
+
+
+		Exemplo completotab
+		
+		
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  fon-family: sans-serif;
+}
+  
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid black;
+  text-align:left;
+}
+
+tr:nth-child(even) {
+  background-color: lightgrey;
+} 
+
+tr:hover {
+  background-color: darkgrey;
+}

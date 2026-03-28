@@ -1,0 +1,70 @@
+			A função attr()
+			
+• Links devem ser links.
+
+Vamos entender a função attr() usando o exemplo de exibição de links em uma impressão de página.
+Caso tenhamos retirado todos os estilos de nossos links ao serem impressos em papel a preto e branco, podemos usar a função attr() para fazer nosso usuário entender que o mesmo se trata de um link.
+
+· Mas afinal o que é a função attr()?
+
+	A função attr() em CSS é usada para obter o valor de um atributo HTML e usa-lo dentro do CSS.
+	
+	Basicamente, vai buscar o atributo HTML e mostra-lo (ou usa-lo) no CSS.
+	
+	Permite-nos por exemplo, exibir a URL de um link na nossa página web, ou como é mais comumente usada, em uma página impressa.
+	
+• Sintaxe Básica:
+
+CSS
+	seletor::pseudo-elemento {
+		conteúdo: attr(nome-do-atributo);
+	}
+	
+• Exemplo Simples:
+
+HTML
+	<p data-info="informação-extra">Texto principal</p>
+	
+CSS
+	p::after {
+		content: "(" attr(data-info) ")";
+	}
+	
+• Resultado:
+	Teremos então visivel na nossa página algo como:
+	
+	Texto principal (informação-extra)
+	
+			
+			Uso Comum
+			
+1• Normalmente usada com "content" para exibir conteúdo de atributos como um tooltip.
+
+	*Só funciona de forma consistente com pseudo-elementos como: ::before; ::after .
+	
+	
+			Exemplos
+			
+• Exibir Tooltips simples
+
+HTML
+	<span data-tooltip="Olá!">Passa o mouse</span>
+	
+CSS
+	span:hover::after {
+		content: attr(data-tooltip);
+	}
+	
+• Exibir preços de algum artigo da página
+
+HTML
+	<div class="card" data-price="49$"></div>
+	
+CSS
+	.card:hover::after {
+		content: attr(data-price);
+	}
+	
+ Não precisamos de escrever o preço em nosso HTML visivel, fica mais organizado, e o mesmo será exibido quando o usuario passar o mouse em cima do artigo.
+ 
+ 

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários de prática</title>
+  </head>
+  <body>
+    <h1 id="title">Formulários de prática</h1>
+    <p id="description">Este é um formulário criado para a pratica do uso de elementos de formulário e os seus atributos. Enquanto estudamos e trocamos informações com outros desenvolvedores. Fica a vontade para experimentar o seu uso.</p>
+
+    <form id="survey-form">
+
+      <fieldset class="personal">
+        <legend>Informação Pessoal</legend>
+
+        <label id="name-label" for="name">Nome:</label>
+        <input id="name" type="text" placeholder="Your name" required/>
+        
+        <label id="email-label" for="email">E-mail:</label>
+        <input id="email" type="email" placeholder="example@email.com" required/>
+        
+        <label id="number-label" for="number">Idade</label>
+        <input id="number" type="number" min="12" max="55" 
+        placeholder="Age" required/>
+
+      </fieldset>
+
+      <fieldset class="major">
+        <legend>Área de Estudos</legend>
+
+        <label for="dropdown">Que tipo de Desenvolvedor es?</label>
+        <select id="dropdown" name="whatend">
+          <option value="f">Front-end</option>
+          <option value="b">Back-end</option>
+          <option value="fstack">Full-Stack</option>
+        </select>
+      </fieldset>
+      
+      <fieldset class="education">
+        <legend>Educação</legend>
+
+        <p>Possuis formação em Ciencias Computacionais?</p>
+
+        <label>
+          <input type="radio" name="cs_degree" value="yes"/>
+          Sim
+        </label>
+
+        <label>
+          <input type="radio" name="cs_degree" values="no"/>
+          Não
+        </label>
+      </fieldset>
+
+      <fieldset class="interests">
+        <legend>Outros Interesses</legend>
+        <p>Diz-nos que outras áreas te interessam?</p>
+
+        <label>
+          <input type="checkbox" name="interestarea" value="wdesign"/>
+          Web Design
+        </label>
+
+        <label>
+          <input type="checkbox" name="interestarea" value="acessability"/>
+          Acessibilidade
+        </label>
+
+        <label>
+          <input type="checkbox" name="interestarea" value="rspdesign"/>
+          Design Responsivo
+        </label>
+
+        <label>
+          <input type="checkbox" name="interestarea" value="devops"/>
+          DevOps
+        </label>
+
+        <label>
+          <input type="checkbox" name="interestarea" value="cicd"/>
+          CI/CD
+        </label>
+
+        <label>
+          <input type="checkbox" name="interestarea" value="testing"/>
+          Testes/QA
+        </label>
+
+        <label>
+          <input type="checkbox" name="interestarea" value="seo"/>
+          SEO
+        </label>
+
+        <label>
+          <input type="checkbox" name="interestarea" value="cms"/>
+          Content Managment Systems(CMS's)
+        </label>
+
+        <label>
+          <input type="checkbox" name="interestarea" value="pwa"/>
+          Progressive Web Apps
+        </label>
+
+        <label>
+          <input type="checkbox" name="interestarea" value="analytics"/>
+          Web Analytics
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Comentários</legend>
+
+        <label for="comentarios">
+          Fica a vontade para contar-nos mais soubre a tua experiencia como Desenvolvedor Web?
+        </label><br>
+
+        <textarea
+          id="comentarios"
+          name="coments"
+          rows="5"
+          placeholder="Coment something about you">
+        </textarea>
+
+      </fieldset>
+
+      <fieldset>
+        <p>Estás satisfeito com as tuas respostas?</p>
+        <input type="submit" value="Submeter" name="submit"/>
+        <input type="reset" value="Resetar Formulário" name="reset"/>
+      </fieldset>
+
+
+    </form>
+  </body>
+  </html>
+  

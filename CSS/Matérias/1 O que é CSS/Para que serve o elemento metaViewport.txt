@@ -1,0 +1,27 @@
+			Para que serve o elemento Meta Viewport?
+		
+ O elemento meta viewport é um componente crucial no design responsivo para web.
+ 
+ É um elemento meta HTML especial que dá ao navegador instruções sobre como controlar as dimensões da página e o dimensionamento em diferentes dispositivos, particularmente em telefones celulares e tablets.
+ 
+ Vamos dar uma olhada na sintaxe básica do elemento meta viewport:
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ 
+ Este elemento é tipicamente colocado na seção head do seu documento HTML. Mas o que cada parte do elemento significa?
+ 
+ A parte width=device-width informa ao navegador para definir a largura da página para corresponder à largura da tela do dispositivo. Isto é essencial para criar layouts responsivos que se adaptam a diferentes tamanhos de tela.
+ 
+ O initial-scale=1.0 define o nível de zoom inicial quando a página é carregada pela primeira vez. Um valor de 1.0 significa que a página é exibida com zoom de 100% sem qualquer escala.
+ 
+ Ao usar o elemento meta viewport, você está garantindo que suas páginas web sejam exibidas correntamente em dispositivos móveis.
+ 
+ Sem ele, os navegadores móveis normalmente renderizam a página na largura de uma tela de desktop e depois a reduzem, o que pode resultar em uma experiencia ruim para o usuário com texto minúsculo e dificil de ler.
+ 
+ O elemento meta viewport também premite que você controle se os usuários podem dar zoom in e zoom out nas suas páginas web.
+ 
+ Embora seja possivel desativar o zoom com o atributo user-scalable=no, geralmente é recomendado evitar isso por razões de acessibilidade.
+ 
+ O elemento meta viewport desempenha num papel crucial na criação de sites amigáveis para dispositivos móveis.
+ 
+ Ele garante que seus designs responsivos cuidadosamente elaborados sejam exibidos conformer o esperado em vários dispositivos, proporcionando uma melhor experiência ao usuário para todos os visitantes de seu site

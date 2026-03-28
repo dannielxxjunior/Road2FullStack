@@ -1,0 +1,51 @@
+			O que é a especificidade para seletores de tipo?
+			
+Seletores de tipo, também conhecidos como seletores de elemento, seleciona elementos com base no nome da tag.
+
+Esse seletores são fundamentais no CSS e permitem que você aplique estilos a todas as instancias de um elemento HTML específico.
+
+Seletores de tipo são faceis de usar e são escritos simplesmente como o nome da tag do elemento que você deseja estilizar.
+
+Aqui está um exemplo de um seletor de tipo que seleciona todos os elementos de parágrafo na página:
+
+	<link rel="stylesheet" href="styles.css">
+
+	<p>Paragraph one</p>
+	<p>Paragraph two</p>
+	<p>Paragraph three</p>
+
+	p {
+	  color: blue;
+	}
+
+Neste exemplo, todos os elementos p terão a cor do texto definida como blue.
+
+Seletores de tipo têm uma especificidade relativamente baixa em comparação com outros seletores. O valor de especificidade para um seletor de tipo é (0, 0, 0, 1).
+
+Isso significa que seletores de tipo serão substituídos por seletores de classe, seletores de ID e estilos inline, mas ainda podem aplicar estilos a menos que essas regras de especificidade mais alta estejam presentes.
+
+Vamos dar uma olhada em um exemplo onde os seletores de classe irão sobrescrever os estilos do seletor de tipo.
+
+Aqui está um exemplo com dois elementos de parágrafo:
+
+	<p class="para">I am a paragraph</p>
+	<p class="para">Here is another paragraph</p>
+
+Ambos os elementos de parágrafo têm uma classe chamada para.
+
+Dentro do arquivo CSS, o seletor de tipo seleciona parágrafos e o seletor de classes seleciona elementos com a classe para.
+
+	<link rel="stylesheet" href="styles.css">
+
+	<p class="para">I am a paragraph</p>
+	<p class="para">Here is another paragraph</p>
+
+	p {
+	  color: blue;
+	}
+
+	.para {
+	  color: red;
+	}
+
+Todos os parágrafos na página com a classe .para terão a cor do texto definida como red em vez de blue, porque seletores de classe têm uma especificidade maior do que seletores de tipo.

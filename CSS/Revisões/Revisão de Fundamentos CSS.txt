@@ -1,0 +1,160 @@
+			Revisão de Fundamentos de CSS
+			
+	•Noções básicas  CSS
+	
+•O que é CSS?: Cascaidng style sheets(CSS) é uma linguagem de marcação usada para aplicar estilos a elementos HTML. CSS é usado para cores, imagens de fundo, layouts, etc...
+
+•Anatomia básica de uma regra CSS: Uma regra básica em CSS é composta por duas partes principais: O Seletor e o Bloco de Declaração. Um seletor é o padrão usado em CSS para identificar e direcionar elementos HTML especificos para estelização. Um Bloco de Declaração aplica um conjunto de estilos para um ou mais Seletores.
+
+Vejamos então a sintaxe geral de uma regra básica de CSS:
+
+	seletor {
+		propriedade: valor;
+	}
+	
+• Elemento meta name="viewport": Este elemento meta fornece ao navegador instruções sobre como controlar as dimnensões da página e o escalonamento em diferentes dispositivos, particularmente em telefones celulares e tablets.
+
+• Estilos Padrão do Navegador: Cada elemento HTML terá estilos padrão do navegador aplicados a ele. Isso geralmente inclui items como margens e espaçamento padrão. 
+
+-----------------------------------------------------
+	•CSS inline, interno e externo
+	
+• CSS Inline: Esses estilos são escritos directamente dentro de um elemento HTML usando o atributo style. Na maioria das vezes você não usará CSS inline devido à separação de responsabiliades.
+
+Vejamos um Exemplo de CSS inline:
+
+	<link rel="stylesheet" href="styles.css">
+	<p style="color: red;">This is a red paragraph.</p>
+
+• CSS Interno: Esses estilos são escritos dentro das tags <style> na secçãoad de um documento HTML. Isso pode ser útil para criar exemnplos de código curtos, mas geralmente você usará CSS Interno.
+
+• CSS Externo: Esses estilos são escritos em um arquivo CSS separado e vinculados ao documento HTML usando o elemento link na seção head. Para a maioria dos projetos, você usará um arquivo CSS externo em vez de CSS interno ou inline.
+
+-----------------------------------------------------
+	•Trabalhando com as propiedades width e height
+	
+•Propriedade width: Esta propriedade especifica a largura de um elemento. Se você não especificar uma largura, o padrão será definido como auto. Isso permite que o navegador determine a largura do elemento com base no seu conteúdo, pai e tipo de exibição.
+
+• Propriedade min-width: Esta propriedade espeecifica  largura minima para um elemento.
+
+• Propriedade max-width: Esta propridade especifica a largura maxima para um elemento.
+
+• Propriedade height: Esta propriedade especifica a altura de um elemento. Da mesma forma, aaltura é "auto" por padrão, o que significa que ela se ajustará ao conteúdo interno.
+
+• Propriedade min-height: Esta propriedade especifica a altura mínima para um elemento.
+
+• Propriedade max-height: Esta propriedade especifica a altura máxima para um elemento.
+
+----------------------------------------------------	
+	•Diferentes tipos de Combinadores CSS
+	
+• Combinador Descendente( ): Este combinador(espaço) é usado para direcionar elementos que são descendentes de um elemento pai especificado.
+ O exemplo a seguir irá selecionar todos os items <li> dentro dos elementos <ul>.
+ 
+HTML
+	<ul>
+		<li>Example one</li>
+		<li>Example two</li>
+		<li>Example three</li>
+	</ul>
+
+CSS
+	ul li {
+		color: yellow;
+	}
+
+
+• Combinador Filho(>): Este combinador é usado para selecionar elmentos que são filhos diretos de um elemento pai especificado. O exemplo a seguir irá direcionar todos os elementos <p> que são filhos diretos da class="container".
+
+HTML
+	<div class="container">
+		<p>Este parágrafo será estilizado.</p>
+		
+		<div>
+			<p>Este parágrafo não será estilizado</p>
+		</div>
+	</div>
+	
+CSS
+	.container > p {
+		background-color: black;
+		color: white;
+	}
+
+
+• Combinador de proximo-irmão(+): Este combinador seleciona um elemento que segue imediatamente um elemento irmão especificado. O exemplo a seguir selecionará o elemento parágrafo(<p>) que segue imediatamente o elemento <h2>.
+
+HTML
+	<h2>Eu sou um sub-título</h2>
+	
+	<p>Este parágrafo receberá um fundo vermelho.</p>
+	
+CSS
+	h2 + p {
+		background-color: red;
+	}
+	
+	
+• Combinador de irmão-subsequente(~): Este combinador seleciona todos os irmãos de um elemento especificado que vêm depois dele. O exemplo a seguir estilizará apenas o segundo elemento <p> porque ele é o unico que é irmão do elemento <ul> que vem depois e compartilha o mesmo pai.
+
+HTML
+	<div class="container">
+		<p>Isto não será estilizado.</p>
+		<ul>
+			<li>Exemplo um</li>
+			<li>Exemplo dois</li>
+			<li>Exemplo três</li>
+		<ul>
+		<p>Este parágrafo será estilizado.</p>
+	</div>
+	<p>Este não será estilizado</p>
+	
+CSS
+	ul ~ p {
+		background-color: green;
+	}
+
+----------------------------------------------------
+	•Elementos de Nível Inline, Block e Inline-Block
+
+• Elementos Inline: Elementos inline ocupam apenas a largura necessaria e não começam em uma nova linha. Esses elementos fluem dentro do conteúdo, permitindo que texto e outros elementos inline apareçam ao lado deles.
+ Elementos inline comuns são: span, anchor e img.
+ 
+• Elementos em Block: Elementos em bloco começam em uma nova linha e ocupam toda a largura disponível por padrão, estendendo-se pela largura do seu container. Alguns elementos comuns de nível de bloco são os elementos: div, paragraph(<p>) e section.
+
+• Elementos Inline-Block: Podemos definir um elemento como inline-block usando a propriedade display. Esses elementos se comportam como elementos inline mas podem ter width e height definidos como elementos block.
+
+----------------------------------------------------
+	•Margem e preenchimento
+
+• Propriedade margin: Esta propriedade é usada para aplicar espaço fora do elemento, entre a borda do elemento e os elementos ao redor.
+
+• Propriedade padding: Esta propriedade é usada para aplicar espaço dentro do elemento, entre o conteúdo e sua borda.
+
+• Abreviação de margin: Você pode especificar de 1 a 4 valores para definir os lados da margem. Um valor se aplica aos quatro lados; dois valores definem top e bottom e depois right e left; três valores definem top, horizontal (right e left) e depois bottom; quatro valores definem top, right, bottom, left.
+
+• Atalho de padding: Você pode especificar de 1 a 4 valores para definir os lados do padding. Um valor se aplica aos quatro lados; dois valores definem top e bottom e depois right e left; três valores definem top, horizontal (right e left) e depois bottom; quatro valores definem top, right, bottom, left.
+
+----------------------------------------------------
+	•Especificidade do CSS
+
+• Especificidade do CSS Inline: O CSS Inline tem a especificidade mais alta porque é aplicado directamente ao elemento. Ele substitui qualquer CSS interno ou externo: O valor da especificidade para estilos inline é (1, 0, 0, 0).
+
+• Especificidade do CSS Interno: O CSS Interno é definido dentro de um elemento style na seção head do documento HTML. Ele tem especificidade menor do que estilos inline. Tanto o CSS interno quanto o externo compartilham o mesmo nível de especificidade, que é determinado pelos seus seletores, não pela sua localização.
+
+• Especificidade do CSS Externo: O CSS externo é vinculado via um elemento link na seção head e é escrito em arquivos .css separados. Assim como o CSS interno, sua especificidade é determinada pelos seletores usados. Quando duas regras têm especificidade igual, a ordem de origem determina o vencedor — a regra que aparece mais tarde no documento tem precedência. O CSS externo oferece a melhor manutenção para projetos maiores.
+
+• Seletor Universal (*): Este é um tipo de seletor CSS especial que seleciona todo e qualquer elemento dentro do documento HTML. É frequentemente usado para aplicar um estilos a todos os elementos na página, o que pode se útil para redefinir ou normalizar estilos entre diferentes navegadores. O seletor universal tem o menor valor de especificidade de qualque seletor. E contribui com 0 para todas as partes do valor de especificidade (0, 0, 0, 0).
+
+• Seletores de Tipo: Esses seletores têm como alvo elementos com base no nome da tag. Seletores de tipo têm uma especificidade relativamente baixa em comparação com outros seletores. O valor de especificidade para um seletor de tipo é: (0, 0, 0, 1).
+
+• Seletores de Classe: Estes seletores são definidos por um ponto(.) seguido pelo nome da classe. O valor de especificidade para um seletor de classe é (0, 0, 1, 0). Isso significa que seletores de classe podem substituir seletores de tipo, mas podem ser substituidos por seletores de ID e estilos inline.
+
+• Seletores de ID: Seletores de ID são definidos por um símbolo de cerquilha(#) seguido pelo nome do ID. Seletores de ID têm uma especificidade muito alta, maior do que seletores de tipo e seletores de classe, mas menor do que estilos inline. O valor de especificidade para um seletor de ID é (0, 1, 0, 0).
+
+• Palavra-chave !important: Usada para dar a uma regra de estilo a mais alta prioridade, permitindo que ela substitua quaisquer outras declarações para uma propriedade. Quando usada, força o navegador a aplicar o estilo especificado, independentemente da especificidade de outros seletores. Você deve ter cautela ao usar !important porque isso pode tornar o CSS mais dificil de manter e de depurar.
+
+• Algoritmo de Cascata: Um algoritmo usado para decidir quais regras CSS aplicar quando há múltiplos estilos direcionados ao mesmo elemento. Ele garante que os estilos mais apropriados sejam usados, com base em um conjunto de regras bem definidas.
+
+Herança CSS: O processo pelo qual estilos são passados de elementos pai para seus filhos. A Herança permite que você defina estilos em um nível superior na árvore do documento e os aplique a múltiplos elementos sem especificá-los esplicitamente para cada elemento.
+

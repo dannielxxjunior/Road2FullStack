@@ -1,0 +1,49 @@
+		Qual é a diferença entre elementos inline e em nível de bloco em CSS?
+		
+Em HTML e CSS, os elementos são classificados como elemento-inline ou elemento em block-level, e essa classificação determina como eles se comportam no layout do documento.
+
+Entender essa diferença é crucial para entender como o conteúdo é exibido em uma página web.
+-------------------------------------
+
+Elementos de nível de bloco são elementos que ocupam toda a sua largura por padrão, estendendo-se peça çargura do seu contêiner.
+
+Esses elementos sempre começam em uma nova linha e empurram outro conteúdo para a próxima linha, criando um bloco de conteúdo.
+
+Elementos de nível de bloco têm a propriedade CSS display: block; aplicada por padrão. esta propriedade garante que o elemento se estenda para preencher a largura do contêiner e apareça em uma nova linha.
+
+Alguns dos elementos mais comuns de nivel bloco são: div, parágrafos, títulos, listas oredenadas e não ordenadas e elementos de seção(section).
+
+Vejamos um exemplo de código de um elemento de nível de bloco:
+
+		<p style="border: 2px solid red;">
+			first paragraph
+		</p>
+		<p>Second paragraph</p>
+		
+Neste, exemplo temos dois elementos de parágrafo onde o primeiro tem uma borda vermelha ao seu redor.
+
+Os dois elementos de parágrafo não compartilham a mesma linha porque eles são elementos de nível de bloco por padrão.
+
+Então, ambos os elementos de parágrafo ocuparão toda a largura do seu contêiner, que neste caso é o elemento body.
+
+Elementos de nível de bloco são ideais quando queremos que o conteúdo se empilhe verticalmente, como parágrafos, seções ou blocos maiores de conteúdo. Eles são comumente usados para definir o layout e a estrutura de uma página da web.
+--------------------------------------
+
+Elementos de nível inline, ao contrario dos elementos em bloco, ocupam apenas a largura necessária e não começam em uma nova linha. Esses elementos fluem dentro do conteúdo, permitindo que o texto e outros elementos inline apareçam ao lado deles.
+
+Elementos inline têm a propriedade CSS display: inline; aplicada por padrão. Esta propriedade garante que o elemento permaneça dentro do fluxo do conteúdo e não quebre para uma nova linha.
+
+Elementos inline comuns são os elementos: span, anchor e img.
+
+Vejamos agora um exemplo para entendermos mais facilmente os elementos inline:
+
+    <p>This is a
+	    <span style="color: red; broder: 2px solid green;">red</span>
+	    word inside a paragraph.
+    </p>
+    
+Neste exemplo, temos um elemento span aninhado dentro de um elemento parágrafo. O elemento span tem uma cor de texto red com uma borda green ao redor para que você possa ver melhor a palavra destacada.
+
+Como você pode ver, o elemento span ocupa apenas o espaço da palavra "red" e não empurra o conteúdo seguinte para uma nova linha.
+
+Elementos inline são melhores para estilizar porções menores de texto ou conteúdo dentro de uma linha, como enfatizar uma palavra, criar hyperlinks ou aplicar estilos específicos a partes de um parágrafo.

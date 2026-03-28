@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    a[href]::after {
+      content: "(" attr(href) ")";
+      color: red;
+    }
+  </style>
+  <title>Função attr()</title>
+</head>
+<body>
+  <h1>Função attr()</h1>
+  <p>A função <code>attr()</code> é usada para acessar o valor de um atributo de um elemento HTML. Ela é comumente utilizada em CSS para aplicar estilos com base nos atributos dos elementos.</p>
+
+  <h2>Exemplo de uso</h2>
+  <p>Suponha que temos o seguinte HTML:</p>
+  <pre>
+    &lt;div class="box" data-color="red"&gt;Box 1&lt;/div&gt;
+    &lt;div class="box" data-color="blue"&gt;Box 2&lt;/div&gt;
+  </pre>
+
+  <p>Podemos usar a função <code>attr()</code> para definir a cor de fundo das caixas com base no valor do atributo <code>data-color</code>:</p>
+  <pre>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: attr(data-color);
+    }
+  </pre>
+
+  <p>No exemplo acima, a caixa com o atributo <code>data-color="red"</code> terá um fundo vermelho, enquanto a caixa com o atributo <code>data-color="blue"</code> terá um fundo azul.</p>
+
+  <hr>
+
+  <h2>Outros Exemplos de uso</h2>
+
+  <p>Podemos usar a função <code>attr()</code> para exibir uma URL de um link, fazendo uso da mesma em conjunto com a propriedade <code>content</code>: e o pseudo-elemento <code>::before</code> ou <code>::after</code>.</p>
+  <pre>
+    &lt;a href="https://www.example.com"&gt;Example&lt;/a&gt;
+
+    a::after {
+      content: " (" attr(href) ")";
+    }
+  </pre>
+
+  <p>O resultado será um link com a URL exibida após o texto.</p>
+  <p>Assim: </p>
+  <a href="https://www.example.com">Exemplo real</a>
+</body>
+</html>

@@ -1,0 +1,27 @@
+			Como funciona width & height?
+			
+No cSS, as propriedades width e height são usadas para controlar as dimensões dos elementos em uma página web.
+
+Essas propriedades podem ser definidas em diferentes unidades como pixels (px), porcentagens (%), unidades de viewport (vw, vh) e mais.
+
+A propriedade de width especifica a largura de um elemento. Se você não especificar uma largura o padrão será definido com auto. Isto permite ao browser determinar a largura do elemento baseado em seu conteúdo, pai, e tipo de diplay. Para um elemento div por exemplo, width: auto; faz com que expanda para preencher toda a largura do seu elemento pai.
+
+Já a propriedade height especifica a altura de um elemento. Da mesma forma, a altura é auto por padrão, o que significa que ela se ajustará ao conteúdo interno.
+--------------------------------------------------------------------------------
+
+	Propriedades min e max
+	
+A propriedade min-width especifica a largura mínima que um elemento pode ter. Mesmo que o conteúdo interno seja menor, o elemento não encolherá abaixo desse valor.
+
+O min-height especifica a altura mínima que um elemento pode ter. Ele garante que o elemento não fique menor que o valor definido.
+
+* Se min-width e min-height forem maiores que o width e height, eles substituirão os valores menores. Isso garante que os elementos não fiquem muito pequenos, o que é importante para manter uma design consistente e utilizável.
+-- -- -- -- -- -- -- -- -- 
+
+O max-width especifica a largura máxima que um elemento pode alcançar, mesmo que haja espaço suficiente para que ele seja mais largo.
+
+O max-height especifica a altura máxima que um elemento pode atingir, independentemente do tamanho do seu conteúdo.
+
+* Quando max-width e max-height são menores que width e height, eles têm precedência. Isto é importante para controlar o tamanho máximo dos elementos em seus layouts.
+
+* Isto garante que os elementos premaneçam dentro das faixas de tamanho desejadas, independentemente dos valores padrão de largura e altura.

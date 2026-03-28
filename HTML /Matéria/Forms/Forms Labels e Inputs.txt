@@ -1,0 +1,130 @@
+		Forms, Labels e Inputs em HTML5
+
+ O elemento <form> é usado em HTML para coletar user info, como nomes, endereços de email e até endereços de morada.
+
+Vejamos um primeiro exemplo:
+
+<form action="URL-goes-here"> <!--Elementos de input aqui--></form>
+
+ O atributo action="" usado no exemplo a cima especifica para onde os dados do formulario serão enviados.
+ Para coletarmos uma informação epecifica usamos o elemento <input> em conjunto com o seu atributo de tipo, type="".
+Vejamos:
+
+<form action="URL">
+	<input type="text"/>
+</form>
+
+ Os elementos de input são do tipo VOID.
+ O atributo type="" define o tipo de dado esperado. Para adicionarmos um rotúlo basta adicionarmos um elemento <label></label>
+Vejamos:
+
+<form action="URL">
+	<label>User-Name:<input type="text"/></label>
+</form>
+
+ Ao aninharmos o input dentro do <label> criamos associação implicita entre o label e o campo de input.
+ Mas veremos e usaremos mais um outro tipo de associação entre estes dois elementos, a associação explicita.
+ Para associarmos explicitamente um label com um campo de input usamos dentro do elemento label o atributo for="", e dentro do input definnimos um id="" com o mesmo valor.
+Vejamos:
+
+<form action="URL">
+	<label for="userName">User Name:</label>
+	<input type="text" id="userName"/>
+</form>
+
+	*Não esquecer que os valores do atributo for="" e do id="" do input precisam ser os mesmos para fazermos a associação.*
+
+ Se quisermos dar ainda uma dica adicional ao usuario que irá preecher o formulário podemos adicionar um atributo placeholder="" ao nosso input.
+
+<form action="URL">
+	<label for="userName">User Name:</label>
+	<input type="text" id="userName" placeholder="Nome de Usuario"/>
+</form>
+
+
+ Vejamos agora como podemos usar ainda os elementos de fieldset e legend para agrupar entradas e legendar as mesmas.
+ 
+<fieldset>
+  <legend>É a primeira vez que crias este tipo de formulário?</legend>
+  
+  <label for="yes-option">Yes</label>
+  <input id="yes-option" type="radio" name="hotel-stay" value="yes"/>
+  
+  <label for="no-option">No</label>
+  <input id="no-option" type="radio" name="hotel-stay" value="no"/>
+</fieldset>
+ 
+ No exemplo a cima construi um simples campo de entrada com uma legenda superior e dois radio buttons que são sempre de escolha unica, o ser humano associa os radio buttons a escolha unica e as checkbox's a escolha multipla, muito cuidado ao desenhar este tipo de formulários. mas segindo certas regras basicas não tem como falhar.
+--------------------------------------------------------------------------------------------------
+
+ Vamos passar agora aos elementos <select> e <option> e entender o seu funcionamento.
+ 
+Como funcinam:
+  O elemento <select> cria um drop-down menu
+  O <option> gera as opções necessarias de seleção
+  Que podem ser agrupadas em <optgroup>, grupo de opções
+  
+  Exemplo Básico:
+  
+<form>
+<label for="pais">Escolhe um pais</label>
+
+  <select id="pais" name="pais">
+    <option value="br">Brasil</option>
+    <option value="usa">Estados Unidos</option>
+    <option value="jpn">Japão</option>
+    <option value="cnd">Canada</option>
+    <option value="skr">Korea do Sul</option>
+  </select>
+</form>
+
+ Quanto ao uso do label pode ser usado assim de forma explicita ou de forma implicita aninhando o <select> dentro do mesmo.
+ Vejamos:
+ 
+ <form>
+  <label>
+    Escolhe um país:
+    <select name="pais">
+      <option value="pt">Portugal</option>
+      <option value="br">Brasil</option>
+      <option value="es">Espanha</option>
+    </select>
+  </label>
+</form>
+-----------------------------------------------------------------------------------			
+		Tipos de Valor do Atributo Input
+
+ Existem cerca de 22 tipos principais de input em HTML5
+
+1. Tipos de Texto
+	Usados para inserir informação textual
+
+ text / password / email / search / tel / URL
+	
+EX: 
+ <input type="email" placeholder="email" required/>
+
+
+2. Tipos Númericos e Valores
+	Usados para insersão de datas e outros valores númericos
+
+ number / range(slider) / datetime-local / month / week / time
+
+EX:
+ <input type="number" min="3" max="333"/>
+
+
+3. Seleção
+	Permitem escolher entre varias opções
+ checkbox / radio / color / file (upload de ficheiros)
+
+EX:
+ <input type="checkbox"/>Aceito os termos
+
+
+4. Butões
+
+ button / submit / reset / image
+
+EX:
+ <input type="submit" value="enviar"/>

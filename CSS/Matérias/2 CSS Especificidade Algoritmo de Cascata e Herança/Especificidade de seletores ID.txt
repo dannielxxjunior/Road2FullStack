@@ -1,0 +1,28 @@
+			O que é a especificidade para seletores ID?
+			
+Seletores ID estão entre os seletores mais poderosos em CSS, permitindo que desenvolvedores apliquem estilos a elementos específicos com identificadores únicos.
+
+Isso os torna altamente eficazes para direcionar elementos individuais que precisam de estilização única.
+
+Seletores de ID são definidos por um símbolo de cerquilha (#) seguido pelo nome do ID. Eles devem ser únicos dentro de um documento HTML, significando que nenhum dois elementos deve compartilhar o mesmo ID.
+
+Aqui está um exemplo usando um seletor de ID:
+
+HTML
+	<link rel="stylesheet" href="styles.css">
+	<p id="unique">Example paragraph</p>
+	<p>Another paragraph</p>
+	<p>Yet another paragraph</p>
+
+CSS
+	#unique {
+		color: purple;
+	}
+	
+Neste exemplo, o elemento com o ID #unique terá a cor do texto definida como purple.
+
+Seletores de ID têm uma especificidade muito alta, maior do que seletores de tipo e seletores de classe, mas menor do que estilos inline. O valor de especificidade para um seletor ID é (0, 1, 0, 0).
+
+Isso significa que seletores de ID podem substituir seletores de classe e seletores de tipo mas podem ser substituídos por estilos inline.
+
+

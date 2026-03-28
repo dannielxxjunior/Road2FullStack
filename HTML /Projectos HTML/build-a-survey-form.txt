@@ -1,0 +1,141 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+        <h1 id="title">Practice Forms</h1>
+    <p id="description">This is a form made for practicing the use of form elements, and atributes, while learning and sharing infos with other Web Developers. Feel free to try and use it.</p>
+
+    <form id="survey-form">
+
+      <fieldset class="personal">
+        <legend>Personal Information</legend>
+
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" type="text" placeholder="Your name" required/>
+        
+        <label id="email-label" for="email">E-mail:</label>
+        <input id="email" type="email" placeholder="example@email.com" required/>
+        
+        <label id="number-label" for="number">Age</label>
+        <input id="number" type="number" min="12" max="55" 
+        placeholder="Age" required/>
+
+      </fieldset>
+
+      <fieldset class="major">
+        <legend>Your Field</legend>
+
+        <label for="dropdown">What type of dev are you?</label>
+        <select id="dropdown" name="whatend">
+          <option value="f">Front-end</option>
+          <option value="b">Back-end</option>
+          <option value="fstack">Full-Stack</option>
+        </select>
+      </fieldset>
+      
+      <fieldset class="education">
+        <legend>Education</legend>
+
+        <p>Do you have a Computer Science Degree?</p>
+
+        <label>
+          <input type="radio" name="cs_degree" value="yes"/>
+          Yes
+        </label>
+
+        <label>
+          <input type="radio" name="cs_degree" value="no"/>
+          No
+        </label>
+      </fieldset>
+
+      <fieldset class="interests">
+        <legend>Other Interests</legend>
+        <p>What are some other areas that interest you?</p>
+
+        <label>
+          <input type="checkbox" name="interestarea" value="wdesign"/>
+          Web Design
+        </label>
+
+        <label>
+          <input type="checkbox" name="interestarea" value="Acessability"/>
+          Acessability
+        </label>
+
+        <label>
+          <input type="checkbox" name="interestarea" value="rspdesign"/>
+          Responsive Design
+        </label>
+
+        <label>
+          <input type="checkbox" name="interestarea" value="devops"/>
+          DevOps
+        </label>
+
+        <label>
+          <input type="checkbox" name="interestarea" value="cicd"/>
+          CI/CD
+        </label>
+
+        <label>
+          <input type="checkbox" name="interestarea" value="testing"/>
+          Testing/QA
+        </label>
+
+        <label>
+          <input type="checkbox" name="interestarea" value="seo"/>
+          SEO
+        </label>
+
+        <label>
+          <input type="checkbox" name="interestarea" value="cms"/>
+          Content Managment Systems
+        </label>
+
+        <label>
+          <input type="checkbox" name="interestarea" value="pwa"/>
+          Progressive Web Apps
+        </label>
+
+        <label>
+          <input type="checkbox" name="interestarea" value="analytics"/>
+          Web Analytics
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Coments</legend>
+
+        <label for="comentarios">
+          Do you wish to tell us something more about yourself or your Developer Experience?
+        </label><br>
+
+        <textarea
+          id="comentarios"
+          name="coments"
+          rows="5"
+          placeholder="Coment something about you">
+        </textarea>
+
+      </fieldset>
+
+      <fieldset>
+        <p>Are you happy with you answers?</p>
+        <input id="submit" type="submit" value="Submit" name="submit"/>
+        <input type="reset" value="Reset Form" name="reset"/>
+      </fieldset>
+
+
+    </form>
+  </body>
+</html>
+
+** end of index.html **
+

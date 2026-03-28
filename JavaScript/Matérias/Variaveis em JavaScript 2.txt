@@ -1,0 +1,101 @@
+			Variaveis em JavaScript
+			
+Para fazermos o uso correto de uma variavel em JavaScript precisamos primeiro de declarar a mesma e em seguida atribuir-lhe um valor.
+
+ Exemplo:
+ 
+ const newVariable = 'hello world';
+ 
+ Vemos no exemplo a cima: const newVarible. Esta é a declaração da variavel, que é seguida logo após o sinal de atribuição(=) pelo valor atribuido a mesma: 'hello world'.
+ 
+ Formamos assim, declaração e atribuição em um passo apenas, mas podemos faze-lo em separado, fazendo a declaração primeiramente e a atribuição a posteriori.
+ 
+ Vejamos:
+ 
+ let anotherVariable;
+ 
+Aqui declaramos, o que significa que reservamos este espaço na memoria para um valor que será mais tarde atribuido a nossa variavel.
+
+ anotherVariable = 20;
+ 
+E aqui finalmente atribuimos o valor a variavél.
+Podemos experimentar imprimir agora a mesma usando:
+
+console.log(anotherVariable);
+
+
+		Formas de declaração de variavél
+		
+Em JavaScript existem diferentes modos que podemos usar para declarar uma variavél, ao contrario de por exemplo em Python onde simplesmente declaramos, em Javascript cada modo tem um proposito.
+
+Os três modos de declaração de variaveis são: var, let e const.
+
+Nos dias que correm o modo var não é mais usado, mas caso trabalhes algum dia com codigo legado, pode ser que encontres pelo caminho variaveis declaradas com var apesar de cada vez mais raro.
+
+ let - Introduzido no ECMAScript 6 é a forma moderna de declarar variaceis que podem ter seu valor alterado.
+ Tem um escopo de bloco {}. a variavel só existe dentro do bloco onde foi definida.
+ Premite reatribuição, mas não premite redeclaração no mesmo escopo.
+ 
+	let idade = 25;
+	idade = 26; // Permite reatribuição
+	
+ const - Também introduzido no ES6, usado para declarar constantes. O valor deve ser definido na declaração e não pode ser reatribuido.
+ Tem escopo de bloco {}.
+ Não premite reatribuição nem redeclaração.
+ 	nota: Se a constante for um objeto ou array, o conteúdo pode ser alterado, mas a variável não pode receber um novo objecto/array.
+ É recomendado usar const como padrão para todas as variaveis que não mudarão de valor.
+ 
+ 	const pi = 3.14;
+	// pi = 3.15; // Erro: reatribuição não permitida
+	
+As boas práticas de JavaScript dizem-nos que devemos evitar var, preferir o const e usar o let quando precisarmos reatribuir o valor.
+
+Exemplos de uso 
+
+let:
+
+ let counter = 0;
+ 
+ counter = counter + 1;
+ 
+que é igual a:
+
+ counter++;
+ 
+Neste exemplo estamos a reatribuir o valor por varias vezes a mesma variavel declarada como let.
+
+ const:
+ 
+ const counter = 0;
+ 
+ counter++;  Vemos um erro pois const não pode receber um novo valor/atribuição
+ 
+ O melhor caso de uso para const é sempre que não queremos que o valor que lhe será atribuido mude, quando queremos que seja uma constante por todo o nosso código.
+ vejamos o exemplo:
+ 
+ const taxRate = 0.08
+ 
+ Um valor que jamais irá mudar.
+ 
+ 
+ 		Nomear as Variáveis
+ 		
+Existem varias maneiras de nomear corretamente uma variavel mas sem duvida que existem umas que são mai corretas, fluentes e comuns.
+
+Para nomes de variaveis que tenham mais que uma palavra a norma mais comum é usar camelCase para atribuir um nome, a quem use também a PascalCase que é com todas as iniciais maiusculas mas a camelCase é sem duvida a mais comum, e do meu ponto de vista também a mais agradavel a vista e de facil leitura.
+Temos ainda snake_case que separa palavras com underscores, ou o simples lowercase com todas as letras minusculas.
+
+Estes são apenas alguns dos varios estilos de escrita que podem ser usados para nomear uma variável em JavaScript, mas é boa pratica usar o camelCase.
+
+É importante não esqueceres que variaveis não podem nunca começar com números, mas que os números podem estar presentes dentro do nome, so não como primeiro caracter.
+ 
+ Como: variavel1 - correto / 1variavel - errado
+ 
+Estas são algumas das coisas com as quais devemos sempre ter cuidado, até que com o tempo e a pratica se tornem segundo instinto.
+
+Estas são algumas das práticas básicas de estilos JavaScript, podes descobrir mais soubre essas boas práticas de estilos de JavaScript simplesmente digitando no google: JavaScript Style Guide.
+
+E serás apresentado a varias especificações de estilo preferidas por diferentes empresas para a escrita de programas em JavaScript por parte dos seus Developers.
+
+Para finalizar este assunto de conveções de nomenclatura falta apenas falarmos do nome que devemos dar a uma determinada variável. 
+Nomes de variaveis devem ser descritivos o mais possivel, devem representar explicitamente o valor no seu interior, claro sem turnar o nome em um paragrafo, mas buscando sempre o meio termo, onde o nome das tuas variaveis seja algo descritivo o soficiente para que seja possivel saber o que consiste a variavel em questão, pensa sempre que o teu codigo será possivelmente trabalhado mais tarde por desenvolvedores que precisaram de entender teu codigo, de preferecia sem que necessites ficar de babysitting ao mesmo.

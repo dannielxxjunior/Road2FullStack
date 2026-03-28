@@ -1,0 +1,44 @@
+			Como o algoritmo Cascade funciona em um nível alto?
+			
+O Algoritmo de Cascata é o processo que o navegador usa para decidir quais regras CSS aplicar quando há múltiplos estilos direccionados ao mesmo elemento. Ele garante que os estilos mais apropriados sejam usados, com base em um conjunto de regras bem definidas.
+
+O processo começa com RELEVÂNCIA. O navegador primeiro filtra todas as regras CSS para encontrar aquelas que realmente se aplicam ao elemento em questão. Isso inlcui combinar seletores e considerar media queries que possam estar em efeito.
+
+Uma Media Querie é uma técnica CSS usada para aplicar estilos com base nas características do dispositivo ou viewport, como sua largura, altura ou orientação.
+
+Em seguida, o algoritmo considera ORIGEM e IMPORTÂNCIA. O CSS pode vir de diferentes fontes: os estilos padrão do navegador (user-agent), estilos definidos pelo usuário e estilos escritos pelo autor (EU).
+
+Após a consideração da origem, o algoritmo então avalia a importância de cada regra, dando prioridade às regras marcadas com !important, que substituem outras regras independentemente da sua fonte.
+
+Após filtrar por origem e importância, o algoritmo analisa a especificidade. Quando duas regras da mesma origem e nível de importância se aplicam, a regra com maior especificidade será aplicada.
+
+Especificidade é uma medida de quão direcionado um seletor é, com seletores mais específicos tendo precedência sobre os mais gerais.
+
+Finalmente, se tudo mais for igual, a ordem de aparição entra em jogo. Quando duas regras têm a mesma especificidade, a que aparece por último no CSS será aplicada.
+
+É por isso que a ordem na qual você escreve seus estilos pode às vezes afetar o resultado.
+
+ • Vamos dar uma olhada em um exemplo.
+ 
+No arquivo HTML, há um único elemento de parágrafo. Depois, dentro do CSS, temos duas regras, cada uma direcionada ao elemento de parágrafo.
+
+HTML
+	<link rel="stylesheet" href="styles.css">
+
+	<p>example paragraph</p>
+
+CSS
+	p {
+	  color: blue;
+	}
+
+	p {
+	  color: green; 
+	}
+
+A primeira regra define todos os elementos de parágrafo para a cor do texto azul, enquanto a segunda regra define todos os elementos de parágrafo para a cor do texto verde.
+
+Então qual cor será aplicada? A cor verde será aplicada aos elementos de parágrafo.
+
+Considerando relevância, origem e importância, especificidade, escopo e ordem de aparição, o Algoritmo de Cascata garante que seu CSS se comporte de forma previsivel, permitindo que você crie páginas web mais complexas e detalhadas.
+

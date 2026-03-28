@@ -1,0 +1,109 @@
+		Como Estelizamos os Diferentes Estados do Links
+		
+Existe diferentes estados de um link, que incluem: :link, :visited, :hover, :focus e :active.
+Esses estados são importantes para ajudar  os usuários a reconher links e fornecer um feedback claro após as interações, o que melhora tanto a usabilidade quanto a acessabilidade.
+
+Estilizar estes diferentes estados de link é crucial para usabilidade e acessibilidade, pois fornece indicações visuais sobre o estado atual do link. Isso ajuda os usuários a entender quais links eles visitaram, com qual link eles estão interagindo e o que acontecerá quando clicarem.
+
+Para usuários com defeciências visuais ou cognitivas, esses estilos distintos pode tornar a navegação muito mais facíl e intuitiva.
+
+Além disso estados claros de link melhoram a experiencia geral do usuário ao fornecer feedback imediato sobre as interações do mesmo com os links, reduzindo a confusão e melhorando a navegabilidade do site.
+
+Esses estados podem ser estilizados usando algo chamado pseudo-classes em CSS.
+
+Uma pseudo-classe é uma palavra-chave adicionada a um seletor que especifica um estado especial do elemento selecionado.
+
+Por exemplo, :hover pode mudar a cor de um botão quando o ponteiro do usuário passa sobre ele,  enquanto :visited pode mudar a cor de um link que já foi visitado.
+
+Pseudo-classes permitem que estilizemos elementos com base no estado deles ou na interação do usuário com eles, sem a necessidade de marcação adicional no nosso documento HTML.
+
+A sintaxe de uma pseudo-classe se parece com isto, onde A é o seletor e :B é a pseudo-classe.
+Vejamos:
+
+	A(seletor):B(pseudo-classe) {
+		property: value;
+	}
+
+	
+Para entender melhor como estilizar os diferentes estados de link, vamos dar uma olhada em alguns exemplos.
+
+
+• A pseudo-class :link estiliza links não visitados, indicando que eles são clicaveis.
+
+Aqui está um exemplo de como direcionar um elemento anchor e usar a pseudo-classe :link:
+	
+HTML
+	<link rel="stylesheet" href="styles.css">
+
+	<a href="/">Example link</a>
+
+CSS
+	/* Estado normal (link não visitado) */
+	a:link {
+		color: green
+	}
+		
+· No exemplo a cima a cor padrão do link é alterada de azul para verde, enquanto o estado do link for o normal(não visitado).
+
+
+• A pseudo-class de estilo :visited aplica-se a links que já foram visitados ou clicados, ajudando os usuários a acompanhar quais links eles já clicaram antes. Aqui está um exemplo de uso da pseudo-classe :visited :
+
+HTML
+	<link rel="stylesheet" href="style.css">
+	<a href="https://www.example.com/learn" target="_blank">Example.com</a>
+
+CSS
+	/*Link Visitado*/
+	a:visited {
+		color: red;
+	}
+	
+· Este exemplo irá colorir o nosso link com a cor verde quando o mesmo for visitado/clicado.
+
+
+• A pseudo-class :hover altera o estilo do link quando o usuário paasa o cursor do mouse sobre o mesmo, fornecendo uma indicação visual de que o link é interativo. Aqui está um exemplo de uso da pseudo-classe :hover :
+
+HTML
+	<link rel="stylesheet" href="style.css">
+	
+	<a href="/">Link de Exemplo</a>
+	
+CSS
+	/*Estado :houver*/
+	a:hover {
+		color: purple;
+	}
+	
+Este exemplo vai colorir o link com a cor purple sempre que o mouse passar por cima dele.
+
+
+• A pseudo-class :focus adiciona estilos ao redor do link quando ele está focado, como ao navegar com o teclado ou melhorar a acessibilidade.
+
+Aqui está um exemplo usando a propriedade outline para aplicar um contorno laranja sólido quando o link está focado.
+
+HTML
+	<link rel="stylesheet" href="style.css">
+	
+	<a href="/">Link de Exmplo</a>
+	
+CSS
+	a:focus {
+		outline: 2px solid orange;
+	}
+	
+	
+• Terminamos com a pseudo-class : active que altera os estilos do link enquanto o mesmo está a ser precionado, fornecendo um feedback imediato ao usuário de que a ação dele está a ser registrada.
+Vejamos um exemplo da pseudo-class :active :
+
+HTML
+	<link rel="stylesheet" href="styles.css">
+
+	<a href="/">Example link</a>
+	
+CSS
+	/*Estado :active*/
+	a:active {
+		color: yellow;
+	}
+
+Este exemplo final de código fará com que o link fique com a cor yellow imediatamente quando o link for clicado.

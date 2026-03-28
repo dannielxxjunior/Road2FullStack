@@ -1,0 +1,81 @@
+		Como o Inline-Block Funciona e Como Ele Difere dos Elementos Inline e Block?
+		
+Ao trabalharmos com CSS frequentemente encontramos três diferentes tiposs de comportamentos de exibição para elementos: inline, block e inline-block.
+
+Cada uma dessas propriedades afeta como os elementos são posicionados e como eles interagem com outros elementos na página.
+
+Nesta lição vamos focar em como a propriedade inline-block funciona e como ela difere tanto dos elementos inline quanto dos de nível block.
+
+Elementos de nível de bloco se comportam como grandes contêiners ou "blocos" que ocupam toda a çargura do seu contêiner PAI. Eles sempre começam em uma nova linha e sua altura e largura pode ser ajustadas.
+
+Já os elementos inline ocupam apenas o espaço que precisam. Eles fluem dentro do conteúdo ao redor e não quebram para uma nova linha.
+
+A propriedade inline-block é uma combinação híbrida desses dois comportamentos.
+Como elementos inline, os elementos inline-block permanecem no fluxo do texto sem iniciar em uma nova linha.
+
+No entanto, ao contrário dos elementos inline, você pode ajustar a largura e a altura de um elemento inline-block, assim como faria com elementos de nível de bloco.
+
+Em resumo, a principal diferença entre inline e inline-block é que elementos inline não podem ter seu tamanho controlado, enquanto elementos inline-block permitem controle total sobre as dimensões e ainda permanecem alinhados com outro conteúdo.
+
+Vamos dar uma olhada em um exemplo.
+
+HTML
+	<link href="style.css" rel="stylesheet"/>
+
+	<div class="container">
+		<span class="inline-block-element element1">Inline-Block</span>
+		<span class="inline-block-element element2">Inline-Block</span>
+	</div>
+	
+CSS
+	.inline-block-element {
+		display: inline-block;
+		width: 150px;
+		height: 100px;
+	}
+	
+	.element1 {
+		background-color: lightblue;
+	}
+	
+	.element2 {
+		background-color: lightgreen;
+	}
+	
+No exemplo acima, temos um div com uma classe container. Dentro desse elemento div, temos dois elementos span.
+
+Cada um dos elementos span está configurado para display:inline-block e também possui largura e altura definidas.
+
+Os elementos inline-block aparecerão lado a lado porque se comportam como elementos inline, mas também têm uma largura e altura especificadas, o que lhes confere propriedades semelhantes a blocos.
+
+Mas, se você remover a propriedade display: inline-block, nem a height nem a width serão aplicadas mesmo que você as tenha definido claramente.
+
+Aqui está o CSS revisado:
+
+HTML
+  <link href="styles.css" rel="stylesheet">
+
+  <div class="container">
+    <span class="inline-block-element element1">Span element</span>
+    <span class="inline-block-element element2">Span element</span>
+  </div>
+
+CSS
+  .inline-block-element {
+    width: 150px;
+    height: 100px;
+  }
+
+  .element1 {
+    background-color: lightblue;
+  }
+
+  .element2 {
+    background-color: lightgreen;
+  }
+
+Neste código, removemos a propriedade display: inline-block; mas mantivemos todo o resto intacto. Aqui, os elementos span retornam ao seu comportamento padrão como elementos inline.
+
+Como resultado, a largura e a altura especificadas são ignoradas e os elementos ocupam apenas o espaço necessário para seu conteúdo.
+
+Entender como inline-block funciona é útil porque você pode usá-lo para criar layouts que exigem tanto alinhamento e controle de dimensão dentro de um fluxo contínuo de texto.

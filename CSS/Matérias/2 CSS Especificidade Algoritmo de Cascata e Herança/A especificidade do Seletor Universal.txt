@@ -1,0 +1,52 @@
+			O Universal Selector e a sua Especificidade
+			
+O seletor universal (*) é um tipo especial de seletor CSS que corresponde a qualquer elemento no documento.
+
+É frequentemente usado para aplicar um estilo a todos os elementos na página, o que pode ser útil para redefinir ou normalizar estilos entre diferentes navegadores.
+
+O seletor universal pode ser usado para selecionar todos os elementos dentro de um contexto específico ou globalmente em todo o documento.
+
+Aqui está um exemplo de uso do seletor universal para definir o margin e o padding para todo o documento HTML:
+
+	<link rel="stylesheet" href="styles.css">
+
+	<h1>Heading element</h1>
+	<p>example paragraph element</p>
+
+	* {
+	  margin: 0;
+	  padding: 0;
+	}
+
+Neste exemplo de código, o seletor * redefine a margem e o padding de todos os elementos para zero, que é uma técnica comum usada em resets de CSS.
+
+Vamos dar uma olhada no seguinte exemplo de HTML e CSS:
+
+	<head>
+	  <style>
+		* {
+		  color: blue;
+		}
+		p {
+		  color: red;
+		}
+		.highlight {
+		  color: green;
+		}
+		#unique {
+		  color: purple;
+		}
+	  </style>
+	</head>
+	<body>
+	  <p id="unique" class="highlight">This text has multiple styles applied.</p>
+	</body>
+	
+O seletor universal * define a cor do texto para blue em todos os elementos.
+
+No entanto, o seletor do tipo p substitui isso definindo a cor do texto para red especificamente para elementos p.
+
+Se um elemento tiver a classe highlight, o seletor de classe terá precedência, alterando a cor do texto para green.
+
+Finalmente, o seletor de ID #unique, que tem a especificidade mais alta, substituirá todos os outros, definindo a cor do texto para purple.
+

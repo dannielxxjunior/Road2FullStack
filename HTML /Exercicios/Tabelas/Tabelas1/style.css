@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.tabela {
+  width: 40%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: lightgrey;
+}
+
+tr:hover {
+  background-color: brown;
+}

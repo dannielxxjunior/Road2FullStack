@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Creating Tables Exercise</title>
+</head>
+<body>
+  <header>
+    <h1>HTML5 Tables</h1>
+    <p>
+      
+      The HTML <code><strong>&lt;table&gt;</strong></code> element allows Web Authors to display tabular data (such as text, images, links, other tables, etc.) in a two dimensional table with <em>Rows and Columns of Cells</em>.
+    </p>
+  </header>
+  <main>
+
+    <section class="table t1">
+
+      <div class="paragraph">
+        <h2>Example one</h2>
+        <p>This is our first simple table example</p>
+        <p>This will render a <code><strong>&lt;table&gt;</strong></code> consisting of three total rows (<code><strong>&lt;tr&gt;</strong></code>): one row of header cells (<code><strong>&lt;th&gt;</strong></code>) and two rows of content cells (<code><strong>&lt;td&gt;</strong></code>). <code><strong>&lt;th&gt;</strong></code> elements are tabular headers and (<code><strong>&lt;td&gt;</strong></code>) elements are <em>tabular data</em>.</p>
+        <p>You can put whatever you want inside a <code><strong>&lt;td&gt;</strong></code> or <code><strong>&lt;th&gt;</strong></code></p>
+      </div>
+      
+      <div class="code">
+        <h3>The Code</h3>
+        <pre>
+          <code>
+            &lt;table&gt;
+              &lt;tr&gt;
+                &lt;th&gt;Heading 1/Column 1&lt;/th&gt;
+                &lt;th&gt;Heading 2/Column 2&lt;/th&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Row 1 Data Column 1&lt;/td&gt;
+                &lt;td&gt;Row 1 Data column 2&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                <+&lt;td&gt;Row 2 Data Column 1&lt;/td&gt;
+                &lt;td&gt;Row 2 Data Column 2&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+          </code>
+        </pre>
+      </div>
+
+      <div class="result">
+
+        <h3>The Result</h3>
+        <table class="tabela">
+          <tr>
+            <th>Heading 1/Column 1</th>
+            <th>Heading 2/Column 2</th>
+          </tr>
+          <tr>
+            <td>Row 1 Data Column 1</td>
+            <td>Row 1 Data column 2</td>
+          </tr>
+          <tr>
+            <td>Row 2 Data Column 1</td>
+            <td>Row 2 Data Column 2</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="table t2">
+      
+      <div class="paragraph">
+        <h2>Example 2</h2>
+        <p>
+          Table cells can span multiple columns or rows using the colspan and rowspan atributes.
+        </p>
+        <p>
+          These atributes can be applied to <code><strong>&lt;th&gt;</strong></code> and <code><strong>&lt;td&gt;</strong></code> elements.
+        </p>
+        <p>
+          Note that you should not design a table where both rows and columns overlap as this is invalid HTML and the result is handled differently by different web browsers.
+        </p>
+        <p>
+          <strong>rowspan</strong> = A non-negative integer that specifies the number of rows spanned by a cell.
+        </p>
+        <p>
+          <strong>colspan</strong> = A non-negative integer that specifies the number of rows spanned by a cell.
+        </p>
+      </div>
+
+      <div class="code">
+        <h3>The Code</h3>
+        
+        <pre>
+          <code>
+            &lt;table>
+              &lt;tr&gt;
+                &lt;td&gt;row 1 col 1&lt;/td&gt;
+                &lt;td&gt;row 1 col 2&lt;/td&gt;
+                &lt;td&gt;row 1 col 3&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                <td colspan="3"> This second row spans all three columns&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td rowspan="2"&gt;This cell spans for 2 rows&lt;/td&gt;
+                &lt;td&gt;row 3 col 2&lt;/td&gt;
+                &lt;td&gt;row 3 col 3&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;row 4 col 2&lt;/td&gt;
+                &lt;td&gt;row 4 col 3&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+          </code>
+        </pre>
+
+      </div>
+
+      <div class="result">
+        <h3>The Result</h3>
+
+        <table class="tabela">
+          <tr>
+            <td>row 1 col 1</td>
+            <td>row 1 col 2</td>
+            <td>row 1 col 3</td>
+          </tr>
+          <tr>
+            <td colspan="3"> This second row spans all three columns</td>
+          </tr>
+          <tr>
+            <td rowspan="2">This cell spans for 2 rows</td>
+            <td>row 3 col 2</td>
+            <td>row 3 col 3</td>
+          </tr>
+          <tr>
+            <td>row 4 col 2</td>
+            <td>row 4 col 3</td>
+          </tr>
+        </table>
+      </div>
+
+    </section>
+
+  </main>
+</body>
+</html>

@@ -1,0 +1,15 @@
+			Trabalhar com ferramentas HTML5
+
+		O que é um validador de HTML5?
+
+ Um validador de HTML é uma ferramenta que verifica a validade de seu código html em relação as espicificações padrão do html.
+ Ajuda a identificarr erros, garantindo que nossas páginas web estejam corretamente estruturadase em conformidade com os padrões da web.
+ Existem vários validadores html. O mais amplamente aceito é o serviço de validação de marcação W3.org. Basta visitar o site "validator.W3.org clicar no butão "validate by direct input", e colar ai seu código html.
+ Uma lista de resultados será exibida com os erros que precisam ser corrigidos.
+
+
+		Trabalhar com os Dev Tools
+
+CMD+SHIFT+I - O comando mágico para a abertura das DEVTOOLS. 
+ Ao abrirmos as ferramentas de desenvolvedor, veremos varias abas, a pirmeira será onde veremos a estrutura do nosso html.
+ Já na segunda(console) é onde veremos quisquer erros que possam estar a acontecer na nossa página.

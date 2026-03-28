@@ -1,0 +1,43 @@
+			O que é especificidade para seletores de class?
+			
+Seletores de classe são uma parte fundamental do CSS, permitindo que desenvolvedores direcionem múltiplos elementos com o mesmo atributo de classe e apliquem estilização consistente.
+
+Isso os torna altamente versáteis e eficientes para aplicar estilos em todo o site.
+
+Seletores de classe são definidos por um ponto (.) seguido do nome da classe. Eles podem ser aplicados a qualquer elemento no documento HTML.
+
+Aqui está um exemplo usando um seletor de classe:
+
+HTML
+	<link rel="stylesheet" href="style.css">
+
+	<p class="exemplo">Parágrafo de exmplo</p>
+
+CSS
+	.exemplo {
+		color: purple;
+	}
+	
+Neste exemplo qualquer elemento com a classe: exemplo, terá sua cor definida como: purple.
+
+Seletores de classe têm uma especificidade maior do que seletores de tipo mas menor do que seletores de ID e estilo inline.
+
+O valor de especificidade para um seletor de classe é (0, 0, 1, 0). Isso significa que seletores de classe podem substituir seletores de tipo, mas eles podem ser substituídos por seletores de ID e estilos inline.
+
+Seletores de classe podem ser combinados com outros seletores para criar regras mais específicas.
+
+Aqui está um exemplo combinando um seletor de tipo de parágrafo com um seletor de classe:
+
+HTML
+	<p class="bold-text">Example paragraph</p>
+	<p class="bold-text">Example paragraph</p>
+	<p>Another paragraph</p>
+	<p>Yet another paragraph</p>
+
+CSS
+	p .boldtext {
+		font-weight: bold;
+	}
+
+Esta regra será aplicada apenas a elementos <p> que sejam também da classe:bold-text.
+
