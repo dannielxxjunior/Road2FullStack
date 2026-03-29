@@ -36,4 +36,4 @@ Embora menos comum, aúdio ou videos de fundo também podem afetar a acessibilid
 
 Música de fundo ou vídeos que tocam automaticamente podem ser distrativos para alguns usuários, particularmente aqueles com deficiências cognitivas. Se você incluir áudio de fundo, forneça sempre uma maneira para os usuários silenciarem ou pausarem o áudio.
 
-Ao levar em conta essas considerações de acessibilidade, você pode criar designs mais inclusivos que garantam que seu conteúdo seja legível e utilizavel por todos os usuários, independentemente de suas habilidades.
+Ao levar em conta essas considerações de acessibilidade, podemos criar designs mais inclusivos que garantam que o conteúdo seja legível e utilizavel por todos os usuários, independentemente de suas habilidades.
