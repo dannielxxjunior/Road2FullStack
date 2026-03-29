@@ -1,0 +1,76 @@
+			Diferentes formas de adicionar Bordas em volta de uma imagem ou elemento
+			
+
+No CSS, existem várias maneiras de adicionar bordas ao redor de imagens, cada uma oferecendo diferentes opções de estilos e níveis de controle.
+
+Vamos explorar alguns dos métodos mais comuns e versateis.
+
+A maneira mais simples de adicionar uma borda a uma imagem é usando a propriedade border. Esta porpriedade é uma forma abreviada que permite definir a largura, o estilo e a cor da borda tudo de uma so vez.
+
+Vejamos o exemplo a seguir:
+
+HTML
+	<link rel="stylesheet" href="styles.css">
+
+	<img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute cat lying on its back.">
+	
+CSS
+	img {
+		border: 2px solid red;
+	}
+	
+• Esta regra CSS adiciona uma borda vermelha sólida de 2 pixels de largura ao redor de todos os elementos img. Podemos ajustar a largura, o estilo(como dashed, dotted ou double) e a cor para atender às suas necessidades de design.
+
+Caso precises de mais controle sobre os lados individuais da borda, podes sempre usar as propriedades especificas da borda para cada lado.
+
+Vê o exmplo a seguir:
+
+HTML
+	<link rel="stylesheet" href="styles.css">
+
+	<img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute cat lying on its back.">
+	
+CSS
+	img {
+		border-top: 10px solid red;
+		border-right: 10px dashed green;
+		border-bottom: 10px dotted blue;
+		border-left: 10px double purple;
+	}
+
+• Neste exemplo criamos estilos de borda únicos para cada lado da imagem.
+
+Outra forma de criar um efeito de borda é usando a propriedade de "outline".
+Embora seja semelhante a "border", "outline" não afeta as dimensões ou o layout do elemento.
+
+Ve o exemplo a seguir:
+
+HTML
+	<link rel="stylesheet" href="styles.css">
+
+	<img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute cate lying on its back.">
+	
+CSS
+	img {
+		outline: 3px solid gold;
+	}
+
+• Criamos um contorno dourado ao redor da imagem sem alterar seu tamanho ou posição.
+
+Se quisermos criar cantos arredondados na nossa borda, podemos usar a propriedade "border-radius" em conjunto com o "border".
+
+Como veremos neste proximo exemplo.
+
+HTML
+	<link rel="stylesheet" href="styles.css">
+
+	<img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute cate lying on its back.">
+	
+CSS
+	img {
+		border: 2px solid black;
+		border-radius: 10px;
+	}
+	
+Lembra-te que estas técnicas podem ser combinadas e personalizadas para criar efeitos de bordas únicos. A escolha do método depende dos seus requisitos específicos de design e do nível de complexidade que precisamos.
+
