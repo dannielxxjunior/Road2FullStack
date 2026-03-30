@@ -1,0 +1,91 @@
+			Revisão de Listas, Links, Fundos e Bordas
+			
+			
+	• Estilizando Listas
+	
+·Propriedade line-height: Esta propriedade é usada para criar espaço entre linhas de texto. Os valores aceitos para line-height incluem a palavra-chave: normal, números, porcentagens e unidades de comprimento como a unidade "em".
+
+·Propriedade list-style-type: Esta propriedade é usada para especificar o marcador de um item de lista. Os valores aceitaveis podem incluir um círculo, disco ou decimal.
+
+	Aqui está um exemplo usando list-style-type para alterar o estilo do marcador:
+	
+HTML
+	<ul>
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3 </li>
+	<ul>
+	
+CSS
+	ul {
+		list-style-type: square;
+	}
+	
+·Propriedade list-style-position: Esta propriedade é usada para definir a posição do marcador da lista. Os únicos dois valores aceitaveis são: inside e outside.
+
+	Aqui esta um exemplo mostrando a diferença entre inside e outside:
+	
+HTML
+	<ul class="inside-list">
+		<li>Item with inside position</li>
+		<li>Item with inside position</li>
+	</ul>
+	
+	<ul class="outside-list">
+		<li>Item with outside position</li>
+		<li>Item with outside position</li>
+	</ul>
+	
+CSS
+	.inside-list {
+		list-style-position: inside;
+	}
+	
+	.outside-list {
+		list-style-position: outside;
+	}
+	
+·Propriedade list-style-image: Esta propriedade é usada para utilizar uma imagem como marcador do item da lista. Um caso comum de uso é usar a função "url" com um valor definido para um local válido da imagem.
+
+-------------------------------------------------------
+
+	• Espaçamento de itens de lista usando margin
+	
+·Além de line-height, as margens também podem ser usadas em CSS para melhorar o espaçamento e a legibilidade dos itens da lista.
+
+·As margens criam espaço fora de cada elemento li, permitindo o controle sobre o espaço entre os itens da lista.
+
+·margin-bottom é usado para criar espaço abaixo de cada item da lista. Por exemplo, margin-bottom: 10px; criará um espaço de 10 pixels abaixo de cada item da lista.
+
+	Aqui está um exemplo usando o margin-bottom para espaçar os itens da lista
+	
+HTML
+	<ul class="list">
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+	</ul>
+	
+CSS
+	.list li {
+		margin-bottom: 20px;
+	}
+	
+-------------------------------------------------------
+
+	• Estilizando Links
+	
+·Pseudo-class: Esta é uma palavra-chave adicionada a um seletor que permite selecionar elementos com base em um estado especifico: Estados comuns incluiriam os estados :hover, :visited e :focus.
+
+·:link pseudo-class: Esta pseudo-class é usada para estilizar links que não foram visitados pelo usuário.
+
+	Aqui está um exemplo usando a pseudo-class :link:
+	
+HTML
+	<a href="/">Example link</a>
+
+CSS
+	a:link {
+		color: red;
+	}
+
