@@ -89,3 +89,163 @@ CSS
 		color: red;
 	}
 
+· :visited pseudo-class: Esta pseudo-class é usada para estilizar links que o usuário já visitou.
+
+· :hover pseudo-class: Esta pseudo-class é usada ppara estilizar elementos sobre os quais o usuário está ativamente passando o cursor.
+
+	Aqui esta um exemplo usando a pseudo-class :hover :
+	
+HTML
+	<a href="/">Passa o cursor aqui</a>
+	
+CSS
+	a:hover {
+		color: green;
+		text-decoration: underline;
+	}
+	
+· :focus pseudo-class: ESta pseudo-class é usada para estilizar um elemento quando ele recebe foco. EXemplos incluiriam elementos input ou select onde cliques ou tabs ono elemento o focam.
+
+	Aqui está um exemplo usando a pseudo-class :focus :
+	
+HTML
+	<a href="/">Link de Exemplo</a>
+
+CSS
+	a:focus {
+		outline: 2px solid orange;
+	}
+	
+· :active pseudo-class: Esta pseudo-class é usada para estilizar um elemento que foi ativado pelo usuário. Um exemplo comum seria quando o usuário clica em um botão.
+
+	Aqui está um exemplo usando a pseudo-class :active:
+	
+HTML
+	<a href="/">Clica aqui</a>
+	
+CSS
+	a:active {
+		color: pink;
+	}
+	
+	
+		• Trabalhando com fundos e bordas
+		
+· Propriedade background-size: Esta propriedade é usada para definir o tamanho de fundo de um elemento. Alguns valores comuns incluem "cover" para que a imagem de fundo cobra todo o elemento e "contain" para que a imagem de fundo se ajuste dentro do elemento.
+
+	Aqui está um exemplo usando background-size: cover; :
+	
+CSS
+	<style>
+		body {
+			background-image: url("https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			min-height: 100px;
+		}
+	</style>
+		
+	Usando o background-size: contain; :
+
+CSS	
+	<style>
+		body {
+			background-image: url("https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg");
+			background-size: contain;
+			background-repeat: no-repeat;
+			min-height: 100px;
+		}
+	</style>
+
+· Propriedade background-repeat: Esta propriedade é usada para determinar como as imagens de fundo devem ser repetidas ao longo dos eixos horizontal e vertical. O valor padrão para background-repeat é "repeat", o que significa que a imagem será repetida tanto horizontalmente quanto veeticalmente. Podemos também especificar que não deve haver repetição usando a propriedade "no-repeat".
+
+	Aqui está um exemplo usando background-repeat: no-repeat; :
+	
+CSS
+	<style>
+	  body {
+		background-image: url("https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		min-height: 100px;
+	  }
+	</style>
+	
+· Propriedade background-position: Esta propriedade é usada para especificar a posição da imagem de fundo. Pode ser definida para um comprimento especifico, porcentagem ou valores de palavra-chave como "top", "bottom", "left", "right" e "center".
+
+	Aqui temos o exemplo usando background-position: :
+	
+CSS
+	<style>
+	  body {
+		background-image: url("https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center top;
+		min-height: 100px;
+	  }
+	</style>
+
+· Propriedade background-attachment: Esta propriedade é usada para especificar se a imagem de fundo deve rolar com o conteúdo ou permanecer fixa no lugar. Os principais valores são: scroll(padrão), onde a imagem de fundo rola com o conteúdo, e, fixed, onde a imagem de fundo parmanece na mesma posição na tela.
+
+· Propriedade background-image: Esta propriedade é usada para definir a imagem de fundo de um elemento. Você pode definir múltiplas imagens de fundo ao mesmo tempo e usar as funções url, radial-gradient e linear-gradient como valores.
+
+	Aqui está um exemplo de uso da propriedade background-image: ; :
+	
+CSS
+	<style>
+	  body {
+		background-image: url("https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg");
+		min-height: 100px;
+	  }
+	</style>
+
+· Propriedade background: Está é a propriedade abreviada para definir todas as propriedades de fundo em uma única declaração. Aqui está um exemplo de como definir a imagem de fundo e configura-le para não se repetir: 
+background: no-repeat url("url-de-exemplo-aqui"):
+
+	Aqui está um exemplo usando a propriedade abreviada background:
+	
+CSS
+
+	  body {
+		background: center top no-repeat url("https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg");
+		min-height: 100px;
+	  }
+	  
+· Bom Contraste para Cores de Fundo e Primeiro Plano: É importante garantir que as cores de fundo e primeiro plano tenham bom contraste para tornar o texto legível. As Diretrizes de Acessibilidade para o Conteúdo Web (WCAG) recomendam uma razão mínima de contraste de 4.5:1 para texto normal e 3:1 para texto grande.
+
+			
+			• Gradientes
+			
+· Função linear-gradient(): Esta função CSS é usada para criar uma transição entr múltiplas cores ao longo de uma linha reta.
+
+	Aqui está um exemplo usando linear-gradient():
+	
+HTML
+	<div class="linear-gradient"></div>
+
+CSS
+	.linear-gradient {
+		background: linear-gradient(to right, red, blue);
+		height: 40vh;
+	}
+	
+Outro tipo de gradiente que podemos usar é o chamado gradiente radial.
+
+· Função radial-gradient(): Esta função CSS cria uma imagem que irradia de um ponto especifico, como um círculo ou uma elipse, e faz uma trnasição gradual entre várias cores.
+
+	Vejamos um exemplo de uso do radial-gradient():
+	
+HTML
+	<div class="radial-gradient"></div>
+
+CSS
+	.radial-gradient {
+		background: radial-gradient(circle, red, blue);
+		height: 40vh;
+	}
+	
+	
+			• Obs fináis
+			
+Terminamos por aqui a nossa revisão em torno de listas links bordas e fundos, apesar de não revermos propriamente a questão das bordas elas também não têm nada de tão dificil que naõ tenhamos com certeza já entendido durante o estudo das matérias deste modulo.
