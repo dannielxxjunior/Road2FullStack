@@ -8,7 +8,7 @@ Do server-side com Node.js ao desenvolvimento de apps mobile com React.
 
 JavaScript Client-Side serve-se de ficheiros html, o que significa que a integração em páginas estaticas será facil.
 
-Para escrevermos JavaScript em im ficheiro HTML usamos a tag <script> que é normalmente usada ou na head ou no fundo do elemento <body>.
+Para escrevermos JavaScript em um ficheiro HTML usamos a tag <script> que é normalmente usada ou na head ou no fundo do elemento <body>.
 
 JavaScript pode ser usado para modificar o CSS ou HTML em um documento(página). 
 

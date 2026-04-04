@@ -1,0 +1,267 @@
+			Termos Comuns do Design
+			
+	/*Nota Prévia: Alguns dos exemplos em CSS que iremos ver talvez contenham certas propriedades que ainda não foram estudadas aqui, caso tal aconteça não precisas te preocupar em entender a matéria que vires que é mais avançada e não faz parte integrante daquilo que estamos ao momento a estudar.*/
+
+			
+1 - Layout: Layout é como os elementos visuais são organizados em uma página ou tela para comunicar uma mensagem. Estes elementos podem incluir coisas como texto, imagens e até mesmo o espaçamento em branco.
+ O layout é como uma planta de um design. Designers devem considerar a colocação, o tamanho e a hierarquia de cada elemento. 
+ 
+O termo que está intimamente relacionado ao layout é o alinhamento.
+Alinhamento é como os elementos são posicionados em relação uns aos outros. Usar o alinhamento corretamente é útil para fazer o design parecer limpo e organizado. Designers criam ordem visual alinhando elementos ao longo de linhas imaginárias, bordas ou um ponto central.
+
+	Vamos ver um exemplo com 3 alinhamentos diferentes para texto:
+	
+HTML
+	<link rel="stylesheet" href="styles.css"/>
+	
+	<div class="container">
+		
+		<section class="alignment left">
+			<h2>Alinhado a Esquerda</h2>
+			<p>Este conteúdo está allinhado a Esquerda. O alinhamento a esquerda é o mais comum para o corpo de um texto grande, pois segue o fluxo natural de linguagens que correm da esquerda-para-direita.</p>
+		</section>
+		
+		<section class="alignment center">
+			<h2>Alinhado ao Centro</h2>
+			<p>Este conteúdo está alinhado ao Centro. Alinhamento Central pode ser bastante útil para títulos ou conteúdo que precisa ser o ponto central.</p>
+		</section>
+		
+		<section class="aligment right">
+			<h2>Alinhado a Direita</h2>
+			<p>Este conteúdo está alinhado a Direita. Coteúdo é alinhado a direita para ter um outro enfase do restante texto da página.</p> 
+		</section>
+		
+	</div>
+	
+CSS
+	* {
+	  box-sizing: border-box;
+	  margin: 0;
+	  padding: 0;
+	}
+
+	body {
+	  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	  line-height: 1.6;
+	  background: #f4f4f4;
+	  color: #333;
+	  padding: 2rem;
+	}
+
+	.container {
+	  max-width: 800px;
+	  margin: 0 auto;
+	}
+
+	.alignment {
+	  background: #fff;
+	  border-left: 4px solid #3498db;
+	  padding: 1.5rem;
+	  margin-bottom: 2rem;
+	  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+	  transition: all 0.3s ease;
+	}
+
+	.alignment:hover {
+	  transform: scale(1.02);
+	}
+
+	.alignment h2 {
+	  margin-bottom: 0.5rem;
+	  color: #3498db;
+	}
+
+	.left {
+	  text-align: left;
+	}
+
+	.center {
+	  text-align: center;
+	}
+
+	.right {
+	  text-align: right;
+	}
+	
+	·Experimenta este exemplo em tua maquina cria diferentes variações, adapta estes alinhamentos em projetos teus, talvez tenhas cartões ou elementos de páginas que fossem beneficiar bastante de um alinhamento diferente, para além de te ajudar a memorizar mais alguns termos e propriedades.
+-------------------------------------------------
+
+			• Composição
+
+Ótimo, agora vamos falar sobre composição.
+Composição é a arte de organizar elementos para criar um design harmonioso. Ela determina como elementos como imagens, textos e formas se relacionam entre si e contribuem para o design de uma forma artística. Enquanto o layout foca principalmente na disposição dos elementos, a composição também considera o impacto artístico que essa disposição terá no design geral.
+
+Composição está intimamente relacionada aos conceitos de equilibrio. O equilibrio é como o peso visual é distribuido dentro de uma compisição.
+Designers buscam criar um equilibrio por meio de arranjos simétricos ou assimétricos. Um design equilibrado parece harmonioso.
+
+Vejamos então o seguinte exemplo de código:
+
+HTML
+	<link rel="stylesheet" href="styles.css">
+	
+	<h1>Composição &amp; Balanço</h1>
+	
+	<div class="section symmetrical">
+		<div class="box-container">
+			<div class="box">A</div>
+			<div class="box">B</div>
+			<div class="box">A</div>
+		</div>
+		<div class="description">Balanço Simetrico - Peso igual em ambos os lados.</div>
+	</div>
+	
+	<div class="section asymetrical">
+		<div class="box-container">
+			<div class="box">A</div>
+			<div class="box">C</div>
+			<div class="box">B</div>
+		</div>
+		<div class="description">Balanço Assimétrico - Desigual mas harmonioso na mesma.</div>
+	</div>
+	
+CSS
+	body {
+	  font-family: Arial, sans-serif;
+	  margin: 0;
+	  padding: 40px;
+	  background: #f4f4f4;
+	}
+
+	h1 {
+	  text-align: center;
+	  margin-bottom: 40px;
+	}
+
+	.section {
+	  margin-bottom: 60px;
+	}
+
+	.box-container {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  gap: 20px;
+	}
+
+	.box {
+	  width: 100px;
+	  height: 100px;
+	  background: #3498db;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 18px;
+	  border-radius: 8px;
+	}
+
+	.asymmetrical .box:nth-child(2) {
+	  transform: scale(1.5);
+	  background: #e74c3c;
+	}
+
+	.description {
+	  text-align: center;
+	  margin-top: 50px;
+	  font-style: italic;
+	  color: #333;
+	}
+	
+	· Experimenta criar nossos exemplos em teu editor de texto ou IDE favoritos, isso irá ajudarte a entender melhor a matéria que falamos agora.
+------------------------------------------------------
+
+			• Hierarquia
+			
+Hierarquia é outro conceito importante que devemos conhecer. Hierarquia estabelece a ordem de importância dos elementos em um design. Trata-se de garantir que a informação mais importante seja notada primeiro. Você pode implementar uma hierarquia visual com tamanho, cor, contraste, alinhamento, espaço em branco e até tipografia.
+
+Para criar distinções claras entre os elementos, podemos usar contraste. O contraste é útil para guiar a atenção do usuário para o que queremos enfatizar.
+Podemos fazer isso por meio de varaições de cor, tamanho, forma, textura ou qualquer outra característica visual. Um forte contraste também é útil para melhorar a legibilidade.
+------------------------------------------------------
+
+			• Espaço Negativo
+			
+Outro termo útil é o espaço em branco. Espaço em branco, também conhecido como "espaço negativo", é o espaço vazio em um design. É a área ao redor dos elementos. Você pode se surpreender ao saber que espaço em branco não é necessariamente branco. Na verdade, pode ser um espaço de qualquer cor ou textura. Seu propósito é melhorar a legibilidade e realçar a hierarquia visual de um design.
+
+Vejamos um último exemplo onde demonstramos o uso de espaço negativo:
+
+HTML:
+<link rel="stylesheet" href="styles.css">
+
+<div class="container">
+  <h1>The Power of White Space</h1>
+  <p>
+    White space (or negative space) is the empty space around elements. It’s not just “blank”—it gives your content room to breathe, improves focus, and adds elegance to the design.
+  </p>
+  <a href="#" class="button">Learn More</a>
+</div>
+
+<div class="no-whitespace">
+  <strong>Without white space:</strong> This block has minimal padding, making the content feel cramped, harder to read, and less appealing.
+</div>
+
+CSS:
+	body {
+	  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	  margin: 0;
+	  padding: 0;
+	  background-color: #f0f0f0;
+	}
+
+	.container {
+	  max-width: 800px;
+	  margin: 60px auto;
+	  background-color: #ffffff;
+	  padding: 60px;
+	  border-radius: 10px;
+	  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+	}
+
+	h1 {
+	  font-size: 36px;
+	  margin-bottom: 20px;
+	  color: #2c3e50;
+	}
+
+	p {
+	  font-size: 18px;
+	  line-height: 1.8;
+	  color: #555;
+	  margin-bottom: 30px;
+	}
+
+	.button {
+	  display: inline-block;
+	  padding: 14px 28px;
+	  background-color: #27ae60;
+	  color: white;
+	  font-size: 16px;
+	  font-weight: bold;
+	  border: none;
+	  border-radius: 5px;
+	  text-decoration: none;
+	  transition: background 0.3s ease;
+	}
+
+	.button:hover {
+	  background-color: #219150;
+	}
+
+	.no-whitespace {
+	  background-color: #ffffff;
+	  padding: 10px;
+	  margin: 60px auto;
+	  width: 800px;
+	  box-shadow: 0 0 0 1px #ccc;
+	  font-size: 16px;
+	  color: #222;
+	}
+------------------------------------------------------
+
+• Estes são conceitos gerais de design que você encontrará com muita frequência, mas também pode encontrar termos de design que estão mais relacionados ao desenvolvimento de software.
+
+• A Interface de Usuário ou UI, é como nos humanos interagimos com os computadores. Uma interface de usuário inclui os elementos visuais e interativos que os usuários podem ver em suas telas, como incones, imagens, textos, menus, links e botões.
+
+• A Experiencia de Usuário ou UX, é sobre como os usuários se sentem ao usar um produto ou serviço. Uma aplicação com uma experiencia de usuário bem projetada é intuitiva, fácil de usar, eficiente, acessível e agradável. A Interface do Usuário desempenha um papel fundamental para tornar a experiencia do usuário o mais facil e agradável possivel, então eles estão muito intimamente relacionados.
+
+• Estes são alguns dos termos comuns que você deve conhecer para se comunicar com designers. Com esse conhecimento, gora você pode assumir um papel mais ativo no processo de Design.

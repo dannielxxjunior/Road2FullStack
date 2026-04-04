@@ -1,0 +1,81 @@
+			Comon criar um bom contraste entre o plano de fundo e o primeiro plano em nossos Designs?
+			
+Primeiro que tudo vamos familiarizar-nos com o contraste. Contraste é a diferença entre duas cores - ou o quau fácil é distingui-las.
+
+Cores com maior contraste serão mais visualmente distintas, enquanto cores com menor contraste serão mais visualmente semelhantes. Por exemplo, preto e branco têm uma relação de contraste muito alta. Enquanto o azul claro e o roxo claro têm menos contraste.
+
+	Exeperimenta executar este proximo exemplo:
+	
+HTML
+
+	<style>
+	  .example {
+		padding: 20px;
+		margin-bottom: 20px;
+		font-size: 18px;
+		font-family: sans-serif;
+	  }
+
+	  .high-contrast {
+		background-color: black;
+		color: white;
+	  }
+
+	  .low-contrast {
+		background-color: #add8e6; 
+		color: #dda0dd; 
+	  }
+
+	  .label {
+		font-weight: bold;
+		margin-bottom: 5px;
+	  }
+	</style>
+
+	<div class="example high-contrast">
+	  <div class="label">High Contrast</div>
+	  This text has high contrast (black background and white text).
+	</div>
+
+	<div class="example low-contrast">
+	  <div class="label">Low Contrast</div>
+	  This text has low contrast (light blue background and light purple text).
+	</div>
+	
+Nestes exemplos temos ainda assim uma distinção mais clara por conta do layout. 
+
+Mas como determinamos o que é um contraste "bom o suficiente"?
+Não podemos basear isso apenas em como o texto nos parece, pois cada usuário terá uma experiencia diferente. Felizmente, Diretrizes de Acessibilidade para Conteúdo Web, ou WCAG, fornecem um padrão para isso.
+
+Texto com uma proporção de contraste de 4.5:1 é considerado padrão AA, que é o minimo necessário que devemos seguir para ser acessível para a maioria dos usuários. Textocom uma relação de contraste de 7:! é considerado o padrão AAA e garante o melhor nível de acessibilidade.
+
+Existem vários sites que podem verificar a relação de contraste entre duas cores, mas a maioria dos navegadores permite que você faça isso diretamente nas ferramentas de desenvolvedor do seu site.
+
+Vamos em seguida ver alguns exemplos de Contrast Ratio para entendermos melhor o conceito.
+
+Começamos com um exemplo de texto preto em fundo branco que tem uma relação de contraste de 21:1 :
+
+HTML:
+	<style>
+	  .contrast-21 {
+		background-color: white;
+		color: black;
+		padding: 15px;
+		font-family: sans-serif;
+		font-size: 18px;
+		margin-bottom: 20px;
+	  }
+
+	  .label {
+		font-weight: bold;
+		margin-bottom: 8px;
+		display: block;
+	  }
+	</style>
+
+	<div class="contrast-21">
+	  <span class="label">Contrast Ratio 21:1</span>
+	  This is black text on a white background, which has the highest contrast ratio of 21:1.
+	</div>
+	
+
