@@ -43,4 +43,107 @@ HTML:
 	  </p>
 	</div>
 	
+ A escala não se aplica apenas ao texto. Também é importante para imagens. E embora a escala de uma imagem de banner possa fazer sentido para um layout de desktop, ela pode ser grande de mais para um layout em mobile.
+
+ Ao reduzir uma imagem para uma proporção mais adequada, podemos manter o impacto visual e garantir que as informações no site estejam visiveis.
+ 
+ HTML:
+	 <style>
+	  body {
+		font-family: sans-serif;
+		padding: 20px;
+		background-color: #fefefe;
+		color: #333;
+	  }
+
+	  .banner {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		margin: 0 auto 20px auto;
+		border-radius: 8px;
+	  }
+
+	  .content {
+		max-width: 600px;
+		margin: 0 auto;
+		font-size: 16px;
+		line-height: 1.6;
+	  }
+
+	  @media (max-width: 600px) {
+		.banner {
+		  max-width: 90%;
+		}
+
+		.content {
+		  font-size: 15px;
+		}
+	  }
+	</style>
+
+	<img 
+	  src="https://placehold.co/1200x400/png?text=Large+Banner+Image"
+	  alt="Banner" 
+	  class="banner"
+	>
+
+	<div class="content">
+	  <p>
+		This banner image looks great on a large screen, but on smaller devices, it scales down automatically.
+		That way, it still delivers a strong visual impression without pushing the actual content off the screen.
+		Scaling images properly helps maintain balance and accessibility across layouts.
+	  </p>
+	</div>
+	
+ A escala também é importante para a interactividade e a capacidade de realmente usar seu website. Se o texto em uma barra de navegação não estiver em uma escala apropriada, os usuários de telefones móveis terão dificuldade para tocar nos links.
+ 
+ E se nos escalarmos adequadamente, acabamos com links que não são apenas mais faceis de ler mas também mais faceis de clicar para nossos usuários móveis.
+ 
+HTML:
+	<style>
+	  body {
+		font-family: sans-serif;
+		padding: 20px;
+		margin: 0;
+		background-color: #fafafa;
+	  }
+
+	  .navbar {
+		background-color: #004080;
+		padding: 15px 20px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+	  }
+
+	  .nav-link {
+		color: white;
+		text-decoration: none;
+		font-size: 18px;
+		padding: 10px 15px;
+		display: inline-block;
+		border-radius: 4px;
+	  }
+
+	  .nav-link:hover {
+		background-color: #0059b3;
+	  }
+
+	  @media (max-width: 600px) {
+		.nav-link {
+		  font-size: 20px;
+		  padding: 14px 18px;
+		}
+	  }
+	</style>
+
+	<nav class="navbar">
+	  <a href="#" class="nav-link">Home</a>
+	  <a href="#" class="nav-link">About</a>
+	  <a href="#" class="nav-link">Services</a>
+	  <a href="#" class="nav-link">Contact</a>
+	</nav>
+
+Existem muitas maneiras pelas quais a escala é importante em nossos designs. Cobrimos o básico, então devemos ter agora uma compreesão fundamental da sua importância.
 
