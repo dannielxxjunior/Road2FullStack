@@ -1,0 +1,129 @@
+			Boas Práticas para trabalhar com imagens em seu site
+			
+ Adicionar imagens aos seus sites é uma ótima maneira de envolver seus usuários e aumentar o apelo visual do seu site. Mas há algumas coisas a considerar ao trabalhar com imagens em seus designs.
+
+ A primeira coisa a considerar é criar imagens responsivas. Imagens responsivas são imagens que se ajustam para caber no tamanho da tela em que estão sendo visualizadas. Isso é importante porque garante que suas imagens fiquem boas em todos os dispositivos, de desktops a telefones móveis.
+ 
+ Vejamos o seguinte exemplo, que contêm uma imagem tornada responsiva atraves da propriedade: max-width: 100%; :
+ 
+HTML:
+	 <style>
+	  body {
+		font-family: sans-serif;
+		padding: 20px;
+		background-color: #fefefe;
+		color: #333;
+		text-align: center;
+	  }
+
+	  img {
+		max-width: 100%;
+		height: auto;
+		border-radius: 8px;
+	  }
+
+	  p {
+		font-size: 16px;
+		max-width: 600px;
+		margin: 20px auto;
+		line-height: 1.6;
+	  }
+	</style>
+
+	<h1>Responsive Cat Image</h1>
+
+	<img 
+	  src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" 
+	  alt="Two cats peacefully sleeping together."
+	/>
+
+	<p>
+	  This image automatically scales based on the screen size. Whether you're viewing on a desktop or a mobile phone, it adjusts its size without losing proportions, making the design clean and user-friendly on all device
+	</p>
+	
+ ·Experimenta fazer os exemplos de todos os assuntos em teu editor e trabalha os mesmo a tua maneira, isso irá ajudarte a praticar e raçossionar como um verdadeiro Web Developer.
+ 
+ 
+ Outra coisa a considerar é a resolução para imagens. Imagens de maior qualidade com melhor resolução têm mais pixels por polegada. Pixels são pequenos quadrados que compõem uma imagem.
+ 
+ Pixels por polegada, ou PPI, é o número de pixels em uma polegada de uma imagem. Quanto maior o PPI, melhor a qualidade da imagem.
+ 
+ Você quer garantir que suas imagens sejam de alta qualidade e tenham boa aparência em todos os dispositivos. Isso sigifica que você deve usar imagens de alta resolução que são otimizadas para a WEB.
+ 
+ Outra coisa a considerar é o tamanho das suas imagens e como elas se encaixam nos espaços do layout. Você quer garantir que suas imagens tenham o tamanho correto e não sejam muito grandes ou muito pequenas.
+
+ Usar imagens grandes que são destinadas a caber em espaços menores no design pode deixar seu site mais lento e dificultar o carregamento para os usuários. Você quer garantir que suas imagens tenham o tamanho correto e estejam otimizadas para a web.
+
+ Quando se trata de posicionamento de imagens, você deve pensar em equilíbrio, hierarquia e alinhamento para ajudar a garantir que suas imagens estejam otimizadas para a web.
+
+ Balance(Equilibrio) é a distribuição do peso visual em um design. Você quer garantir que haja um bom equilíbrio entre texto e imagens no site para que ele crie um design harmonioso.
+ 
+Vejamos um exemlo de um layout equilibrado entre imagem e texto:
+
+HTML:
+	<style>
+	  body {
+		font-family: sans-serif;
+		margin: 0;
+		padding: 40px 20px;
+		background-color: #f9f9f9;
+		color: #333;
+	  }
+
+	  .container {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: 30px;
+		max-width: 1000px;
+		margin: 0 auto;
+	  }
+
+	  .text {
+		flex: 1 1 400px;
+	  }
+
+	  .text h2 {
+		font-size: 28px;
+		margin-bottom: 10px;
+	  }
+
+	  .text p {
+		font-size: 16px;
+		line-height: 1.6;
+	  }
+
+	  .image {
+		flex: 1 1 400px;
+	  }
+
+	  .image img {
+		width: 100%;
+		height: auto;
+		border-radius: 8px;
+	  }
+	</style>
+
+	<div class="container">
+	  <div class="text">
+		<h2>Balanced Layout</h2>
+		<p>
+		  Balance is essential in web design. By evenly distributing visual weight—such as pairing this block of text
+		  with a complementary image—you create a layout that feels calm, structured, and easy to navigate.
+		</p>
+	  </div>
+	  
+	  <div class="image">
+		<img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Two cats peacefully sleeping together.">
+	  </div>
+	</div>
+	
+
+É importante pensarmos e trabalharmos ainda com outros conceitos do design como a hirarquia e o alinhamento.
+
+ Hierarquia é a ordem em que os elementos são visualizados em uma página. Podemos garantir que imagens que se alinham com conteúdo importante sejam colocadas acima de imagens que são menos importantes.
+ 
+ Já quando falamos de alinhamento falamos do posicionamento dos elementos em relação uns aos outros. Queremos garantir que nossas imagens estejam alinhadas com o texto e outros elementos no nosso web site para que isso crie um design coeso.
+ 
+ A última coisa a considerar é a acessibilidade para imagens. Você quer garantir que suas imagens sejam acessíveis a todos os usuários, incluindo aqueles com deficiências visuais. Isso significa que você deve usar texto alternativo para suas imagens para que leitores de tela possam ler o texto para usuários com deficiência visual.
