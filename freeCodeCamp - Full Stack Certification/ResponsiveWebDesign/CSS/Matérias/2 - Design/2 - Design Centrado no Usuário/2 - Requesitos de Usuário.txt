@@ -1,0 +1,16 @@
+			O que são Requesitos do Usuário, Pesquisa com Usuário e Testes?
+			
+			
+Pesquisa com usuários é o estudo sistemático das pessoas que usam seu produto. O objetivo é medir as necessidades, comportamentos e pontos problemáticos do usuário.
+
+Pesquisa com usuários assume muitas formas. Talvez um dos mais comuns seja o Net Promoter Score, ou NPS. O NPS mede a probabilidade de seus usuários recomendarem seu produto a um amigo. O NPS é medido por meio de uma pesquisa oferecida em marcos importantes ao longo da jornada do usuário, como após 7 dias, 30 dias e 90 dias. NPS é medido em uma escala de 0 a 10, com 9 e 10 indicando um promotor ativo do seu site.
+
+Outro vetor de pesquisa é uma entrevista de desligamento. Esta é uma pesquisa que você mostra aos seus usuários quando eles cancelam uma assinatura ou excluem uma conta. Os dados desta pesquisa podem fornecer insights sobre os fatores que causam a perda de usuários, para que você possa resolvê-los.
+
+Teste de usuário, por outro lado, refere-se à prática de capturar dados dos usuários enquanto eles interagem com sua aplicação. Por exemplo, um videogame passando por testes beta é uma forma de teste de usuário. Um com o qual você pode se deparar como desenvolvedor web é A/B testing. Testes A/B envolvem lançar uma nova funcionalidade para um subconjunto selecionado aleatoriamente da sua base de usuários. Você pode então aproveitar os dados de analytics para determinar se o recurso é benéfico.
+
+Finalmente, os requisitos do usuário referem-se às histórias ou à rubrica que sua aplicação precisa seguir. Isso pode informar o processo de desenvolvimento. Os requisitos do usuário podem ser definidos por pesquisa com usuários ou padrões da indústria. Eles podem até ser definidos pela entrada do stakeholder.
+
+Esses requisitos podem ser funcionais, significando que eles ditam como sua aplicação deve funcionar, ou não funcionais, significando que eles definem como sua aplicação deve se comportar. Os requisitos do usuário também não são estáticos. As informações tanto dos testes com usuários quanto da pesquisa com usuários podem impactar os requisitos e eles mudarão conforme sua base de usuários mudar.
+
+Entender a diferença é essencial para coletar os dados mais precisos para que você possa oferecer a melhor experiência para seus usuários finais.
