@@ -1,0 +1,156 @@
+			Boas Práticas para Projetar Bons Cards
+			
+			
+ Componentes de Card são muito comuns em e-commerce, redes sociais e sites de notícias.  Eles são usados para ajudar a exibir informações de forma estruturada. Qaundo você estiver projetando seus cartoẽs , é importante entender as melhores práticas para que seus usuários possam entender facilmente as informações que você está tentando transmitir.
+ 
+ A primeira consideração para o design do cartão deve ser a simplicidade. Você não quer que seus cartões fiquem visualmente poluídos ou exibam muita informação. Por exemplo, se um design de cartão estiver visualmente poluído, haverá informação demais para o usuário processar tudo de uma vez.
+ 
+ Vamos ver em seguida um código de um cartão mal organizado e demasiado visualmente poluído, re-cria este código em teu editor:
+ 
+HTML:
+<link rel="stylesheet" href="styles.css">
+
+<div class="card">
+  <img src="https://placehold.co/150x150" alt="Example Product Image">
+  <h2><strong><em>Product Name: Ultimate Edition</em></strong></h2>
+  <p>
+    This is a great product that you will love! It has many features and benefits that will make your life easier and more enjoyable. Whether you're at home or on the go, this product is perfect for all situations. Don’t miss out on this incredible offer, buy now and experience the difference!
+  </p>
+  <button>Buy Now</button>
+  <button>Learn More</button>
+  <button>Add to Wishlist</button>
+  <p><strong>Only 3 left in stock!</strong></p>
+  <p><em>Rated 4.8 stars by 2,391 customers</em></p>
+</div>
+
+CSS:
+.card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  width: 300px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin: 8px 0;
+}
+.card p {
+  font-size: 1em;
+  margin: 8px 0;
+}
+
+.card button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+	·Que salganhada aqui vai.
+	
+Ter menos informações e um bom espaçamento entre os itens no cartão facilita para o usuário processar as informações e permite múltiplos cartões na página.
+
+Vejamos agora um exemplo de um design simples e bom de cartão:
+
+HTML:
+	<link rel="stylesheet" href="styles.css">
+
+	<div class="card">
+	  <img src="https://placehold.co/150x150" alt="Example Product Image">
+	  <h2>Product Name</h2>
+	  <button>Buy Now</button>
+	</div>
+	
+CSS:
+	.card {
+	  border: 1px solid #ccc;
+	  padding: 16px;
+	  width: 200px;
+	  text-align: center;
+	}
+
+	.card img {
+	  max-width: 100%;
+	  height: auto;
+	}
+
+	.card h2 {
+	  font-size: 1.5em;
+	  margin: 8px 0;
+	}
+
+	.card button {
+	  background-color: #007BFF;
+	  color: white;
+	  padding: 10px 16px;
+	  border: none;
+	  cursor: pointer;
+	}
+	
+Aqui podes ver um design muito mais simples que resulta bastante melhor, e se torna mais apelativo visualmente.
+-----------------------------------------------------
+
+ Outra coisa a considerar é onde o usuário pode clicar no cartão. Alguns designs de cartão terão um unico botão, tornando obvio onde o usuário poderá clicar.
+ Outros designs de cartão terão o cartão inteiro clicável. Quando o usuário passar o mouse sobre qualquer parte do cartão, o cartão mudará de cor ou terá um efeito de sombra para indicar que o cartão é clicável. Qualquer designs que você escolher, ele precisa ser consistente em todo o seu site e fácil para o usuário entender.
+ 
+ Vejamos em seguida como criamos um cartão inteiramente clicavél (re-cria o código a tua maneira) :
+ 
+HTML:
+	<link rel="stylesheet" href="styles.css">
+
+	<div class="card">
+	  <a href="#">
+		<img src="https://placehold.co/150x150" alt="Example Product Image">
+		<h2>Product Name</h2>
+		<button>Buy Now</button>
+	  </a>
+	</div>
+	
+CSS:
+	.card {
+	  border: 1px solid #ccc;
+	  padding: 16px;
+	  width: 300px;
+	  cursor: pointer;
+	}
+
+	.card:hover {
+	  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	}
+
+	.card a {
+	  text-decoration: none;
+	  color: inherit;
+	}
+
+	.card img {
+	  max-width: 100%;
+	  height: auto;
+	}
+
+	.card h2 {
+	  font-size: 1.5em;
+	  margin: 8px 0;
+	}
+
+	.card button {
+	  background-color: #007BFF;
+	  color: white;
+	  padding: 10px 16px;
+	  border: none;
+	  cursor: pointer;
+	}
+-----------------------------------------------------
+
+Outra consideração é o uso de mídia nos seus cards. Escolher mídias de alta qualidade pode melhorar significativamente a experiência do usuário. Se você estiver usando imagens ou vídeos para, por exemplo, um cartão de produto, quanto maior a qualidade, mais o usuário se interessará por esse produto. Mas se você usar qualidade de mídia ruim, o usuário pode não confiar na qualidade dos seus produtos e serviços.
+
+Uma das últimas coisas a considerar é o uso da hierarquia de cores. Você quer garantir que a informação mais importante no cartão seja a mais proeminente. Você pode usar cores vibrantes para elementos importantes como um botão de call-to-action e cores claras para itens menos importantes em um cartão.
+
+À medida que você continua a trabalhar em aplicações web, tenha em mente as diferentes melhores práticas para o design de cartões. Isso ajudará você a criar melhores experiencias para seus usuários.
+
