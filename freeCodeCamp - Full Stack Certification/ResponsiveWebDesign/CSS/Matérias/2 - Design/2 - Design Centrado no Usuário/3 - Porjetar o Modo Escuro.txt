@@ -114,3 +114,93 @@ JavaScript:
 	  document.body.classList.toggle('dark');
 	});
 ---------------------------------------------------
+
+ Outra consideração com o modo escuro é o uso de fundos preto puro com texto branco. Embora esse alto contraste possa ser eficaz, ele também pode ser muito agressivo para os olhos. Em vez disso, considere usar um fundo cinza escuro com texto cinza claro para um contraste mais suave. O texto será mais fácil para os olhos e mais confortável para ler no modo escuro.
+ 
+ Segue a baixo mais um exemplo que podes re-criar para entenderes o resultado:
+ 
+ HTML:
+	 <link rel="stylesheet" href="styles.css">
+
+	<button id="theme-toggle">Toggle Dark Mode</button>
+
+	<div class="content">
+	  <h1>Dark Mode Contrast Comparison</h1>
+	  <p>Compare the two sections below. One uses pure black and white, the other uses dark gray and light gray for better readability.</p>
+
+	  <div class="dark-mode-examples">
+		<div class="box harsh-dark">
+		  <h2>High Contrast</h2>
+		  <p>Pure black background with white text. While readable, it can be harsh on the eyes.</p>
+		</div>
+
+		<div class="box soft-dark">
+		  <h2>Soft Contrast</h2>
+		  <p>Dark gray background with light gray text. Easier to read and more comfortable for long periods.</p>
+		</div>
+	  </div>
+	</div>
+
+	<script src="index.js"></script>
+	
+CSS:
+	body {
+	  background-color: #f0f0f0;
+	  color: #111;
+	  font-family: sans-serif;
+	  padding: 1rem;
+	  transition: background 0.3s, color 0.3s;
+	}
+
+	button {
+	  padding: 0.5rem 1rem;
+	  margin-bottom: 1rem;
+	  cursor: pointer;
+	}
+
+	.dark-mode-examples {
+	  display: flex;
+	  gap: 2rem;
+	  flex-wrap: wrap;
+	}
+
+	.box {
+	  padding: 1rem;
+	  border-radius: 8px;
+	  width: 300px;
+	  transition: background 0.3s, color 0.3s;
+	}
+
+	.box {
+	  background-color: #ffffff;
+	  color: #111;
+	  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	}
+
+	body.dark .box.harsh-dark {
+	  background-color: #000000; 
+	  color: #ffffff;           
+	}
+
+	body.dark .box.soft-dark {
+	  background-color: #1e1e1e; 
+	  color: #cccccc;           
+	}
+
+	body.dark {
+	  background-color: #121212;
+	  color: #e0e0e0;
+	}
+	
+JavaScript:
+	document.getElementById('theme-toggle').addEventListener('click', () => {
+	  document.body.classList.toggle('dark');
+	});
+	
+ ·Repara em como fica mais suave para os olhos o menor contraste.
+------------------------------------------------------
+
+ Outra consideração é o uso do modo escuro com a identidade da marca do site.
+ Uma identidade de marca é um conjunto de elementos visuais que representam uma marca, como o logo, as cores e a tipografia. Ao implementar o modo escuro, devemos considerar como o recurso será consistente com as cores da nossa marca. É aceitavél ter o icone da marca e os botões com saturação total, enquanto os elementos ao redor estão dessaturados.
+ 
+ Em geral, quando se trata de design, você sempre deve estar atento à experiência do usuário e aos níveis de contraste. O modo escuro não é exceção e, seguindo essas melhores práticas, você pode criar um recurso de modo escuro que seja eficaz e fácil de usar.
