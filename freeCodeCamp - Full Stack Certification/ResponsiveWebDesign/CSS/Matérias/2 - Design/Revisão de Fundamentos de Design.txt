@@ -1,0 +1,35 @@
+			Revisão de Fundamentos de Design
+			
+			
+	1 - Terminologia de Design
+	
+• Layout: É assim que os elementos visuais são organizados em uma página ou tela para comunicar uma mensagem. Esses elementos podem incluir texto, imagens e espaço em branco.
+
+• Alinhamento: É assim que os elementos são posicionados em relação uns aos outros. Usar o alinhamento corretamnete é útil para fazer o design parecer limpo e organizado.
+
+• Composição: Este é o ato de organizar elementos para criar un design harmonioso. Ele determina como elementos como imagens, texto e formas se relacionam entre si e contribuem para o design de uma maneira artística.
+
+• Balance(equilibrio): É assim que o peso visual é distribuido dentro de uma composição. Designers buscam criar um euilíbrio por meio de arranjos simétricos ou assimétricos.
+
+• Escala: Isso se refere a comparar as dimensões ou o tamanho de um elemento com o outro.
+
+• Hierarquia: Isso estabelece a ordem de importância dos elementos em um design. Trata-se de garantir que a informação importante seja notada primeiro.
+
+• Contraste: Este é o processo de criar uma distinção clara entre os elementos. Podemos fazer isso por meio de variações de cor, tamanho, forma, textura ou qualquer outra caracteristica visual. Um forte contraste também é útil para melhorar a legibilidade.
+
+• Espaço em Branco(espaço negativo): Este é o espaço em branco ou vazio em um design. É a área que envolve os elementos.
+
+• UI(User Interface): UI inclui os elementos visuais e interatvos que os usuários podem ver em suas telas, como ícones, imagen, texto, menus, links e botões.
+
+• UX(User Experience): UX é sobre como os usuários se sentem ao usar um produto ou serviço. Um aplicativo com uma experiencia do usuário bem projetada é intuitivo, fácil de usar, eficiente, acessível e agradável.
+
+• Resumo de Projeto: Este é um documento que descreve os objetivos, metas e requisitos  de um projeto. É um roteiro que orienta o processo de design e garante que o produto final atenda às necessidades do cliente.
+
+• Desing baseado em Vetores: Este tipo de design envolve criar arte digital usando fórmulas matemáticas para definir linhas, formas e cores.
+
+• Prototipagem: Isso se refere ao processo de criar um modelo interativo de uma produto ou interface de usuário.
+
+
+	2 - Fundamentos de Design de UI
+	
+• 

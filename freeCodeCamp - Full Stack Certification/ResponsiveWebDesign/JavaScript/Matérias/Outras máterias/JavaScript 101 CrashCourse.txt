@@ -1,8 +1,8 @@
 		JavaScript 101 CrashCourse
 
-Neste rápido inicio de máteria JavaScript iremos aprender um pouco de rudo o que é essencial para o bom funcionamento da linguagem, tocando assim em todos os conceitos principais.
+Neste rápido inicio de máteria JavaScript iremos aprender um pouco de tudo o que é essencial para o bom funcionamento da linguagem, tocando assim em todos os conceitos principais.
 
-Diferente de linguadens como PHP e Python o JavaScript corre directamente no browser, mas é também capaz de correr fora do mesmo, o que dá a linguagem a chance de crescer em muitas das outras áreas para além do front-end de uma página web.
+Diferente de linguagens como PHP e Python o JavaScript corre directamente no browser, mas é também capaz de correr fora do mesmo, o que dá a linguagem a chance de crescer em muitas das outras áreas para além do front-end de uma página web.
 
 Do server-side com Node.js ao desenvolvimento de apps mobile com React.
 
@@ -15,7 +15,7 @@ JavaScript pode ser usado para modificar o CSS ou HTML em um documento(página).
 Exemplo:
 	
 	<script>
-		document.body .style.background="blue";
+		document.body.style.background="blue";
 	</script>
 -------------------------------------------------------------------------------	
 		
