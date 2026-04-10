@@ -1,0 +1,219 @@
+			Práticas para projetar Infinite Scrolls
+			
+			
+Infinite Scrolling é um padrão de design que carrega mais conteúdo conforme o usuário rola a página para baixo. Frequentemente, isso é usado em sites de redes sociais como Twitter. Por exemplo, se você estiver logado e quiser ver mais tweets,pode rolar para baixo e mais tweets serão carregados. Este é um exemplo de rolagem infinita.
+
+Iremos ver em seguida um código de exemplo de infinite scrolling:
+
+HTML:
+	<link rel="stylesheet" href="styles.css">
+
+	<div class="infinite-scroll">
+	  <div class="post">Post 1</div>
+	  <div class="post">Post 2</div>
+	  <div class="post">Post 3</div>
+	  <div class="post">Post 4</div>
+	  <div class="post">Post 5</div>
+	  <div class="post">Post 6</div>
+	  <div class="post">Post 7</div>
+	  <div class="post">Post 8</div>
+	  <div class="post">Post 9</div>
+	  <div class="post">Post 10</div>
+	  <!-- More posts will load here as the user scrolls down -->
+	</div>
+
+	<script src="index.js"></script>
+	
+CSS:
+	.infinite-scroll {
+	  display: flex;
+	  flex-direction: column;
+	  gap: 12px;
+	}
+
+	.post {
+	  padding: 12px;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	}
+	
+JavaScript:
+	// Simulate loading more content as the user scrolls
+	window.addEventListener('scroll', () => {
+	  if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+		loadMorePosts();
+	  }
+	});
+
+	function loadMorePosts() {
+	  const container = document.querySelector('.infinite-scroll');
+	  for (let i = 0; i < 3; i++) {
+		const post = document.createElement('div');
+		post.className = 'post';
+		post.textContent = `Post ${container.children.length + 1}`;
+		container.appendChild(post);
+	  }
+	}
+	
+	·Recria o exemplo em teu IDE
+------------------------------------------------------
+
+A rolagem infinita também é usada como substituta da paginação. Paginação é um padrão de design que divide o conteúdo em páginas. Isso é frequentemente usado quando há muito conteúdo para exibir. Um exemplo de paginação é quando você pesquisa algo no Google e vê os resultados da pesquisa em várias páginas. Com paginação, você precisa clicar em um botão para ir para a próxima página. Com rolagem infinita, você apenas continua rolando para baixo e mais conteúdo será carregado.
+
+À medida que você incorpora infinite scrolling no seu design, há algumas melhores práticas a serem lembradas. A primeira consideração é fornecer um botão "Load More" que carregue o próximo conjunto de resultados quando o usuário clicar nele. Esta é uma boa maneira de dar ao usuário controle sobre quando ele quer ver mais conteúdo.
+
+Vejamos um exemplo com um botão de LoadMore:
+
+HTML:
+	<link rel="stylesheet" href="styles.css">
+
+	<div class="infinite-scroll">
+	  <div class="post">Post 1</div>
+	  <div class="post">Post 2</div>
+	  <div class="post">Post 3</div>
+	  <!-- More posts will load when the user clicks "Load More" -->
+	</div>
+	<button class="load-more">Load More</button>
+	<script src="index.js"></script>
+	
+CSS:
+	.infinite-scroll {
+	  display: flex;
+	  flex-direction: column;
+	  gap: 12px;
+	}
+
+	.post {
+	  padding: 12px;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	}
+
+	.load-more {
+	  margin-top: 12px;
+	  padding: 8px 16px;
+	}
+	
+JavaScript:
+	const loadMoreButton = document.querySelector('.load-more');
+	const container = document.querySelector('.infinite-scroll');   
+	loadMoreButton.addEventListener('click', () => {
+	  loadMorePosts();
+	});
+
+	function loadMorePosts() {
+	  for (let i = 0; i < 3; i++) {
+		const post = document.createElement('div');
+		post.className = 'post';
+		post.textContent = `Post ${container.children.length + 1}`;
+		container.appendChild(post);
+	  }
+	}
+----------------------------------------------------
+
+Outra consideração seria adicionar um botão "Voltar". Isso dá aos usuários a capacidade de voltar para a página anterior sem precisar rolar tudo de volta para cima. Isso cria uma melhor experiência para o usuário e lhes dá mais controle sobre sua experiência de navegação.
+
+Às vezes você verá designs com um botão "Back to the top" que leva os usuários de volta ao topo da página de resultados. Outra consideração é fornecer um indicador de carregamento. Os usuários devem ter uma indicação clara de que mais conteúdo está sendo carregado; caso contrário, eles podem pensar que a página está quebrada.
+
+Vejamos um exemplo disso:
+
+HTML:
+	<link rel="stylesheet" href="styles.css">
+
+	<div class="infinite-scroll">
+	  <div class="post">Post 1</div>
+	  <div class="post">Post 2</div>
+	  <div class="post">Post 3</div>
+	  <div class="post">Post 4</div>
+	  <div class="post">Post 5</div>
+	  <div class="post">Post 6</div>
+	  <div class="post">Post 7</div>
+	  <div class="post">Post 8</div>
+	  <div class="post">Post 9</div>
+	  <div class="post">Post 10</div>
+	  <!-- More posts will load here as the user scrolls down -->
+	</div>
+
+	<div class="loading-indicator" style="display: none;">Loading...</div>
+
+	<button id="back-to-top" class="back-to-top">↑ Back to Top</button>
+
+	<script src="index.js"></script>
+	
+CSS:
+	.infinite-scroll {
+	  display: flex;
+	  flex-direction: column;
+	  gap: 12px;
+	}
+
+	.post {
+	  padding: 12px;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	}
+
+	.loading-indicator {
+	  margin-top: 12px;
+	  font-weight: bold;
+	}
+
+	.back-to-top {
+	  position: fixed;
+	  bottom: 30px;
+	  right: 30px;
+	  display: none;
+	  padding: 10px 15px;
+	  background-color: #007BFF;
+	  color: white;
+	  border: none;
+	  border-radius: 4px;
+	  cursor: pointer;
+	  font-size: 14px;
+	  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+	}
+
+	.back-to-top:hover {
+	  background-color: #0056b3;
+	}
+	
+JavaScript:
+	const container = document.querySelector('.infinite-scroll');
+	const loadingIndicator = document.querySelector('.loading-indicator');
+	const backToTopBtn = document.getElementById('back-to-top');
+
+	window.addEventListener('scroll', () => {
+	  if (window.scrollY > 400) {
+		backToTopBtn.style.display = 'block';
+	  } else {
+		backToTopBtn.style.display = 'none';
+	  }
+
+	  if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+		loadMorePosts();
+	  }
+	});
+
+	backToTopBtn.addEventListener('click', () => {
+	  window.scrollTo({ top: 0, behavior: 'smooth' });
+	});
+
+	function loadMorePosts() {
+	  loadingIndicator.style.display = 'block';
+	  setTimeout(() => {
+		for (let i = 0; i < 3; i++) {
+		  const post = document.createElement('div');
+		  post.className = 'post';
+		  post.textContent = `Post ${container.children.length + 1}`;
+		  container.appendChild(post);
+		}
+		loadingIndicator.style.display = 'none';
+	  }, 1000);
+	}
+------------------------------------------------------
+
+Uma das últimas considerações seria manter o rodapé acessível ao usuário. Se o rodapé contiver informações importantes, ele deve estar acessível ao usuário o tempo todo.
+
+Em conclusão, o infinite scrolling é uma ótima maneira de exibir conteúdo no seu site. No entanto, você deve ter em mente as melhores práticas ao projetar seu infinite scroll para que possa oferecer a melhor experiência de usuário possível.
+
+
