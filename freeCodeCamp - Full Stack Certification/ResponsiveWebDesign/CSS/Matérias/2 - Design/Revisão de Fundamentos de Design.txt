@@ -32,4 +32,55 @@
 
 	2 - Fundamentos de Design de UI
 	
-• 
+• Bom contraste para cores de fundo e primeiro plano: É importante garantir que as cores de fundo e primeiro plano tenham bom contraste para tornar o texto legível. As Diretrizes de Acessibilidade para Conteúdo Web (WCAG) recomendam uma razão mínima de contraste de 4.5:1 para texto normal e 3:1 para texto grande.
+
+• Boa Hierarquia Visual no Design: Uma hierarquia visual forte pode fornecer um caminho claro para o olho seguir, garantindo que a informação que você transmite seja consumida na ordem que você pretende.
+
+• Imagens Responsivas: Imagens Responsivas são imagens que se ajustam para caber no tamanho da tela em que estão sendo visualizadas. Isso é importante porque garante que suas imagens fiquem boas em todos os dispositivos, de desktops a telemóveis.
+
+• Aprimoramento Progressivo: Esta é uma abordagem de Design que garante que todos os usários, independentemente do navegador ou dispositivo, possam acessar o conteúdo essencial e a funcionalidade de uma aplicação.
+
+• Design centrado no usuário: Esta é uma abordagem que prioriza o usuário final, desde suas necessidades até suas preferencias e limitações. O objectivo do design centrado no usuário é criar uma página web que seja intuitiva, eficiente de usar e agradável para seus usuários interagirem.
+
+• Pesquisa de Usuário: Este é o estudo sistemático das pessoas que usam seu produto. O objetivo é medir as necessidades, comportamentos e pontos problemáticos dos usuários.
+
+• Entrevistas de Saída: Esta é uma pesquisa que você pode aplicar aos usuários quando eles cancelam suas contas. Ela pode ajudar você a entender por que os usuários estão saindo e o que você pode fazer para reduzir o efeito.
+
+• Teste de Usuário: Isso se refere à prática de capturar dados dos usuários enquanto eles interagem com sua aplicação.
+
+• A/B Testing: Este é o processo de lançar uma nova funcionalidade para um subconjunto selecionado aleatoriamente da sua base de usuários. Você pode então usar dados analíticos para determinar se a funcionalidade é benéfica.
+
+• Requisitos de Usuário: Isso se refere às histórias ou critérios que sua aplicação precisa seguir. Os requisitos do usuário podem ser definidos por pequisa com usuários ou padrões da indústria. Eles podem até ser definidos pela contribuição das partes interessadas.
+
+• Divulgação Progressiva: Este é um padrão de design usado para mostrar aos usuários apenas o conteúdo relevante com base em sua atividade atual e ocultar o restante. Isso é feito para reduzir a carga cognitiva  e tornar a experiência do usuário mais intuitiva.
+
+• Registro Adiado/Preguiçoso: Este é um padrão de design de interface que permite aos usuários navegar e interagir com sua aplicação sem precisar se registrar.
+
+
+	3 - Melhores Práticas de Design
+	
+• Modo escuro: Esta é uma funcionalidade especial em aplicações web onde você pode alterar o esquema de cores claro padrão para um esquema de cores escuro. Você deve usar cores dessaturadas no modo escuro. Cores dessaturadas são cores que são menos intensas e têm um nível de saturação mais baixo.
+
+• Breadcrumbs: Este é um recurso de navegação que mostra ao usuário onde ele está na hierarquia do site. É melhor colocar os breadcrumbs no topo da página para que os usuários possam encontra-los mais facilmente. Além disso, você deve garantir que os breadcrumbs sejam grandes o suficiente para serem facilmente lidos, mas não tao grandes a ponto de ocuparem muito espaço na página.
+
+• Componente Card: Seu componente card deve ser simples no design, não visualmente poluído nem exibir muita informação. Para mídia, certifique-se de escolher imagens e vídeos de alta qualidade para melhorar a experiência do usuário.
+
+• Infinite Scroll: Este é um padrão de design que carrega mais conteúdo conforme o usuário rola a página para baixo. Você deve considerar usar um botão de carregar mais porque ele dá ao usuário o controle sobre quando eles querem ver mais conteúdo. Você também pode adicionar um botão de voltar para que os usuários tenham a capacidade de retornar à página anterior sem precisar rolar toda a página para cima.
+
+• Modal Dialog: Este é um tipo de pop-up que será exibido sobre o conteúdo existente da página. Normalmente o conteúdo de fundo terá uma sobreposição de cor escura para ajudar o usuário a focar melhor no conteúdo do modal. Além disso, é sempre uma boa ideia permitir que o usuário clique fora do modal para fechá-lo. Quando você usa o elemento HTML dialog, você terá muitas das funcionalidades e benefícios de acessibilidade incorporados.
+
+• Indicação de Progresso para Registro de Formulário: Esta é uma forma de mostrar aos usuários o quão avançados eles estão em um processo. Pode ser usado em formulários, registros e processos de configuração. Seu design deve ser simples, fácil de encontrar e possibilitar o retorno aos passos anteriores.
+
+• Carrinho de Compras: Carrinhos são um local para o usuário ver quais itens ele já selecionou em uma plataforma de comércio eletrônico. Seus carrinhos devem estar sempre visíveis para o usuário, usar um ícone comum como um carrinho, bolsa ou cesta, e ter um botão de chamada para ação claro para os usuários prosseguirem para o checkout.
+
+	4 - Ferramentas comuns de Design
+	
+• Figma:  Esta ferramenta baseada na nuvem é especializada em design de Interface do Usuário e Experiência do Usuário (UI / UX). Ela permite que equipes de design e desenvolvimento colaborem de qualquer lugar, oferecendo recursos integrados incluindo design baseado em vetor, layout automático, um sistema de comentários e feedback e mais.
+
+• Sketch: Esta é uma ferramenta de design popular usada por sua interface intuitiva e simplicidade, tornando-a ideal para desenvolvedores que querem criar protótipos rapidamente. Também é amplamente usada por designers para tarefas como criar UIs, ícones e layouts web.
+
+• Adobe XD: Esta é uma ferramenta de design e prototipagem baseada em vetor para design de UI/UX, conhecida por sua integração perfeita com outros aplicativos Adobe como Photoshop, Ilustrator e after effects.
+
+• Canva: Esta ferramenta permite que você crie uma ampla variedade de conteúdo visual, incluindo cartazes, fotos de capa, apresentações, vídeos curtos e mais. Seu design simples e fácil de usar a torna ideal para iniciantes.
+
+
