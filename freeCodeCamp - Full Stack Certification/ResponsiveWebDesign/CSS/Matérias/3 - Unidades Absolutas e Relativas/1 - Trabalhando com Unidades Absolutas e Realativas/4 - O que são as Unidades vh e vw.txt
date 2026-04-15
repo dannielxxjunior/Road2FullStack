@@ -1,0 +1,67 @@
+			O que são as Unidades VH e VW e 	quando usar?
+			
+			
+No CSS, vh e vw são unidades relativas à viewport que premitem dimensionar elementos com base nas dimensões da janela do navegador. Essas unidades são particularmente úteis para criar designs responsivos que se adaptem a diferentes tamanhos de tela.
+
+vh significa viewport-height ou altura da viewport e 1vh é igual a 1% da altura da viewport.
+
+Similarmente vw significa viewport-width e 1 vw é igual a 1% da largura da viewport.
+
+Isso significa que se definirmos a altura de um elemento para 100vh, ele ocupará toda a altura da viewport, independentemente das dimensões reais em pixels do dispositivo.
+
+Essas unidades são especialmente úteis quando queremos criar layouts em tela cheia ou elementos que mantêm uma proporção especifica da tela.
+
+Por exemplo, podemos querer usa-los para criar uma seção hero que sempre preenche a tela inteira, vejamos:
+
+HTML:
+	<section class="hero">
+	  <h1>100vh / 100vw Example</h1>
+	  <p>This section fills the entire browser window.</p>
+	</section>
+
+CSS:
+	body {
+	  margin: 0;
+	  font-family: sans-serif;
+	  border: 5px dashed #333;
+	}
+
+	.hero {
+	  height: 100vh;
+	  width: 100vw;
+	  background-color: #add8e6; 
+	  padding: 2em;
+	}
+	
+	.hero h1 {
+	  font-size: 2em;
+	  margin-bottom: 0.5em;
+	}
+
+	.hero p {
+	  font-size: 1em;
+	}
+
+Este CSS garante que a seção hero sempre terá exatamente o tamanho da viewport, independentemente do tamanho da tela do dispositivo.
+
+
+As unidades vh e vw tambeḿ podem ser usadas para tipografia para criar tamanhos de texto responsivos.
+Vejamos um exemplo disso mesmo:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	<h1>Responsive Heading</h1>
+	<p>The h1 heading scales with the viewport width.</p>
+
+CSS:
+	h1 {
+	  font-size: 5vw;
+	}
+	
+Neste exemplo definimos o tamanho da fonte dos elementos h1 para 5% da largura da viewport, permitindo que o texto escale suavemente com o tamnho da janela do navegador.
+
+Uma das vantagens das unidades vh e vw é que elas respondem às mudanças no tamanho da viewport em tempo real. Isso significa que se um usuário redimensionar a janela do navegador,os elementos dimensionados com essas unidades serão ajustados de acordo sem precisar recarregar a página. No entanto, é importante usar essas unidades com moderação. Definir tamanhos de fonte apenas com unidades vw, por exemplo, pode fazer com que o texto fique muito pequeno em telas estreitas ou muito grande em telas largas.
+
+Outra consideração é que em dispositivos móveis, a altura da viewport pode mudar quando a barra de endereço do navegador aparece ou desaparece, o que pode causar mudanças inesperadas no layout se estivermos usando unidades vh extensivamente.
+
+Em resumo, as unidades vh e vw são ferramentas poderosas para criar layouts responsivos e elementos que se adaptam ao tamanho da viewport. Eles são particularmente úteis para seções em tela cheia, mantendo proporções e criando designs que escalam suavemente. No entanto, eles devem ser usados com cuidado e frequentemente em combinação com outras técnicas de CSS para garantir a melhor experiência do usuário em todos os dispositivos.
