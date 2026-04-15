@@ -1,0 +1,65 @@
+			O que são Percentuiais em CSS e quando devemos usá-los
+			
+			
+ Porcentagens em CSS são unidades relativas que permitem definir tamanhos, dimensões e outras propriedades como uma proporção do elemento pai.
+ Quando usamos um valor percentual, estamos essencialmente dizendo: Faça isto ser X% do seu contêiner.
+ 
+ Por exemplo, se definirmos width: 50% em um elemento, ele ocupará metade da largura do seu contêiner pai. Isso torna as porcentagens incrivelmente úteis para criar designs responsivos que se adaptam a diferentes tamanhos de tela.
+ 
+Vejamos o seguinte exemplo:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	<div class="parent">
+	  <div class="child"></div>
+	</div>
+
+CSS:
+	.parent {
+	  width: 100%;
+	  height: 300px;
+	  background-color: lightblue;
+	}
+
+	.child {
+	  width: 80%;
+	  height: 100%;
+	  background-color: red;
+	}
+
+
+ Usar porcentagens para imagens flexiveis é outra prática comum. Ao aplicar max-width: 100% em imagens, permitimos que elas se ajustem em telas menores manteno sua proporção.
+ 
+Exemplo:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	<img src="https://placehold.co/150x150" alt="Example Product Image" />
+
+CSS:
+	img {
+	  max-width: 100%;
+	  height: auto;
+	}
+
+
+ Embora menos comum, porcentagens também podem ser usadas para tamanhos de fonte para criar tipografia escalável. Por exemplo, font-size: 120% faria o texto 20% maior que o tamanho da fonte do seu elemento pai.
+
+ Porcentagens podem ser particularmente úteis para centralização vertical. Aqui está um exemplo de como podemos usar porcentagens com a propriedade transform para centralizar um elemento verticalmente.
+ 
+ Este exemplo posiciona o elemento a 50% do topo do seu contêiner, depois usa transfrom para movê-lo para cima pela metade da sua propria altura, centralizando-o verticalmente de forma eficaz.
+ 
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	<div class="centered"></div>
+
+CSS:
+	.centered {
+	  position: absolute;
+	  top: 50%;
+	  transform: translateY(-50%);
+	  width: 300px;
+	  height: 300px;
+	  background-color: red;
+	}
+
