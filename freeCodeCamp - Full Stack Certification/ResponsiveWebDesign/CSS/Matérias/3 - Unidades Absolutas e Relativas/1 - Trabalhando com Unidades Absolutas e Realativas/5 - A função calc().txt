@@ -1,0 +1,26 @@
+			A função calc()?
+			
+			
+Com a função calc(), podemos realizar cálculos diretamente dentro de nossas folhas de estilo para determinarmos valores de propriedades dinamicamente. Isso significa que podemos criar interfaces de usuário flexiveis e responsivas calculando dimensões com base no tamanho da viewport ou em outros elementos.
+
+calc() é uma função CSS. Iremos aprender mais sobre funções quando começarmos a aprender sobre JavaScript, mas nesta lição, iremos aprender o básico que precisamos saber para entender como calc() funciona.
+
+Uma função é um bloco de código que executa uma tarefa especifica. Algumas funções já estão definidas em CSS, então podemos usá-las diretamente e passar quaisquer valores necessários para eleas personalizarem como suas tarefas serão executadas.
+
+No mundo da programação, quando executamos a tarefa realizada por uma função, dizemos que chamamos a função. Os valores que passamos para a função são conhecidos como argumentos.
+
+Como podemos ver no código a baixo, para chamar uma função, escrevemos seu nome seguido pelos argumentos entre parênteses, separados por vírgulas.
+Não deve haver espaço entre o nome da função e o parêntese de abertura:
+
+	function(argument1, argument2, argument3)
+	
+Uma função pode precisar de apenas um valor para saber o que fazer.
+Nesse caso, ela aceitará apenas um argumento. É isso que acontece com a função calc(). Ela recebe um argumento porque precisa saber o que calcular.
+
+Para isso, passamos algo chamado expressão como argumento. Uma expressão é uma combinação de valores e operadores que produz um resultado.
+
+É assim que podemos chamar a função calc(). Escrevemos o nome calc(), seguido por parênteses, e dentro dos parênteses, escrevemos a expressão:
+
+	calc(expressão)
+	
+A expressão é avaliada para calcular o resultado final. "Avaliada" significa apenas que os valores e operadores são convertidos em um único valor nos bastidores. O resultado é atribuido à propriedade CSS onde o cálcuclo está sendo feito.
