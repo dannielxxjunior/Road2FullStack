@@ -1,0 +1,148 @@
+			Quais são exemplos de Pseudo-classes de entrada?
+			
+			
+A aparência e o comportamento dos elementos de entrada são importantes ao criar formulários web. U formulário com entradas que respondem às ações do usuário contribui muito para melhora a experiencia do usuário e não deve causar confusão ou frustração.
+
+O CSS fornece várias Pseudo-classes de entrada que podem tornar seus formulários mais intuitivos e fáceis de usar. Vamos analisar essas Pseudo-classes em detalhes.
+
+A Pseudo-classe :focus permite que possamos selecionar um elemento de entrada quando o usuário o seleciona ou clica nele, chamando atenção para o campo de entrada ativo. Isso ajuda os usuários a identificar facilmente onde eles estão digitando no momento.
+Vejamos um exemplo a baixo:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	<form>
+	  <input type="text" />
+	</form>
+
+CSS:
+	input:focus {
+	  border: 2px solid crimson;
+	  outline: none;
+	}
+
+
+Como o nome indica, a Pseudo-classe :hover é acionada quando o usuário posiciona o cursor sobre um elemento. Ela fornece feedback visual antes que o usuário interaja com o input, alertando efetivamente que o input está pronto para ação.
+Como no seguinte exemplo:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	<form>
+	  <input type="text" />
+	</form>
+
+CSS:
+	input:hover {
+	  background-color: orange;
+	}
+
+No exemplo a cima, o fundo do elemento de entrada muda para uma cor laranja quando o usuário passa o mouse sobre ele, indicando que o campo está pronto para interação.
+
+A Pseudo-classe :checked permite-nos estilizar um botão de opção ou caixa de seleção de forma diferente quando o usuário a seleciona. Dessa forma , o usuário pode ver facilmente qual opção ele escolheu.
+Seguimos a baixo um exemplo com uma caixa de seleção para concordar com os termos de um site.
+Vejamos:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	<form>
+	  <label>
+	  Agree <input class="checkbox" type="checkbox" />
+	  </label>
+	</form>
+
+CSS:
+	.checkbox {
+	  appearance: none;
+	  width: 18px;
+	  height: 18px;
+	  border: 2px solid #ccc;
+	  border-radius: 4px;
+	  display: inline-block;
+	  position: relative;
+	  cursor: pointer;
+	  transition: all 0.25s ease;
+	  vertical-align: middle; 
+	}
+
+	.checkbox:hover {
+	  border-color: #888;
+	}
+
+	.checkbox:checked {
+	  background-color: #4caf50;
+	  border-color: #4caf50;
+	}
+
+	.checkbox:checked::after {
+	  content: "";
+	  position: absolute;
+	  left: 4px;
+	  top: 0px;
+	  width: 5px;
+	  height: 10px;
+	  border: solid white;
+	  border-width: 0 2px 2px 0;
+	  transform: rotate(45deg);
+	}
+
+	.checkbox:focus {
+	  outline: 2px solid #90caf9;
+	  outline-offset: 2px;
+	}
+
+
+:required seleciona elementos de entrada que possuem o atributo required. Ela sinaliza para o usuário que ele deve preencher o campo para enviar o formulário.
+
+Aqui está um exemplo com um formulário que possui alguns campos de entrada obrigatórios:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	<form action="#">
+	  <label for="name">Name:</label>
+	  <input type="text" id="name" name="name" required />
+
+	  <label for="email">Email:</label>
+	  <input type="email" id="email" name="email" required />
+
+	  <label for="phone">Phone Number:</label>
+	  <input type="tel" id="phone" name="phone" />
+
+	  <button type="submit">Submit</button>
+	</form>
+
+CSS:
+	input:required {
+	  border: 2px solid orange;
+	}
+
+
+Ao validar formulários, podemos usar a pseudo-classe :valid para estilizar os campos de entrada que atendem aos critérios de validação e :invalid para estilizar os campos de entrada que não atendem aos critérios. Normalmente, usaremos verde para uma entrada válida e vermelho para uma entrada inválida.
+
+Aqui está um exemplo do uso da Pseudo-classe :valid:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	<form>
+	  <label for="email">Email:</label>
+	  <input type="email" id="email" name="email" />
+	</form> 
+
+CSS:
+	input:valid {
+	  border-color: green;
+	}
+
+Aqui está um exemplo de uso da pseudo-classe :invalid:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	<form>  
+	  <label for="email">Email:</label>
+	  <input type="email" id="email" name="email" />
+	</form>
+
+CSS:
+	input:invalid {
+	  border-color: crimson;
+	}
+
+A Pseudo-classe :disabled permite que possamos selecionar e estilizar elementos de entrada que estão desabilitados. Estes elementos têm atributo disabled, que impede os usuários de interagirem com eles. Quando um input está desabilitado, ele não pode ser clicado, focado ou editado.
