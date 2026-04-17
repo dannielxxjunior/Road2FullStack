@@ -1,0 +1,125 @@
+			O que são Pseudo-classes e com elas funcionam?
+			
+			
+Pseudo-classes são palavras chave especiais do CSS que permitem selecionar um elemento com base no seu estado ou posição especifica. O estado ou posição do elemento pode incluir:
+
+• Quando está activo.
+• Quando está sendo sobrevoado por um mouse.
+• Quando é o primeiro filho de um pai.
+• Quando um link foi visitado.
+• Quando está desativado.
+
+Para fazermos uso de uma Pseudo-classe adicionamos ao seletor dois pontos (:) seguidos do nome da Pseudo-classe que queremos usar.
+Vejamos:
+
+	seletor:pseudo-classe {
+		/* Porpriedades CSS*/
+	}
+	
+Vamos ver em seguida como podemos usar uma Pseudo-classe para representar cada um dos estados e posições que já mencionamos.
+
+Pseudo-classe :active permite-nos selecionar o estado ativo de um elemento, como ao clicar em um botão.
+Vejamos:
+
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	<button>Example Button</button>
+
+CSS:
+	button:active {
+	  background: greenyellow;
+	}
+	
+A Pseudo-classe :hover define o estado de foco do mouse de um elemento.
+Um exemplo seria passar o mouse sobre o botão ou link.
+Vejamos:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	<a href="#">Hover over me!</a>  
+
+CSS:
+	a:hover {
+	  text-decoration: none;
+	  color: white;
+	  background: crimson;
+	}
+
+A Pseudo-classe :first-child seleciona o elemento que é o primeiro filho do seu elemento pai. Aqui está um exemplo de como direcionar o primeiro elemento <p> dentro de um contêiner.
+Vejamos:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	<div class="container">
+	  <p>first child</p>
+	  <p>second child</p>
+	  <p>third child</p>
+	  <p>last child</p>
+	</div>
+
+CSS:
+	.container p:first-child {
+	  background: lightcoral;
+	  padding: 0.4rem;
+	}
+
+Vemos aqui que o primeiro elemento de parágrafo naqule div receberá a cor de fundo lightcoral e o padding de 0,4rem em todos os quatro lados.
+
+A Pseudo-classe :last-child seleciona o útlimo elemento que é filho do seu pai. Aqui está um exemplo de como direcionar o último elemento <p> dentro do elemento contêiner <div>.
+Vejamos:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	<div class="container">
+	  <p>first child</p>
+	  <p>second child</p>
+	  <p>third child</p>
+	  <p>last child</p>
+	</div>
+
+CSS:
+	.container p:last-child {
+	  background: lightcoral;
+	  padding: 0.4rem;
+	}
+
+A Pseudo-classe :visited permite que estilizemos um link que nosso usuário já visitou.
+Vejamos:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	<a href="https://www.example.com" target="_blank">Visit Example.com</a>
+
+CSS:
+	a:visited {
+	  color: purple;
+	}
+
+A Pseudo-classe :disabled permite que você estilize um elemento interativo no modo desabilitado.
+Vejamos:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	<button disabled>Disabled Button</button>
+
+CSS:
+	button:disabled {
+	  background-color: lightgray;  
+	}
+
+Como podemos observar as Pseudo-classes permitem-nos estilizar elementos com base em interações do usuário, como passar o mouse ou visitar um link. Isso faz com que seu site pareça mais interativo.
+
+Além das Pseudo-classes já mencionadas, existem outras como:
+
+• :focus
+• :first-of-type
+• :last-of-type
+• :nth-of-type
+• :modal
+• :enabled
+• :checked
+• :required
+
+	e outras mais...
+

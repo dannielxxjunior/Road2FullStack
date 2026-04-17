@@ -5,9 +5,9 @@ Com a função calc(), podemos realizar cálculos diretamente dentro de nossas f
 
 calc() é uma função CSS. Iremos aprender mais sobre funções quando começarmos a aprender sobre JavaScript, mas nesta lição, iremos aprender o básico que precisamos saber para entender como calc() funciona.
 
-Uma função é um bloco de código que executa uma tarefa especifica. Algumas funções já estão definidas em CSS, então podemos usá-las diretamente e passar quaisquer valores necessários para eleas personalizarem como suas tarefas serão executadas.
+Uma função é um bloco de código que executa uma tarefa especifica. Algumas funções já estão definidas em CSS, então podemos usá-las diretamente e passar quaisquer valores necessários para elas personalizarem como suas tarefas serão executadas.
 
-No mundo da programação, quando executamos a tarefa realizada por uma função, dizemos que chamamos a função. Os valores que passamos para a função são conhecidos como argumentos.
+No mundo da programação, quando executamos a tarefa realizada por uma função, dizemos que "chamamos" a função. Os valores que passamos para a função são conhecidos como argumentos.
 
 Como podemos ver no código a baixo, para chamar uma função, escrevemos seu nome seguido pelos argumentos entre parênteses, separados por vírgulas.
 Não deve haver espaço entre o nome da função e o parêntese de abertura:
@@ -23,4 +23,75 @@ Para isso, passamos algo chamado expressão como argumento. Uma expressão é um
 
 	calc(expressão)
 	
-A expressão é avaliada para calcular o resultado final. "Avaliada" significa apenas que os valores e operadores são convertidos em um único valor nos bastidores. O resultado é atribuido à propriedade CSS onde o cálcuclo está sendo feito.
+A expressão é "avaliada" para calcular o resultado final. "Avaliada" significa apenas que os valores e operadores são convertidos em um único valor nos bastidores. O resultado é atribuido à propriedade CSS onde o cálcuclo está sendo feito.
+
+Podemos realizar cálculos em valores que representam comprimento, ângulo, tempo, porcentagens, números e cores. Podemos também combinar diferentees unidades como pixels, porcentagens e ems.
+
+Com números, todos os valores na expressão, também chamados de operandos, devem ter suas unidades correspondentes, como px, em e porcentagem(%). Dependendo do operador, diferentes operandos podem ter unidades diferentes.
+
+Podemos usar os operadores de adição(+), subtração(-), multiplicação(*) e divisão(/) na expressão.
+
+Se houver múltiplos operandos e operadores, calc() seguirá a regra padrão de precedência de operadores. Podemos também adicionar parênteses para estabelecer a ordem das operações, se necessário.
+
+No exemplo a baixo, podemos ver uma div com o texto: Hello, World!.
+
+Usando o seletor de tipo CSS para selecionar a div podemos estilizar com texto branco e fundo azul escuro:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	<div>Hello, World!</div>
+
+CSS:
+	div {
+	  color: white;
+	  background-color: #1b1b32;
+	  width: calc(50% - 20px);
+	}
+
+O que há de novo aqui é que a largura é calculada dinamicamente. Observe como estamos chamando a função calc() e passando uma expressão como argumento. A expressão tem dois operandos com unidades diferentes e um operador, o operador de subtração.
+
+Porcentagem é uma unidade relativa. O valor (50%) será determinado pela largura do contêiner pai. Então, 20px é subtraido do valor. O resultado desta expressão determinará a largura da div.
+
+A largura da div é aproximadamente metade da largura total do seu contêiner e, se redimensionarmos o contêiner pai, a largura será recalculada automaticamente.
+
+Essa é a principal vantagem de usar calc(). Podemos determinar o valor de uma propriedade CSS dinamicamente com base em diferentes aspectos da aplicação ou da viewport.
+
+A expressão tambeḿ pode conter funções e variáveis CSS se precisarmos usa-las em nossos cálculos. Aprenderemos mais sobre variáveis CSS nas próximas lições.
+
+Ótimo. Agora que conhecemos o básico da função calc(), vamos abordar algumas de suas melhores práticas.
+
+Primeiro, devemos cercar os operadores de adição(+) e subtração(-) com espaços em branco.
+
+Por exemplo, a expressão a baixo não seria uma expressão válida porque o operador de subtração está imediatamente antes do segundo operando. 
+Vejamos:
+
+	calc(100% -30px)
+	
+O operador de subtração deve ser cercado por espaços em branco, assim, adicionar o espaço em branco criará uma expressão válida.
+Vejamos:
+
+	calc(100% - 30px)
+	
+Isso não é necessário para operadores de multiplicação e divisão mas é altamente recomendado.
+
+Podemos também aninhar chamadas da função calc() se precisarmos realizar cálculos e usar esses resultados em outros cálculos.
+
+Além disso, se usarmos o valor zero para representar comprimento na expressão que passamos para a função calc(), devemos incluir as unidades.
+Por exemplo, esta expressão não seria válida:
+
+	calc(100% - 0)
+
+Precisamos usar as unidades de medida como px.
+
+	calc(100% - 0px)
+	
+Devemos também saber que atualmente, se usarmos os operadores de multiplicação ou divisão, um dos operandos precisa ser sem unidade. Para o operador de divisão, especificamente o operando direito precisa ser sem unidade. Isto não seria uma expressão válida porque ambos os operandos têm unidades (pixels). Um dos operandos, seja 5 ou 50, deve ser sem unidade:
+
+	calc(5px * 50px)
+	
+Precisamos omitir uma das unidades, ambas as alternativas são válidas na multiplicação ja para divisão omitimos o direito, pelo que é melhor seguir usando o mesmo esquema em ambas as situações.
+
+	cal(5px * 50)
+	
+A função calc pode ser muito útil para nós enquanto Desenvolvedores Web. Com esta função, podemos definir valores de propriedade dinamicamente para criar designs flexiveis e responsivos.
+

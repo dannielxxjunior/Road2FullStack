@@ -1,0 +1,24 @@
+			Exemplos de Pseudo-classes de ação do usuário em elementos
+			
+			
+O feedback de usuário é um elemento crucial do design web. Por exemplo, é importante que os usuários recebam indicações visuais quando interagem com elementos em um site, como passar o mouse sobre um botão ou clicar em um link. Esse feedback ajuda os usuários a entender o estado dos elementos interativos, como indicar se um link foi visitado ou não.
+
+Pseudo-classes de ação de usuário em CSS são palavras-chave especiais que permitem fornecer esse tipo de feedback sem precisar de JavaScript ou outras linguagens de programação.
+
+Essas Pseudo-classes incluem :hover, :active, :focus e :visited, entre outras. Elas permitem que possamos alterar a aparência dos elementos com base nas interações do usuário, melhorando a experienia geral do usuário. 
+
+Vamos então explorar algumas das Pseudo-classes de ação do usuário que temos e ver como elas funcionam.
+
+A Pseudo-classe :active aplica estilos quando um elemento é ativado pelo usuário. Por exemplo, quando o usuário clica em um botão ou em um link, ele fornece um feedback imediato, mostrando aos usuários que suas ações estão sendo reconhecidas.
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	<a href="#">Example link</a>
+
+CSS:
+	a:active {
+	  color: crimson;
+	}
+
+
+A Pseudo-classe :hover é acionada quando um usuário passa o mouse ou outro dispositivo apontador sobre um elemento.
