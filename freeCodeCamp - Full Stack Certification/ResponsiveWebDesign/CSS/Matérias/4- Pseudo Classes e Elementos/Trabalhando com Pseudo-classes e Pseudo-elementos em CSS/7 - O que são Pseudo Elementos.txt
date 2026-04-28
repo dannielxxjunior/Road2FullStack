@@ -1,0 +1,107 @@
+			O que são Pseudo-Elementos e como funcionam?
+			
+			
+Um dos aspectos mais interessantes do CSS é o uso de pseudo-elementos.
+Neste contexto, "pseudo" significa "não-real", então pseudo-elementos são elementos virtuais ou sintéticos que não correspondem directamente a nenhum elemento HTML real. Eles permitem que você estilize partes específicas de um elemento ou insira conteúdo sem adicionar HTML extra.
+
+Para aplicar um pseudo-elemento, anexe-o ao seletor do elemento original usando dois pontos duplos (::). Observe que o seletor pode ser de qualquer tipo, como um seletor de classe ou de ID. Aqui está como a sintaxe básica dos pseudo-elementos se apresenta:
+
+	seletor::pseudo-elemento {
+		propriedade: valor;
+	}
+	
+Este duplo dois-pontos é o que distingue pseudo-elementos de pseudo-classes, que usam um único dois-pontos.
+
+Pseudo-elementos permitem que você estilize partes específicas do conteúdo de um elemento ou insira conteúdo antes ou depois dele, mas eles não podem existir de forma independente. O elemento ao qual um pseudo-elemento está anexado é chamado de seu elemento de origem.
+
+Vamos começar olhando exemplos para os pseudo-elementos ::before e ::after. Como os nomes sugerem ::before permite que você insira conteúdo logo antes do conteúdo do elemento, enquanto ::after permite que você insira conteúdo depois dele.
+
+Aqui está um exemplo de um elemento de botão. No CSS usaremos posicionamento absoluto e o pseudo-elemento ::before para adicionar uma estrela antes do texto Learn More do botão. Você aprenderá mais sobre posicionamento absoluto em lições futuras.
+Vejamos o primeiro exemplo:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	
+	<button class="cta-button">Saber Mais</button>
+	
+CSS:
+	.cta-button {
+		background-color: lightseagreen;
+		color: white;
+		border: none;
+		padding: 10px 20px;
+		cursor: pointer;
+		position: relative;
+	}
+	
+	.cta-button::before {
+		content: "⭐";
+		position: absolute;
+		left: 3px;
+		top: 8px;
+		font-size: 0.75rem;
+	}
+	
+Podemos ver neste exemplo que a propiredade "content" é usada para representar o conteúdo que você deseja adicionar antes do texto do botão. Neste exemplo, estamos adicionando uma estrela. Você notará que pode não apenas inerir o conteúdo mas também estiliza-lo.
+
+Vejamos agora um exemplo do pseudo-elemento ::after com o mesmo botão:
+
+HTML:
+	<link rel ="stylesheet" href="styles.css" />
+	
+	<button class="cta-button">Saber Mais</button>
+	
+CSS:
+	.cta-button {
+		background-color: orange;
+		border: none;
+		padding: 10px 30px;
+		cursor: pointer;
+		position: relative;
+	}
+	
+	.cta-button::after {
+		content: "➡️";
+		position: absolute;
+		right: 5px;
+		bottom: 6px;
+		font-size: 1.125rem;
+		transition: transform 0.3s ease;
+	}
+	
+No pseudo-elemento ::after, a propriedade transition é usada para animar mudanças ao longo de 0,3 segundos com um efeito de easing, criando uma transformação suave e gradual em vez de uma súbita. Você aprenderá mais sobre a propriedade "transition" em lições futuras.
+
+Você também pode anexar uma pseudo-classe ao conteúdo que você insere em outro conteúdo com os pseudo-elementos ::before e ::after. Por exemplo, um estado de hover para o conteúdo.
+Vejamos:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	
+	<button class="cta-button">Saber Mais</button>
+	
+CSS:
+	.cta-button {
+		background-color: orange;
+		border: none;
+		padding: 10px 30px;
+		cursor: pointer;
+		position: relative;
+	}
+	
+	.cta-button::after {
+		content: "➡️";
+		position: absolute;
+		right: 5px;
+		bottom: 6px;
+		font-size: 1.125rem;
+		transition: transform 0.3s ease;
+	}
+	
+	.cta-button:hover::after {
+		transform: translateX(2px);
+	}
+	
+Com a propriedade "transform: translateX(2px)" no estado :hover, o conteúdo é deslocado para a direita em 2px sempre que o usuário passa o mouse sobre o botão. A propriedade transition no próprio ::after garante que o processo leve 0.3s.
+
+É isso que a propriedade transform faz - ela permite que você rotacione, distorça, escale ou translade um elemento em uma direção específica.
+Iremos aprender mais sobre isso em lições futuras.
