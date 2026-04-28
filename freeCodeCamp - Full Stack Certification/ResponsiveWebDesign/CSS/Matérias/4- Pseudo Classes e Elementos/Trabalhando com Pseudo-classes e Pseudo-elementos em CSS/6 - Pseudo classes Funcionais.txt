@@ -1,0 +1,158 @@
+			Pseudo-classes Funcionais
+			
+			
+Pseudo-classes funcionais permitem que possamos selecionar elementos com base em condições ou relacionamentos mais complexos. Ao contrário das pseudo-classes regulares que têm como alvo elementos com base em um estado, por exemplo, :hover e :focus, pseudo-classes funcionais aceitam argumentos entre parênteses, daí o nome "pseudo-classes funcionais".
+
+Exemplos de pseudo-classes funcionais são:
+
+	•:is()
+	•:where()
+	•:has()
+	•:not()
+	
+Vamos analisar mais detalhadamente cada uma dessas pseudo-classes funcionais com exemplos.
+
+A pseudo-classe :is() é útil quando queremos estilizar um grupo de elementos que compartilham algumas, mas não todas, as características.
+ Por exemplo, você pode querer estilizar diferentes tipos de botões no seu site, incluindo elementos button, links estilizados como botões e elementos input com os tipos submit e reset. Aqui está um exemplo representando isso mesmo.
+ Sem a função :is(), teriamos que escrever um seletor complexo como o seguinte:
+ 
+ HTML:
+ 	<link rel="stylesheet" href="styles.css" />
+ 	
+ 	<button>Butão de Exemplo</button>
+ 	<a href="#" class="button">Link estilizado como butão</a>
+ 	<input type="submit" value="Submit" />
+ 	<input type="rest" value="Reset" />
+ 	
+CSS:
+	button, a.button, input[type='submit'], input[type='reset'] {
+		  background-color: darkblue;
+		  color: white;
+		  border: 1px solid darkblue;
+		  padding: 10px 20px;
+		  text-decoration: none;
+		  border-radius: 5px;
+		  cursor: pointer;
+		  display: inline-block;
+		  margin: 5px;
+		  font-size: 16px;
+		  text-align: center;
+	}
+	
+	button:hover, a.button:hover, input[type'submit']:hover, input[type='reset']:hover {
+		background-color: blue;
+		border-color: blue;
+	}
+
+	
+Com a função :is(), podemos escrever um seletor mais compacto e compreensível assim:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	
+	<button>Butão de Exemplo</button>
+	<a href="#" class="button">Link estilizado como butão</a>
+	<input type="submit" value="Submit" />
+	<input type="reset" value="Reset" />
+	
+CSS:
+	:is(button, a.button, input[type='submit'], input[type='reset']) {
+		  background-color: darkblue;
+		  color: white;
+		  border: 1px solid darkblue;
+		  padding: 10px 20px;
+		  text-decoration: none;
+		  border-radius: 5px;
+		  cursor: pointer;
+		  display: inline-block;
+		  margin: 5px;
+		  font-size: 16px;
+		  text-align: center;
+	}
+	
+	:is(button, a.button, input[type='submit'], input[type='reset']):hover {
+		background-color: blue;
+		border-color: blue;
+	}
+	
+
+A pseudo-classe :where() funciona de forma semelhante a :is(), mas não aumenta a especificidade dos seus seletores. Isso a torna ideal para aplicar estilos sem afetar a especificidade de outras regras.
+
+Por exemplo, podemos usar a função :where() para aplicar margin e padding zero aos elementos de título. Isso garante que o reset não interfira com estilos mais específicos que possamos aplicar depois.
+Vejamos um exemplo:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	
+	<h1>Título da Página</h1>
+	<h2>Subtítulo</h2>
+	<h3>Um Ponto</h3>
+	
+	<p>Parágrafo de Exemplo</p>
+	<p>Parágrafo de Exemplo</p>
+	<p>Parágrafo de Exemplo</p>
+	
+CSS:
+	:where(h1, h2, h3) {
+		margin: 0;
+		padding: 0;
+	}
+	
+	
+Estilizar um elemento pai com base nos estados de seus elementos filhos era anteriormente desafiador até a introdução da pseudo-classe :has(). Ela permite que possamos aplicar estilos a um elemento pai com base na presença ou estado de seus elementos filhos.
+
+Por exemplo, o CSS abaixo será aplicado apenas a a qualquer elemento <article> que tenha um <h2> dentro dele.
+Vejamos:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	
+	<article>
+		<h2>Sub-título</h2>
+		<p>Um parágrafo</p>
+	</article>
+	
+	<article>
+		<h3>Um ponto</h3>
+		<p>Primeiro parágrafo</p>
+		<p>Segundo parágrafo</p>
+	</article>
+	
+CSS:
+	article:has(h2) {
+		border: 2px solid hotpink;
+	}
+	
+
+A pseudo-classe :not() é ideal para situações em que você deseja aplicar estilos a um grupo de elementos, excluindo uma ou mais excessões específicas. No CSS abaixo, qualquer butão que não seja um butão primario terá um fundo cinza.
+Vejamos:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	
+	<button class="primario">Butão primario</button>
+	<button class="secundario">Butão secundário</button>
+	<button class="perigo">Butão de Perigo</button>
+	
+CSS:
+	button {
+		padding: 10px 20px;
+		border-radius: 4px;
+		cursor: pointer;
+		sont-size: 16px;
+		border: none;
+		color: white;
+	}
+	
+	button.primario {
+		background-color: deepskyblue;
+	}
+	
+	button:not(.primario) {
+		background-color: grey;
+	}
+	
+
+Terminamos assim as pseudo-classes funcionais. 
+Pesquisa por e faz exercicios onde precisarás usar pseudo-classes funcionais, de modo a praticares o uso das mesmas até que te seja natural e intuitivo.
+

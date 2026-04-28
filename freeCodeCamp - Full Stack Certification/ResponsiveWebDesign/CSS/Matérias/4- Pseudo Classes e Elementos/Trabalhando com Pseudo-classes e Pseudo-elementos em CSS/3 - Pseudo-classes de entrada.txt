@@ -1,7 +1,7 @@
 			Quais são exemplos de Pseudo-classes de entrada?
 			
 			
-A aparência e o comportamento dos elementos de entrada são importantes ao criar formulários web. U formulário com entradas que respondem às ações do usuário contribui muito para melhora a experiencia do usuário e não deve causar confusão ou frustração.
+A aparência e o comportamento dos elementos de entrada são importantes ao criar formulários web. Um formulário com entradas que respondem às ações do usuário contribui muito para melhorar a experiencia do usuário e não deve causar confusão ou frustração.
 
 O CSS fornece várias Pseudo-classes de entrada que podem tornar seus formulários mais intuitivos e fáceis de usar. Vamos analisar essas Pseudo-classes em detalhes.
 
@@ -146,3 +146,31 @@ CSS:
 	}
 
 A Pseudo-classe :disabled permite que possamos selecionar e estilizar elementos de entrada que estão desabilitados. Estes elementos têm atributo disabled, que impede os usuários de interagirem com eles. Quando um input está desabilitado, ele não pode ser clicado, focado ou editado.
+
+Vejamos agora em seguida um exemplo de um rotulo e um elemento de entrada desabilitado.
+
+No CSS, estamos direcionando aquele input desabilitado e dando ao mesmo uma cor de fundo lightgray e alterando o cursor pointer para not-allowed.
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	<form>
+	  <label for="name">Name:</label>
+	  <input class="text-input" type="text" id="name" name="name" disabled />
+	</form>
+
+CSS:
+	.text-input:disabled {
+	  background-color: lightgray;
+	  cursor: not-allowed;
+	}
+
+O valor da propriedade CSS cursor: not-allowed; altera a aparência do cursor para indicar que uma ação não é premitida.
+
+Quando aplicado a um elemento, ele mostra um crusor com um simbolo de círculo com barra para sinalizar aos usuários que o elemento não é interativo ou não pode ser clicado ou interagido.
+
+Aqui estão alguns outros exemplos de pseudo-classes de input e o que elas fazem:
+
+	• :autofill : Aplica estilos aos campos de entrada que o navegador preenche automaticamente com dados salvos.
+	• :optional : Estiliza elementos de entrada que não são obrigatorios e pode ser deixados vazios.
+	• :in-range e :out-of-range : Estilizam elementos com base em se seus valores estão dentro ou fora dos limites de intervalo especificados.
+

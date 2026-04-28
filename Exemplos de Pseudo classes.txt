@@ -1,0 +1,39 @@
+			Exemplos de Pseudo-classes de localização
+			
+			
+Pseudo-classes de localização são usadas para estilizar links e elementos que são alvo dentro do documento atual. Eles oferecem uma maneira de aplicar estilos com base em se um link foi visitado ou se um elemento está atualmente em foco.
+
+	Exemplos de pseudo-classes de localização são:
+	
+	• :links
+	• :visited
+	• :any-link
+	• :local-link
+	• :target
+	
+Vamos analisar mais profundamente cada uma dessas Pseudo-classes.
+
+A Pseudo-classe :link permite que você selecione todos os links não visitados em uma página da web. Podemos usá-lo para estilizar links de forma diferente antes que o usuário clique neles. Por exemplo, podemos querer deixar todos os links não visitados azuis ou na cor priméria do seu site:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	<a target="_blank" href="https://www.example.com">Visit Example.com</a>
+
+CSS:
+	a:link {
+	  color: magenta;
+	}
+
+Neste caso, qualquer link que o usuário ainda não tenha visitado aparecerá magenta. Uma vez que o usuário clica no link, o estilo :link não se aplica mais e a Pseudo-classe :visited assume. A Pseudo-classe :visited entra em ação depois que o usuário clica no link, podemos usá-la para direcionar links que o usuário já clicou.
+
+Aqui está um exemplo de como alterar o estado do link visitado para a cor: purple; :
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	<a target="_blank" href="https://www.example.com">Visit Example.com</a>
+
+CSS:
+	a:visited {
+	  color: purple;
+	}
+
