@@ -41,6 +41,7 @@ Elementos HTML comuns
     Elementos de Parágrafo: Isso é usado para parágrafos em uma página web.
 
     Elementos img: O elemento img é usado para adicionar imagens à página web. O atributo src é usado para especificar a localização dessa imagem. Para elementos de imagem, é uma boa prática incluir outro atributo chamado atributo alt. Aqui está um exemplo de um elemento img com os atributos src e alt:
+    <img src="www.google/imagens/gato" alt="imagem de um gato" /> 
 
     Elemento body: Este elemento é usado para representar o conteúdo do documento HTML.
 
@@ -51,6 +52,9 @@ Elementos HTML comuns
     Elementos Anchor (a): Esses elementos são usados para aplicar links a uma página web. O atributo href é usado para especificar para onde o link deve ir quando o usuário clicar nele.
 
     Elementos de Lista Não Ordenada (ul) e Ordenada (ol): Para criar uma lista com marcadores de itens você deve usar o elemento ul com um ou mais elementos li aninhados dentro assim:
+    <ul>
+    		<li>Item</li>
+    	</ul>
 
 Para criar uma lista ordenada de itens você deve usar o elemento ol:
 

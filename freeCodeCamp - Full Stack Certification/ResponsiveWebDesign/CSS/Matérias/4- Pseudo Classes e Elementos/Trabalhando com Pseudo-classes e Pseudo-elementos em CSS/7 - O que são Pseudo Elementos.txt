@@ -69,7 +69,7 @@ CSS:
 		transition: transform 0.3s ease;
 	}
 	
-No pseudo-elemento ::after, a propriedade transition é usada para animar mudanças ao longo de 0,3 segundos com um efeito de easing, criando uma transformação suave e gradual em vez de uma súbita. Você aprenderá mais sobre a propriedade "transition" em lições futuras.
+No pseudo-elemento ::after, a propriedade transition é usada para animar mudanças ao longo de 0.3 segundos com um efeito de easing, criando uma transformação suave e gradual em vez de uma súbita. Você aprenderá mais sobre a propriedade "transition" em lições futuras.
 
 Você também pode anexar uma pseudo-classe ao conteúdo que você insere em outro conteúdo com os pseudo-elementos ::before e ::after. Por exemplo, um estado de hover para o conteúdo.
 Vejamos:
@@ -105,3 +105,48 @@ Com a propriedade "transform: translateX(2px)" no estado :hover, o conteúdo é 
 
 É isso que a propriedade transform faz - ela permite que você rotacione, distorça, escale ou translade um elemento em uma direção específica.
 Iremos aprender mais sobre isso em lições futuras.
+
+No próximo exemplo vamos analisar o pseudo-elemento ::first-letter. O pseudo-elemento ::first-letter seleciona a primeira letra do conteúdo de um elemento, permitindo que você a estilize. Veremos então em seguida um exemplo com um texto de parágrafo. Se quisermos estilizar a primeira letra, podemos usar o pseudo-elemento ::first-letter assim:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	
+	<p>freeCodeCamp permite-nos aprender a programar sem que tenhamos que desembolsar</p>
+	
+CSS:
+	p::first-letter {
+		font-size: 4rem;
+	}
+
+
+No último exemplo, vamos analisar o pseudo-elemento ::marker, que permite selecionar o marcador, marcador de lista ou numeração dos itens da lista para estilização. O pseudo-elemento ::marker oferece uma maneira de aprimorar a identidade da marca do seu site personalizando os marcadores da lista para combinar com seu esquema de cores.
+
+Aqui está um exemplo de uma lista não ordenada e uma lista ordenada. Para alterar a cor e o tamanho do marcador do item da lista, você pode usar o pseudo-elemento ::marker assim:
+
+HTML:
+	<link rel="stylesheet" href="styles.css" />
+	
+	<ul>
+		<li>Lista desordenada 1</li>
+		<li>Lista desordenada 2</li>
+		<li>Lista desordenada 3</li>
+		<li>Lista desordenada 4</li>
+	</ul>
+	
+	<ol>
+		<li>Lista ordenada 1</li>
+		<li>Lista ordenada 2</li>
+		<li>Lista ordenada 3</li>
+		<li>Lista ordenada 4</li>
+	</ol>
+	
+CSS:
+	li::marker {
+		color: crimson;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+	
+	
+Nesta lição, cobrimos apenas alguns pseudo-elementos. Mas há muitos outros como o ::placeholder, ::spelling-error e ::selection, que eu incentivo que procures por ti proprio e estudes o seu funcionamento e casos de uso prático.
+
