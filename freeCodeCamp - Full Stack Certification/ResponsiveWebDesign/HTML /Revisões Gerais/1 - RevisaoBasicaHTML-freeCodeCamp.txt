@@ -69,7 +69,7 @@ Para criar uma lista ordenada de itens você deve usar o elemento ol:
 
 Identificadores e Agrupamento
 
-    IDs: Identificadores únicos de elementos para elementos HTML. Os nomes de ID devem ser usados apenas uma vez por documento HTML.
+    IDs: Identificadores únicos de elementos para HTML. Os nomes de ID devem ser usados apenas uma vez por documento HTML.
 
 <h1 id="title">Movie Review Page</h1>
 
@@ -121,7 +121,7 @@ Boilerplate e Codificação
     Elemento head: A seção head contém metadados importantes que são informações nos bastidores necessárias para navegadores e motores de busca.
     Elementos meta: Esses elementos representam os metadados do seu site. Esses elementos contêm detalhes sobre coisas como codificação de caracteres e como sites como o Twitter devem pré-visualizar o link da sua página e mais.
     Elemento title: Este elemento é usado para definir o texto que aparece na aba ou janela do navegador.
-    Codificação de caracteres UTF-8: UTF-8, ou UCS Transformation Format 8, é uma codificação de caracteres padronizada amplamente usada na web. Codificação de caracteres é o método que os computadores usam para armazenar caracteres como dados. O atributo charset é usado dentro de um elemento meta para definir a codificação de caracteres para UTF-8.
+    Codificação de caracteres UTF-8: UTF-8, ou UCS Transformation Format 8, é uma codificação de caracteres padronizada, amplamente usada na web. Codificação de caracteres é o método que os computadores usam para armazenar caracteres como dados. O atributo charset é usado dentro de um elemento meta para definir a codificação de caracteres para UTF-8.
 
 SEO e Compartilhamento Social
 
@@ -161,7 +161,7 @@ Você pode definir essas propriedades por meio de uma coleção de elementos met
 
 Elementos de Mídia e Otimização
 
-    Elementos substituídos: Um elemento substituído é um elemento cujo conteúdo é determinado por um recurso externo em vez do próprio CSS. Um exemplo seria um elemento iframe. iframe significa inline frame. É um elemento inline usado para incorporar outro conteúdo HTML diretamente dentro da página HTML.
+    Elementos substituídos: Um elemento substituído é um elemento cujo conteúdo é determinado por um recurso externo em vez do próprio HTML/CSS. Um exemplo seria um elemento iframe. iframe significa inline frame. É um elemento inline usado para incorporar outro conteúdo HTML diretamente dentro da página HTML.
 
 <iframe src="https://www.example.com" title="Example Site"></iframe>
 
