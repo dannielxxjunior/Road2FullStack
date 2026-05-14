@@ -41,6 +41,3 @@ Exemplo:
 p {
     color: rgb(255, 0, 0);
 }
-```
-
-![Resultado do Exemplo](./Exemplo1.png)
