@@ -43,4 +43,6 @@ p {
 }
 ```
 
-![Resultado do Exemplo](./Exemplo1.png)
+![Resultado do Exemplo](Exemplo1.png)
+
+- Função rgba(): Esta função adiciona um quarto valor, alpha, que controla a transparência da cor. Se não for fornecido, o valor alpha padrão é 1.
