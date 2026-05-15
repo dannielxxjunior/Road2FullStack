@@ -147,7 +147,7 @@ Resultado do Exemplo:
 
 ## A Propriedade Box-Shadow
 
-- Definição: A propriedade box-shadow aplica uma ou mais sombras ao redo de um elemento.
+- Definição: A propriedade box-shadow aplica uma ou mais sombras ao redor de um elemento.
 
 - Valores de Offset: Devemos especificar valores horizontais(offset-x) e verticais(offset-y). Valores positivos de offset-x movem a sombra para a direita, enquanto valores negativos a movem para a esquerda. Valores postivos de offset-y movem a sombra para baixo, enquanto que valores negativos movem a sombra para cima. Se o valor for 0 não é necessario incluir uma unidade (px, %, rm).
 
@@ -229,7 +229,7 @@ Exemplo:
 ```
 Resultado do Exemplo:
 
-![Resultado do exemplo](exemploGradientRadial)
+![Resultado do exemplo](exemploGradientRadial.png)
 
 * * * 
 
