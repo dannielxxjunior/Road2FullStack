@@ -182,7 +182,7 @@ Exemplo:
 ```
 Resultado do Exemplo:
 
-![Resultado do exemplo](exemploshadow.png)
+![Resultado do exemplo:](exemploshadow.png)
 
 * * * 
 
