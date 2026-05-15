@@ -48,7 +48,7 @@ p {
 ```
 Resultado do exemplo:
 
-![Resultado do Exemplo](imagens/Exemplo1.png)
+![Resultado do Exemplo](/imagens/Exemplo1.png)
 
 * * * 
 
@@ -70,7 +70,7 @@ div {
 ```
 Resultado do Exemplo:
 
-![Resultado do Exemplo](imagens/exemplo2.png)
+![Resultado do Exemplo](.imagens/exemplo2.png)
 
 * * * 
 
@@ -92,7 +92,7 @@ p {
 ```
 Resultado do Exemplo:
 
-![Resultado do exemplo:](imagens/exemplohsl.png)
+![Resultado do exemplo:](./imagens/exemplohsl.png)
 
 * * * 
 
