@@ -2,7 +2,7 @@
 
 ## Teoria das Cores
 
-- Definição de Teoria das Cores: Este é o estudo de como as cores interagem entre i e como elas afetam nossa percepção. Abrange relacionamentos de cores, harmonia de cores e o impacto psicológico da cor.
+- Definição de Teoria das Cores: Este é o estudo de como as cores interagem entre si e como elas afetam nossa percepção. Abrange relacionamentos de cores, harmonia de cores e o impacto psicológico da cor.
 
 - Cores Primárias: Essas cores que são amarelo, azul e vermelho, são os tons fundamentais dos quais todas as outras cores são derivadas.
 
@@ -28,7 +28,7 @@
 
 - Cores Nomeadas: Essas cores são nomes de cores predefinidos reconhecidos pelos navegadores. Exemplos incluem blue, darkred, lightgreen.
 
-- Função RGB: RGB significa red green e blue - as cores primárias da luz. Essas três cores são combinadas em diferentes intensidades para criar uma ampla variedade de cores. A função rgb() permite que defina-mos cores usando o modelo de cores RGB.
+### Função RGB: RGB significa red green e blue - as cores primárias da luz. Essas três cores são combinadas em diferentes intensidades para criar uma ampla variedade de cores. A função rgb() permite que defina-mos cores usando o modelo de cores RGB.
 
 Exemplo:
     
@@ -42,10 +42,11 @@ p {
     color: rgb(255, 0, 0);
 }
 ```
-Resultado do exemplo
+Resultado do exemplo:
+
 ![Resultado do Exemplo](Exemplo1.png)
 
-- Função rgba(): Esta função adiciona um quarto valor, alpha, que controla a transparência da cor. Se não for fornecido, o valor alpha padrão é 1.
+### Função rgba(): Esta função adiciona um quarto valor, alpha, que controla a transparência da cor. Se não for fornecido, o valor alpha padrão é 1.
 
 Exemplo:
 
@@ -59,5 +60,6 @@ div {
     background-color: rgba(0, 0, 255, 0.5);
 }
 ```
-Resultado do Exemplo
+Resultado do Exemplo:
+
 ![Resultado do Exemplo](exemplo2.png)
