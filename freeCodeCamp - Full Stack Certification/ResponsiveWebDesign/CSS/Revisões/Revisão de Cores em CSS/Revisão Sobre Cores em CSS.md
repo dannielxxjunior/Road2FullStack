@@ -145,3 +145,44 @@ Resultado do Exemplo:
 
 * * * 
 
+## A Propriedade Box-Shadow
+
+- Definição: A propriedade box-shadow aplica uma ou mais sombras ao redo de um elemento.
+
+- Valores de Offset: Devemos especificar valores horizontais(offset-x) e verticais(offset-y). Valores positivos de offset-x movem a sombra para a direita, enquanto valores negativos a movem para a esquerda. Valores postivos de offset-y movem a sombra para baixo, enquanto que valores negativos movem a sombra para cima. Se o valor for 0 não é necessario incluir uma unidade (px, %, rm).
+
+- Raio de desfoque: Este valor opcional controla o quão borrada a sombra aparece. Se não for incluído, o padrão é 0, que cria bordas nítidas. Quanto maior o valor, mais suave é a sombra.
+
+- Spread Radius: Este valor opcional controla o quanto a sombra se expande ou encolhe. Se não for incluído, o padrão é 0.
+
+- Cor da Sombra: Podemos especificar a cor usando, cores nomeadas, valores hexadecimais, funções rgb(), rgba(), hsl() ou hsla().
+
+- Palavra-chave inset: Adicionar a palavra-chave inset coloca a sombra dentrodo elemento em vez de fora dele (otimo para dar a sensação de um botão a ser pressionado por exemplo).
+
+- Aplicando múltiplas sombras de caixa: Podemos aplicar múltiplas sombras separando-as por uma vírgulas, as sombras são empilhadas da frente para trás.
+
+### Sintaxe:
+
+- box-shadow: offset-x offset-y blur-radius spread-raius color;
+
+Exemplo:
+
+```html
+<link rel="stylesheet" href="styles.css">
+<div class="shadow-box">Shadow Color Example</div>
+```
+
+```css
+.shadow-box {
+    width: 200px;
+    padding: 20px;
+    background-color: lightblue;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+```
+Resultado do Exemplo:
+
+![Resultado do exemplo](exemploshadow.png)
+
+* * * 
+
