@@ -32,7 +32,7 @@
 
 ### Função rgb()
 
-- Função RGB: RGB significa red green e blue - as cores primárias da luz. Essas três cores são combinadas em diferentes intensidades para criar uma ampla variedade de cores. A função rgb() permite que defina-mos cores usando o modelo de cores RGB.
+- RGB significa red green e blue - as cores primárias da luz. Essas três cores são combinadas em diferentes intensidades para criar uma ampla variedade de cores. A função rgb() permite que defina-mos cores usando o modelo de cores RGB.
 
 Exemplo:
     
@@ -54,7 +54,7 @@ Resultado do exemplo:
 
 ### Função rgba()
 
-- Função rgba(): Esta função adiciona um quarto valor, alpha, que controla a transparência da cor. Se não for fornecido, o valor alpha padrão é 1.
+- Esta função adiciona um quarto valor, alpha, que controla a transparência da cor. Se não for fornecido, o valor alpha padrão é 1.
 
 Exemplo:
 
@@ -71,3 +71,50 @@ div {
 Resultado do Exemplo:
 
 ![Resultado do Exemplo](exemplo2.png)
+
+* * * 
+
+### Função hsl()
+
+- HSL significa Hue, Saturation e Lightness - três componentes principais que definem uma cor.
+
+Exemplo:
+
+```html
+<link rel="stylesheet" href="styles.css"
+<p>HSL Color</p>
+```
+
+```css
+p {
+    color: hsl(120, 100%, 50%);
+}
+```
+Resultado do Exemplo:
+
+[Resultado do exemplo:](exemplohsl.png)
+
+* * * 
+
+### Função hsla()
+
+- Esta função adiciona um quarto valor, alpha, que controla a opacidade da cor.
+
+Exemplo:
+
+```html
+<link rel"stylesheet" href="styles.css">
+<div>HSLA background</div>
+```
+
+```css
+div {
+    background-color: hsla(0, 100%, 50%, 0.5);
+}
+```
+Resultado do Exemplo:
+
+[Resultado do Exemplo:](exemplohsla.png)
+
+* * * 
+
