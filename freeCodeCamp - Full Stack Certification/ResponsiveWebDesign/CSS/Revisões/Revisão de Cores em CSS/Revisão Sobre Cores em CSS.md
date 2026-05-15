@@ -92,7 +92,7 @@ p {
 ```
 Resultado do Exemplo:
 
-[Resultado do exemplo:](exemplohsl.png)
+![Resultado do exemplo:](exemplohsl.png)
 
 * * * 
 
@@ -114,7 +114,34 @@ div {
 ```
 Resultado do Exemplo:
 
-[Resultado do Exemplo:](exemplohsla.png)
+![Resultado do Exemplo:](exemplohsla.png)
+
+* * * 
+
+### Hexadecimal
+
+- Um código hexadecimal é uma string de seis caracteres usada para representear cores no modelo de cores RGB. O "hex" refere-se ao sistema de numeração base 16, que usa os digitos de 0 a 9 e letras de A a F.
+
+Exemplo:
+
+```html
+<link rel="stylesheet" href="styles.css">
+<h1 class="hex-text">Hex Text</h1>
+<p class="hex-bg">Hex Background</p>
+```
+
+```css
+h1 {
+    color: #FF5733;
+}
+
+p {
+    background-color: #4CAF50;
+}
+```
+Resultado do Exemplo:
+
+![Resultado do exemplo](exemplohex.png)
 
 * * * 
 
