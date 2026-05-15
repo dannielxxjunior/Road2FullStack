@@ -28,6 +28,7 @@
 
 - Cores Nomeadas: Essas cores são nomes de cores predefinidos reconhecidos pelos navegadores. Exemplos incluem blue, darkred, lightgreen.
 
+* * * 
 
 ### Função rgb()
 
@@ -49,6 +50,7 @@ Resultado do exemplo:
 
 ![Resultado do Exemplo](Exemplo1.png)
 
+* * * 
 
 ### Função rgba()
 
