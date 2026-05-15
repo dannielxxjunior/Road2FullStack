@@ -28,7 +28,10 @@
 
 - Cores Nomeadas: Essas cores são nomes de cores predefinidos reconhecidos pelos navegadores. Exemplos incluem blue, darkred, lightgreen.
 
-### Função RGB: RGB significa red green e blue - as cores primárias da luz. Essas três cores são combinadas em diferentes intensidades para criar uma ampla variedade de cores. A função rgb() permite que defina-mos cores usando o modelo de cores RGB.
+
+### Função rgb()
+
+- Função RGB: RGB significa red green e blue - as cores primárias da luz. Essas três cores são combinadas em diferentes intensidades para criar uma ampla variedade de cores. A função rgb() permite que defina-mos cores usando o modelo de cores RGB.
 
 Exemplo:
     
@@ -46,7 +49,10 @@ Resultado do exemplo:
 
 ![Resultado do Exemplo](Exemplo1.png)
 
-### Função rgba(): Esta função adiciona um quarto valor, alpha, que controla a transparência da cor. Se não for fornecido, o valor alpha padrão é 1.
+
+### Função rgba()
+
+- Função rgba(): Esta função adiciona um quarto valor, alpha, que controla a transparência da cor. Se não for fornecido, o valor alpha padrão é 1.
 
 Exemplo:
 
