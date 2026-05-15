@@ -32,32 +32,32 @@
 
 Exemplo:
     
-        ```html
-        <link rel="stylesheet" href="styles.css">
-        <p>RGB COLOR</P>
-        ```
+    ```html
+    <link rel="stylesheet" href="styles.css">
+    <p>RGB COLOR</P>
+    ```
 
-        ```css
-        p {
-            color: rgb(255, 0, 0);
-        }
-        ```
-        Resultado do exemplo
-        ![Resultado do Exemplo](Exemplo1.png)
+    ```css
+    p {
+        color: rgb(255, 0, 0);
+    }
+    ```
+    Resultado do exemplo
+    ![Resultado do Exemplo](Exemplo1.png)
 
 - Função rgba(): Esta função adiciona um quarto valor, alpha, que controla a transparência da cor. Se não for fornecido, o valor alpha padrão é 1.
 
 Exemplo:
 
-        ```html
-        <link rel="stylesheet" href="styles.css">
-        <div>RGBA BAckground</div>
-        ```
+    ```html
+    <link rel="stylesheet" href="styles.css">
+    <div>RGBA BAckground</div>
+    ```
 
-        ```css
-        div {
-            background-color: rgba(0, 0, 255, 0.5);
-        }
-        ```
-        Resultado do Exemplo
-        ![Resultado do Exemplo](exemplo2.png)
+    ```css
+    div {
+        background-color: rgba(0, 0, 255, 0.5);
+    }
+    ```
+    Resultado do Exemplo
+    ![Resultado do Exemplo](exemplo2.png)
