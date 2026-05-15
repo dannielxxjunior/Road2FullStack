@@ -186,3 +186,50 @@ Resultado do Exemplo:
 
 * * * 
 
+## Gradientes Lineares e Radiais
+
+### Gradientes Lineares:
+
+- Esses gradientes criam uma mistura gradual entre cores ao longo de uma linha reta. Podemos controlar a direção dessa linha usando palavras-chave como: to top, to right, to bottom ou ângulos como: 45deg, 90deg. Podemos usar qualquer cor CSS válida e quantas paradas de cor desejarmos.
+
+Exemplo:
+
+```html
+<link rel="stylesheet" href="styles.css">
+<div class="linear-gradient">Linear Gradient</div>
+```
+
+```css
+.linear-gradient {
+    background: linear-gradient(45deg, red, #33FF11, rgba(100, 100, 255, 0.5));
+}
+```
+Resultado do Exemplo:
+
+![Resultado do exemplo:](exemploGradientLinear.png)
+
+* * * 
+
+### Gradientes Radiais:
+
+- Estes são gradientes circulares ou elipticos que erradiam de um ponto central.
+
+Exemplo:
+
+```html
+<link rel="stylesheet" href="styles.css">
+<div class="radial-gradient">Gradiente Radial</div>
+```
+
+```css
+.radial-gradient {
+    background: radial-gradient(circle, red, blue);
+    height: 40vh;
+}
+```
+Resultado do Exemplo:
+
+![Resultado do exemplo](exemploGradientRadial)
+
+* * * 
+
