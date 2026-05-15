@@ -48,7 +48,7 @@ p {
 ```
 Resultado do exemplo:
 
-![Resultado do Exemplo](Exemplo1.png)
+![Resultado do Exemplo](imagens/Exemplo1.png)
 
 * * * 
 
@@ -70,7 +70,7 @@ div {
 ```
 Resultado do Exemplo:
 
-![Resultado do Exemplo](exemplo2.png)
+![Resultado do Exemplo](imagens/exemplo2.png)
 
 * * * 
 
@@ -92,7 +92,7 @@ p {
 ```
 Resultado do Exemplo:
 
-![Resultado do exemplo:](exemplohsl.png)
+![Resultado do exemplo:](imagens/exemplohsl.png)
 
 * * * 
 
@@ -114,7 +114,7 @@ div {
 ```
 Resultado do Exemplo:
 
-![Resultado do Exemplo:](exemplohsla.png)
+![Resultado do Exemplo:](imagens/exemplohsla.png)
 
 * * * 
 
@@ -141,7 +141,7 @@ p {
 ```
 Resultado do Exemplo:
 
-![Resultado do exemplo](exemplohex.png)
+![Resultado do exemplo](imagens/exemplohex.png)
 
 * * * 
 
@@ -182,7 +182,7 @@ Exemplo:
 ```
 Resultado do Exemplo:
 
-![Resultado do exemplo:](exemploshadow.png)
+![Resultado do exemplo:](imagens/exemploshadow.png)
 
 * * * 
 
@@ -206,7 +206,7 @@ Exemplo:
 ```
 Resultado do Exemplo:
 
-![Resultado do exemplo:](exemploGradientLinear.png)
+![Resultado do exemplo:](imagens/exemploGradientLinear.png)
 
 * * * 
 
@@ -229,7 +229,7 @@ Exemplo:
 ```
 Resultado do Exemplo:
 
-![Resultado do exemplo](exemploGradientRadial.png)
+![Resultado do exemplo](imagens/exemploGradientRadial.png)
 
 * * * 
 
