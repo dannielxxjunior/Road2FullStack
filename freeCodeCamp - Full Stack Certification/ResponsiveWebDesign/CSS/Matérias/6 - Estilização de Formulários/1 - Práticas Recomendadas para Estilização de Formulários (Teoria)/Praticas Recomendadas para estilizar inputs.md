@@ -221,7 +221,7 @@ button:hover, button:focus {
 ```
 Resultado do Exemplo:
 
-![Resultado do exemplo](Imagens/textarea)
+![Resultado do exemplo](Imagens/textarea.png)
 
 * * * 
 
@@ -307,3 +307,62 @@ Resultado do Exemplo:
 
 * * * 
 
+## O estado de erro!
+
+Ao trabalahrmos com elementos de entrada de dados(inputs) devemos lembrar que ha que considerar o estado de possivel erro. Quando o texto do usuário não passa na validação de entrada, há um indicador visual que mostra que há algo errado.
+
+Para que a mensagem de erro seja atualizada dinamicamente, precisariamos de usar JavaScript, que iremos estudar em outras aulas de outra certificação.
+
+Exemplo:
+
+```html
+<link rel="stylesheet" href="styles.css">
+
+<form class="accessible-form">
+    <label for="email">Email address</label>
+    <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="you@example.com"
+        aria-describedby="email-error"
+    >
+    <p id="email-error" class="error-message">
+        Please enter a valid email address.
+    </p>
+    
+    <button type="submit">Submit</button>
+</form>
+
+<script src="index.js></script>
+```
+
+```css
+body {
+    background-color: #f9fafb;
+    color: #222;
+    padding: 2rem;
+    font-family_ system-ui, sans-serif;
+}
+
+.accessible-form {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    border: 2px solid #666;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #111;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
