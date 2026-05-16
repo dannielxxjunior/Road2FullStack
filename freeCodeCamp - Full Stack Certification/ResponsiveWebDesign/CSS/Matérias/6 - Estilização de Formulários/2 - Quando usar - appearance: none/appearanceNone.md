@@ -61,4 +61,8 @@ Resultado do Exemplo:
 
 * * * 
 
+## WebKit
 
+O WebKit é um motor de software que ajuda os navegadores a exibirem sites. Navegadores como Safari usam WebKit para garantir que as páginas da web apareçam e funcionem corretamente. Este propriedade CSS appearance: none; oferece controle total sobre o etilo, mas tráz algumas coisas para ficar atento. Os componentes interativos padrão dos elementos de input incluem recursos como indicadores de foco e de erro que devemos garantir que não sejam perdidos.
+
+Criar um estilo consistente entre plataformas é uma ótima razão para usar essa propriedade. Podemos também usá-lo para garantir que os alvos de toque em um dispositivo móvel sejam grandes o suficiente ou que as cores de uma caixa de seleção tenham contraste suficiente.
