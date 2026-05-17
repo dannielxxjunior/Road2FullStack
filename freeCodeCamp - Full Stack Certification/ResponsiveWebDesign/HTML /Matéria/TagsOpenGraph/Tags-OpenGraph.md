@@ -77,4 +77,88 @@ O projeto parece imediatamente mais profissional
 
 #### Exemplo visual típico
 
-![exemplo](TagsOpenGraph.png)
+![exemplo](Imagens/TagsOpenGraph.png)
+
+Exemplo em post de Facebook:
+
+![exemplo](Imagens/facebookOpenGraph.png)
+
+* * *
+
+### Open Graph não é SEO
+
+Open Graph não é SEO otimizado para o Google Search.
+Mas ajuda:
+
+- partilhas sociais
+- tráfego
+- engajamento
+- apresentação da marca
+
+SEO usa mais:
+
+- title
+- meta description tags
+- headings
+- performance
+- conteúdo
+
+### Boas Práticas
+
+#### Imagem
+
+Usa:
+
+- 1200x630 px
+- formato .png ou .jpg
+- pouco texto
+- visual limpo
+
+#### Títulos
+
+Mantém:
+
+- curtos
+- claros
+- diretos
+
+#### Descrição
+
+Ideal:
+
+- 1-2 frases
+- objetiva
+- focada no valor
+
+* * * 
+
+### Exemplo Moderno Completo
+
+Iremos agora ver um exemplo do uso de Open Graph Tags, irei usar a minha Organização: Dev Assembly para a criação deste exemplo, se ainda não conheces visita a nossa página de org aqui no github.
+
+```html
+<head>
+    <title>Dev Assembly</title>
+    
+    <meta name="description"
+          content="Projetos, colaborações, estudos e conteúdo sobre desenvolvimento">
+         
+    <!-- Meta Content-->
+    <meta property="og:title" content="Dev Assembly">
+    <meta property="og:description" content="Projetos colaborativos e aprendizagem activa de Web moderna">
+    <meta property="og:image" content="https://devassembly.com/imageCover.png">
+    <meta property="og:URL" content="https://devassembly.com">
+    <meta property="og:type" content="website">
+</head>
+```
+
+### Algo importante para GitHub Pages
+
+Se fizeres projetos usando:
+
+- GitHub Pages
+- portfolios
+- landing pages
+- documentação
+
+Open Graph fará toda a diferença pois teus links serão frequentemente partilhados em plataformas sociais, e mesmo o projeto mais simples terá um ar profissional.
