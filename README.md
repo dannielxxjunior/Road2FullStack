@@ -1,12 +1,105 @@
-#   Bem-vindo a este Repositorio
+# Bem-vindo ao meu Repositório de Estudos Full Stack
 
+Este repositório documenta a minha jornada de aprendizagem no desenvolvimento Full Stack através das certificações da freeCodeCamp e de outros recursos de estudo.
 
-Poderas encontrar aqui grande parte das matérias por mim estudadas na freeCodeCamp durante as várias certificações feitas para a minha certificação final de Full Stack Dev.
+Aqui encontrarás:
 
-Estarão também incluidas neste repositiorio todas as lições téorico/práticas e exercicios por mim feitos pertencentes aos cursos que frequentei no meu caminho para me tornar um desenvolvedor Full Stack.
+- 📚 Resumos teóricos das matérias estudadas
+- 💻 Exercícios práticos
+- 🧪 Experiências e testes de código
+- 🛠️ Projetos desenvolvidos durante as certificações
+- 🔄 Versões melhoradas e expandidas desses projetos
+- 📝 Anotações pessoais em Markdown
 
-Como ves cada matéria estará separada na sua pasta, podes contar com ficheiro txt onde escrevo conforme vou fazendo as certificações e também os projetos, começamos os projetos aqui com um ponto de partida, que é a base de cada um deles, ou seja o projeto feito durante a certificação, para além disso eu vou editando os projetos para além do projeto base em um ficheiro .html novo para aplicar a cada um deles outros conhecimentos, o que me permite praticar imenso o que vou aprendendo e partilhar com o Mundo todo este conhecimento que busco e recebo.
+---
 
-Espero que possas disfrutar deste modelo de repositorio. 
+# Estrutura do Repositório
 
-Com os melhores cumprimentos, Dan "Junior" Marinho. 
+Cada matéria encontra-se organizada na sua própria pasta.
+
+Dentro de cada pasta poderás encontrar:
+
+- `README.md` → Explicação da matéria
+- `notes.md` → Apontamentos e resumos
+- `exercises/` → Exercícios práticos
+- `projects/` → Projetos relacionados com a matéria
+- `images/` → Screenshots e imagens de apoio
+
+---
+
+# Objetivo Deste Repositório
+
+O objetivo principal deste espaço é:
+
+- Consolidar o meu conhecimento
+- Documentar a minha evolução como programador
+- Criar um sistema de revisão eficiente
+- Partilhar conhecimento com outros estudantes e desenvolvedores
+- Construir uma base sólida para a minha carreira em desenvolvimento web
+
+---
+
+# Método de Estudo
+
+Durante cada certificação:
+
+1. Estudo a matéria
+2. Faço anotações em Markdown
+3. Crio exercícios práticos
+4. Desenvolvo projetos
+5. Melhoro os projetos com novos conhecimentos
+6. Organizo tudo neste repositório
+
+Este método ajuda-me a transformar teoria em prática constantemente.
+
+---
+
+# Tecnologias Estudadas
+
+## Front-End
+- HTML5
+- CSS3
+- Responsive Design
+- Accessibility
+
+## Ferramentas
+- Git
+- GitHub
+- VS Code
+- Linux
+
+## Futuramente
+- JavaScript
+- React
+- Node.js
+- APIs
+- Bases de Dados
+- Full Stack Development
+
+---
+
+# Sobre Este Projeto
+
+Este repositório funciona como:
+
+- Diário de aprendizagem
+- Biblioteca pessoal de conhecimento
+- Portfólio técnico
+- Base de revisão futura
+
+Toda a evolução ficará documentada aqui ao longo do tempo.
+
+---
+
+# Contribuições
+
+Sugestões, melhorias e feedback são sempre bem-vindos.
+
+---
+
+# ⭐ Obrigado pela visita
+
+Espero que este repositório possa também ajudar outros estudantes na sua jornada pelo desenvolvimento web.
+
+  
+**— Dan Marinho**
