@@ -30,6 +30,8 @@ Define a URL que será usada para as postagens contendo determinada página web,
  <meta property="og:URL" content="https://link.com/>
 ```
 
+* * *
+
 ## Porque Open Graph importa?
 
 ### 1. Melhor aparência ao partilhar links
@@ -55,3 +57,24 @@ Um bom preview ajuda a aumentar:
 - engajamento
 - partilhas diretas
 - visitas
+
+Especialmente importante se:
+
+- tens portfolio
+- blog
+- website pessoal
+- canal no youtube
+
+### 3. Branding Profissional
+
+Quando alguem partilha o teu WebSite e aparece:
+
+- imagem bonita
+- título claro
+- descrição boa
+
+O projeto parece imediatamente mais profissional
+
+#### Exemplo visual típico
+
+![exemplo](TagsOpenGraph.png)
