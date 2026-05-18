@@ -1,0 +1,41 @@
+.feature-card-container {
+  background-color: #f3f3f3;
+  height: 90vh;
+  width: 90%;
+  margin: 12px auto;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+label {
+  display: inline-block;
+  border: 2px solid;
+  min-width: 250px;
+  margin: 20px auto;
+}
+
+input[type="checkbox"]{
+  appearance: none;
+  content: "";
+  height: 20px;
+  width: 20px;
+  border: 2px solid #DB5461;
+  border-radius: 4px;
+  background-color: white;
+  vertical-align: middle;
+  margin-left: 20px;
+  transition: all 0.5s;
+}
+
+input[type="checkbox"]:checked{
+  background-color: #a0716e;
+  border-color: #a0716e;
+}
+
+input[type="checkbox"]:checked::after{
+  display: block;
+  content: "✓";
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
