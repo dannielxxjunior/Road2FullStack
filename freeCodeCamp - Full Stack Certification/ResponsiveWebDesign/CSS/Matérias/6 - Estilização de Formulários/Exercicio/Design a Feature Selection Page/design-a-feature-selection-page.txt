@@ -1,0 +1,56 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Selection Feature Page</title>
+</head>
+
+<body>
+    <h1>Feature Selection</h1>
+
+    <div class="feature-card-container">
+
+        <label class="feature-card">Free Hosting<input type="checkbox"></label>
+
+        <label class="feature-card">12 Months free maintenence<input type="checkbox"</label>
+    </div>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #DB5461;
+  border-radius: 4px;
+  background-color: white;
+  position: relative;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #e09590;
+  border-color: #e09590;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 14px;
+}
+
+
+** end of styles.css **
+
