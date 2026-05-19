@@ -66,6 +66,92 @@ Alternativa mais moderna:
     Email
     <input type="email"/>
 </label>
+```
+---
+
+## Tamanho de área clicável (mobile first)
+
+Em dispositivos móveis, inputs pequenos tornam-se difíceis de usar. É recomendado garantir áreas de toque adequadas.
+
+- Altura mínima recomendada: ~44px
+- Espaçamento entre inputs para ecitar erros de clique
+
+Exemplo:
+```css
+input {
+    padding: 12px;
+    min-height: 44px;
+}
+```
 
 ---
 
+## Consistencia entre navegadores
+
+Mesmo sem appearance: none; cada browser aplica diferentes estilos a inputs. Isso pode criar inconsistencias visuais.
+
+Boas práticas:
+
+- Testar em varios browsers sempre que possivel
+- Evitar depender de estilos nativos
+- Criar estilos base consistentes para todos os inputs
+
+---
+
+## Estilização de placeholders
+
+Os placeholders não são conteúdo real e como tal devem ser usados com cuidado.
+
+Exemplo de estilização:
+
+```css
+input:placeholder {
+    color: #999;
+    opacity: 1;
+}
+```
+
+Evita usar placeholders como substitutos de labels - isso prejudica a acessibilidade da webPage.
+
+---
+
+## Layout de formulários (Flexbox / Grid)
+
+Formulários bem etruturados não dependem só de inputs estilizados, mas também de layout.
+
+- Flexbox para alinhamento simples
+- Grid para formulários mais complexos
+
+Exemplo simples de grid layout:
+
+```css
+.form {
+    display: grid;
+    gap: 12px;
+}
+```
+
+---
+
+## Estados de erro e feedback do utilizador
+
+Um bom formulário não só valida, mas também comunica claramente em caso de erro.
+
+- Mensagens de erro devem ser visíveis
+- Não depender apenas de cor(acessibilidade)
+- Usar ícones ou texto adicional
+
+Vejamos um exemplo de estilização de uma class="error" :
+
+```css
+.error {
+    color: red;
+    font-size: 0.9rem;
+}
+```
+
+---
+
+## Resumo
+
+Aqui vimos alguns parametros bastante importantes na estilização de formulários, todos eles tem sua importancia individual, mas é quando juntamos e aplicamos muitas dessas boas práticas que os resultados se mostram de maior valor. 
