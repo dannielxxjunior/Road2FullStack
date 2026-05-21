@@ -54,7 +54,7 @@ Este método ajuda-me a transformar teoria em prática constantemente.
 
 ---
 
-# Tecnologias Estudadas
+#kjbjk Tecnologias Estudadas
 
 ## Front-End
 - HTML5
