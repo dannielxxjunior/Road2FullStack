@@ -60,3 +60,46 @@ Neste exemplo que vimos a cima podiamos esperar que o filho estivesse a 70 pixel
 No entanto, as margens colapsam e a margem maior de 40 pixels é usada.
 
 Se um elemento não tiver conteúdo, padding ou borda, suas margens superior e inferior podem se fundir em uma única margem.
+Vejamos o seguinte exemplo:
+
+```html
+<style>
+    .empty-block {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        height: 0;
+    }
+    
+    .next-block {
+        background-color: lightgray;
+    }
+</style>
+
+<div class="empty-block"></div>
+<div class="next-block">Next block</div>
+```
+
+Neste exemplo, as margens superior e inferior do 'empty-block' colapsam em uma única margem de 20 pixels, a maior das duas.
+
+Aqui está um exemplo de como evitar o colapso usando padding:
+
+```html
+<style>
+    .parent {
+        margin-top: 40px;
+        padding: 1px;
+        background-color: lightyellow;
+    }
+    
+    .child {
+        margin-top: 30px;
+        background-color: lightpink;
+    }
+</style>
+
+<div class="parent">
+    <div class="child">Child element</div>
+</div>
+```
+Resultado:
+![Resultado do exemplo]()
