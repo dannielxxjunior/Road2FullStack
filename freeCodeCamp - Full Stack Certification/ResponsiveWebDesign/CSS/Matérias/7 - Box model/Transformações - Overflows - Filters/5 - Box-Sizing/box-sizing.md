@@ -15,8 +15,11 @@ O valor padrão da propriedade box-sizing é o content-box, iremos cimeçar por 
 Para entendermos como estes modelos funcionam precisamos estar familiarizados com os quatro conceitos principais do modelo de caixa CSS. Vamos revisá-los rápidamente.
 
 • A área de conteúdo é o espaço ocupado pelo conteúdo do elemento.
+
 • O padding é o espaço entre a área de conteúdo e a borda.
+
 • A borda é o contorno que envolve a área de conteúdo e a borda.
+
 • A margem é o espaço fora da borda que separa o elmento de outros elementos.
 
 ---
@@ -47,6 +50,7 @@ div {
 Neste caso como não definimos qualquer valor para a propriedade box-sizing estamos a usar o modelo content-box.
 
 • Área de conteúdo: 300px x 200px
+
 • Tamanho total renderizado - Largura: 300px(conteúdo) + 40px(padding) + 8px(borders) = 348px
 
 Para sabermos a área total é so seguir a formúla.
