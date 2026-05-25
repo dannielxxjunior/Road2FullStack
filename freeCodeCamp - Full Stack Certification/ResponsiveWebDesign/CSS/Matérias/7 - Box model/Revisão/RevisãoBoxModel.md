@@ -39,7 +39,7 @@ Overflow é bidimensional, ou seja, pode ser controlado tanto horizontalmente qu
   - **Borda (Border):** A linha que envolve o preenchimento e o conteúdo. Pode ser personalizada usando a propriedade `border`.
   - **Margem (Margin):** O espaço entre a borda do elemento e os elementos adjacentes. Pode ser definido usando a propriedade `margin`.
 
-  ## Margins e Colapsos
+## Margins e Colapsos
 
 - **Colapso de Margens:** Ocorre quando as margens verticais de elementos adjacentes se combinam em vez de se somarem. O resultado é que a margem resultante é igual à maior das margens envolvidas, em vez de ser a soma delas. O colapso de margens pode ocorrer entre elementos irmãos ou entre um elemento pai e seu primeiro ou último filho.
 
@@ -49,7 +49,7 @@ Overflow é bidimensional, ou seja, pode ser controlado tanto horizontalmente qu
   - Se um elemento pai tiver uma margem superior e seu primeiro filho tiver uma margem inferior, essas margens também colapsam.
   - O colapso de margens não ocorre se houver bordas, preenchimento ou conteúdo entre as margens.
 
-  ## Content-box e Border-box
+## Content-box e Border-box
 
 - **Content-box:** O modelo de caixa padrão onde a largura e altura de um elemento são calculadas apenas com base no conteúdo. O preenchimento, borda e margem são adicionados à largura e altura total do elemento.
 
