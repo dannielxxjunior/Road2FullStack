@@ -101,5 +101,7 @@ Aqui está um exemplo de como evitar o colapso usando padding:
     <div class="child">Child element</div>
 </div>
 ```
-Resultado:
-![Resultado do exemplo]()
+Neste último caso, o preenchimento de um pixel de padding no elemento pai impede o colapo da margem, resultando em um espaço total de 71px do topo do pai até o topo do conteúdo filho.
+
+Entender o colapso de margem é importante para o controlr preciso do layout e do espaçamento em CSS. Embora possa por vezes levar a resultados inexperados, é uma funcionalidade desenhada para a criação de espaçamentos mais consistentes no documento.
+Ao saber quando ocorre o colpapso de margem e como evitá-lo quando necessário, podemos criar layouts mais previsíveis e fáceis de manter em nossos designs.
