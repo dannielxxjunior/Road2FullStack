@@ -1,0 +1,177 @@
+Exercício 1 — Texto e fundo
+
+Cria uma página com:
+
+Fundo escuro
+Um título branco
+Um parágrafo cinzento claro
+Um botão azul
+
+Objetivo:
+
+usar background-color
+usar color
+
+Exemplo do que vais precisar:
+
+body {
+  background-color: #111;
+  color: white;
+}
+Exercício 2 — Experimentar formatos de cor
+
+Cria 4 caixas (divs) com cores diferentes usando:
+
+Nome da cor (red)
+HEX (#ff0000)
+RGB (rgb(255,0,0))
+HSL (hsl(0, 100%, 50%))
+
+Objetivo:
+
+perceber que existem várias formas de representar a mesma cor
+Exercício 3 — Paleta de cores
+
+Cria uma mini landing page com:
+
+cor principal
+cor secundária
+cor de destaque
+
+Exemplo:
+
+fundo claro
+navbar azul escura
+botão laranja
+
+Objetivo:
+
+começar a pensar em design consistente
+
+Estrutura:
+
+<header></header>
+<main></main>
+<footer></footer>
+Exercício 4 — Hover em botões
+
+Cria um botão que muda de cor quando o rato passa por cima.
+
+Objetivo:
+
+usar :hover
+
+Exemplo:
+
+button:hover {
+  background-color: tomato;
+}
+Exercício 5 — Cartões coloridos
+
+Cria 3 cartões com:
+
+cores diferentes
+bordas
+texto legível
+
+Cada cartão deve representar algo:
+
+HTML
+CSS
+JavaScript
+
+Objetivo:
+
+trabalhar contraste
+legibilidade
+Exercício 6 — Transparência
+
+Cria uma imagem de fundo e coloca um cartão por cima usando transparência.
+
+Objetivo:
+
+usar rgba()
+
+Exemplo:
+
+background-color: rgba(0, 0, 0, 0.6);
+Exercício 7 — Gradientes
+
+Cria:
+
+um botão com gradiente
+um hero section com gradiente
+
+Objetivo:
+
+usar linear-gradient()
+
+Exemplo:
+
+background: linear-gradient(to right, blue, purple);
+Exercício 8 — Tema claro/escuro
+
+Cria dois containers:
+
+Light Theme
+Dark Theme
+
+Cada um deve ter:
+
+fundo
+texto
+botão
+
+Objetivo:
+
+perceber contraste e acessibilidade
+Exercício 9 — Réplica de UI real
+
+Escolhe um site simples:
+
+Discord
+GitHub
+YouTube
+Netflix
+
+E tenta copiar apenas:
+
+cores
+botões
+fundo
+navbar
+
+Objetivo:
+
+treinar observação visual
+Exercício 10 — Projeto final do tema “cores”
+
+Cria uma página completa de apresentação pessoal:
+
+Deve conter:
+
+navbar
+hero section
+cartões
+botões
+footer
+
+Regras:
+
+usa uma paleta consistente
+usa hover
+usa gradientes
+usa transparência em pelo menos um elemento
+Desafio extra
+
+Sem procurar no Google:
+
+Tenta criar:
+
+botão neon
+glassmorphism
+dark mode moderno
+
+Mesmo que fique imperfeito.
+
+É assim que desenvolves criatividade em CSS.
