@@ -116,6 +116,8 @@ Seguindo o mesmo exemplo anterior, irei demonstrar apenas o valor aplicando as p
 
 #### justify-content: space-between;
 
+Distribui os itens com espaço igual entre eles, mas sem espaço no início ou no final do container.
+
 ```css
 main {
   display: flex;
@@ -127,3 +129,20 @@ main {
 Isto resultará em:
 
 ![Exemplo de justify-content space-between](spaceBetween.png)
+
+#### justify-content: space-around;
+
+Distribui os itens com espaço igual ao redor deles, incluindo o início e o final do container.
+
+```css
+main {
+  display: flex;
+  justify-content: space-around; /* Distribui os itens com espaço igual ao redor deles */
+  border: 2px solid red;
+}
+```
+
+Isto resultará em:
+
+![Exemplo de justify-content space-around](spaceAround.png)
+
