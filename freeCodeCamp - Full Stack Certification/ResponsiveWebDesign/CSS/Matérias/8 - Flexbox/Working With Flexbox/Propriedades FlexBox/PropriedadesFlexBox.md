@@ -88,7 +88,7 @@ Seguindo o exemplo anterior, podemos agora fazer uso da propriedade `flex-flow` 
 main {
   width: 200px;
   display: flex;
-  border 2px solid red;
+  border: 2px solid red;
   flex-flow: column wrap-reverse; /* Define a direção dos itens e a quebra de linha */
 }
 ```
