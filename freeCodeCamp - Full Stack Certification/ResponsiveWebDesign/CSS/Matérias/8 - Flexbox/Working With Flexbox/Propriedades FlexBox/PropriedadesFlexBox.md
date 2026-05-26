@@ -132,7 +132,7 @@ Isto resultará em:
 
 #### justify-content: space-around;
 
-Distribui os itens com espaço igual ao redor deles, incluindo o início e o final do container.
+Distribui os itens com espaço igual ao redor deles, dentro do eixo principal, incluindo o início e o final do container, caso apenas exista apenas um item para distribuir ele será centralizado.
 
 ```css
 main {
@@ -146,3 +146,74 @@ Isto resultará em:
 
 ![Exemplo de justify-content space-around](spaceAround.png)
 
+#### Justify-content: space-evenly;
+
+Por último mas não menos importante, temos `justify-content: space-evenly;` que distribui os itens uniformemete ao longo do eixo principal, com espaço igual entre eles, incluindo o início e o final do container.
+
+```css
+main {
+  display: flex;
+  justify-content: space-evenly; /* Distribui os itens com espaço igual entre eles, incluindo o início e o final do container */
+  border: 2px solid red;
+}
+```
+
+Isto resultará em:
+
+![Exemplo de justify-content space-evenly](spaceEvenly.png)
+
+---
+
+## Align-items
+
+Já vimos como podemos distribuir os itens ao longo do eixo principal usando `justify-content`, mas e se quisermos alinhar os itens ao longo do eixo transversal? É aí que entra a propriedade `align-items`.
+
+Para alinhar os itens ao longo do eixo transversal, usamos a propriedade `align-items` no container flexível. O eixo transversal é perpendicular ao eixo principal, que tem sua direção determinada pela propriedade `flex-direction`.
+
+A propriedade `align-items` pode assumir os seguintes valores:
+
+- `stretch` (valor padrão): Os itens flexíveis são esticados para preencher o container ao longo do eixo transversal.
+- `flex-start`: Os itens flexíveis são alinhados ao início do container ao longo do eixo transversal.
+- `flex-end`: Os itens flexíveis são alinhados ao final do container ao longo do eixo transversal.
+- `center`: Os itens flexíveis são centralizados ao longo do eixo transversal.
+- `baseline`: Os itens flexíveis são alinhados com base em suas linhas de base de texto.
+
+### Exemplo de uso do `align-items`:
+
+Vamos seguir usando o exemplo anterior e aplicar a propriedade `align-items` para demonstrar como os itens podem ser alinhados ao longo do eixo transversal.
+
+Para isso vamos imaginar que o eixo principal é horizontal (com `flex-direction: row;`), então o eixo transversal será vertical.
+
+Poderiamos então usar `align-items: center;` para centralizar os itens ao longo do eixo transversal:
+
+```css
+main {
+  display: flex;
+  align-items: center; /* Centraliza os itens ao longo do eixo transversal */
+  border: 2px solid red;
+}
+```
+
+Isto resultará em:
+
+![Exemplo de align-items center](alignItemsCenter.png)
+
+Neste exemplo, os itens flex estão centralizados ao longo do eixo transversal, o que significa que por padrão, estão alinhados verticalmente, e o `align-items: center;` os posiciona no meio do container.
+
+Em contraste, e de modo a criar um pouco de movimento nesta secção de exemplos do align-items, poderiamos usar `align-items: flex-start;` para alinhar os itens ao início do container ao longo do eixo transversal, que será, neste caso, o topo do container:
+
+```css
+main {
+  display: flex;
+  align-items: flex-start; /* Alinha os itens ao início do container ao longo do eixo transversal */
+  border: 2px solid red;
+}
+```
+
+Isto resultará em:
+
+![Exemplo de align-items flex-start](FlexStart.png)
+
+O oposto disso seria usar `align-items: flex-end;` para alinhar os itens ao final do container ao longo do eixo transversal, que será, neste caso, a parte inferior do container.
+
+Existe uma propriedade interessante que é o `align-items: stretch;` este é o valor padrão onde os itens flexiveis são 
