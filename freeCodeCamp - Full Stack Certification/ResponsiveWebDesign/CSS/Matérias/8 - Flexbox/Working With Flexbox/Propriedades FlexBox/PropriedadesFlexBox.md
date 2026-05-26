@@ -216,4 +216,90 @@ Isto resultará em:
 
 O oposto disso seria usar `align-items: flex-end;` para alinhar os itens ao final do container ao longo do eixo transversal, que será, neste caso, a parte inferior do container.
 
-Existe uma propriedade interessante que é o `align-items: stretch;` este é o valor padrão onde os itens flexiveis são 
+Existe uma propriedade interessante que é o `align-items: stretch;` este é o valor padrão onde os itens flexiveis são esticados ao longo do eixo transversal para preencher o container.
+Vejamos como isso funciona:
+
+```css
+main {
+  display: flex;
+  align-items: stretch; /* Estica os itens para preencher o container ao longo do eixo transversal */
+  border: 2px solid red;
+}
+```
+
+Isto resultará em:
+
+![Exemplo de align-items stretch](stretch.png)
+
+Por fim vejamos a propriedade align-self, que é usada para alinhar um item flexível individualmente ao longo do eixo transversal, sobrescrevendo o valor definido por `align-items` para esse item específico.
+
+```html
+<link rel="stylesheet" href="style.css">
+
+<div class="container">
+  <div class="box">One</div>
+  <div class="box">Two</div>
+  <div class="box special">Three</div>
+</div>
+```
+
+```css
+.container {
+  display: flex;
+  align-items: flex-start; /* Alinha os itens ao início do container ao longo do eixo transversal */
+  border: 2px solid #444;
+  height: 200px; /* Define a altura do container para demonstrar o alinhamento */ 
+}
+
+.box {
+  width: 100px;
+  border: 1px solid #888;
+  background-color: lightblue;
+  margin: 4px;
+}
+
+.special {
+  align-self: stretch; /* Sobrescreve o alinhamento para este item específico, esticando-o ao longo do eixo transversal */
+  background-color: lightcoral; /* Apenas para destacar o item especial */
+}
+```
+
+Resultando em:
+
+![Exemplo de align-self](alignSelf.png)
+
+Neste exemplo, o item "Three" tem a classe `special` que aplica `align-self: stretch;`, fazendo com que ele se estique para preencher o container ao longo do eixo transversal, enquanto os outros itens permanecem alinhados ao início do container devido ao `align-items: flex-start;` aplicado ao container pai.
+
+Vejamos agora o que acontece se aplicarmos a propriedade `align-self: center;` ao item "Three" deste mesmo exemplo:
+
+```css
+.
+container {
+  display: flex;
+  align-items: flex-start; /* Alinha os itens ao início do container ao longo do eixo transversal */
+  border: 2px solid #444;
+  height: 200px; /* Define a altura do container para demonstrar o alinhamento */ 
+}
+
+.box {
+  width: 100px;
+  border: 1px solid #888;
+  background-color: lightblue;
+  margin: 4px;
+}
+
+.special {
+  align-self: center; /* Sobrescreve o alinhamento para este item específico, centralizando-o ao longo do eixo transversal */
+  background-color: lightcoral; /* Apenas para destacar o item especial */
+}
+```
+
+Resultando em:
+
+![Exemplo de align-self center](alignSelfCenter.png)
+
+Neste caso, o item "Three" é centralizado ao longo do eixo transversal, enquanto os outros itens permanecem alinhados ao início do container devido ao `align-items: flex-start;` aplicado ao container pai.
+
+Bom acho que entendeste a ideia, podes experimentar outros valores para `align-self` como `flex-end` ou `baseline` para ver como eles afetam o alinhamento do item específico dentro do container flexível.
+
+Existem ainda outras propriedades e valores relacionados ao Flexbox que podemos explorar de modo a criar um layout responsivo e flexivel, mas estes são os mais comummente usados e essenciais para entender como o Flexbox funciona. Com a prática, podes experimentar diferentes combinações dessas propriedades para criar layouts únicos e adaptáveis às necessidades do teu projeto.
