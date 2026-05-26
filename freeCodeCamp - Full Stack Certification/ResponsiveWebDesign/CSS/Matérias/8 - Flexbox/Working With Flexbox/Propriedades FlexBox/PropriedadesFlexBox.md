@@ -67,7 +67,7 @@ Podemos resolver isso facilmente usando a quebra de linha caso o conteúdo exced
 main {
   width: 200px;
   display: flex;
-  border 2px solid red;
+  border: 2px solid red;
   flex-wrap: wrap; /* Permite que os itens sejam quebrados em várias linhas */
 }
 ```
