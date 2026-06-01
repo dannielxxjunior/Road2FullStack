@@ -87,7 +87,16 @@ Pode ser aplicada usando um seletor universal para que seu efeito atinja a pági
 ## Ocultando Conteúdo com Atributos HTML
 
 - **Atributo aria-hidden**: Usado para ocultar um elemento de pessoas que utilizam tecnologia assistiva como leitores de tela. Pode por exemplo ser usado para ocultar imagens decorativas que não fornecem nenhm conteúdo significativo.
+Vejamos então um exemplo comum do uso deste atributo:
+
+```html
+<button>
+  <span aria-hidden="true">🗑️</span>
+  Apagar
+</button>
+```
 <br>
+
 - **Atributo hidden**: Este atributo é suportado pela maioria dos navegadores modernos e oculta conteúdo tanto visualmente quanto da árvore de acessibilidade. Pode ainda ser facilmente alternado usando JavaScript.
 
 ## Problema de Acessibilidade do Atributo placeholder
