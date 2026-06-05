@@ -1,6 +1,6 @@
 # Casos para uso de Floats e como funcionam
 
-Floats são uma técnica CSS originalmente projetada para permitir que texto envolva conteúdo, multimídia como um imagem. Com o evuluir da técnologia CSS desenvolvedores encontraram novas maneirass de dar uso aos `floats`, aplicando-os ao design de layouts de formas mais criativas.
+Floats são uma técnica CSS originalmente projetada para permitir que texto envolva conteúdo, multimídia como uma imagem. Com o evuluir da técnologia CSS desenvolvedores encontraram novas maneiras de dar uso aos `floats`, aplicando-os ao design de layouts de formas mais criativas.
 
 Embora tenhamos hoje em dia métodos como Flexbox e Grid Layout, entender o funcionamento e saber onde e quando usar um `float`, especialmente quando trabalhamos com código legado é importante.
 
@@ -8,11 +8,11 @@ Quando um elemento é flutuado, o mesmo é retirado do fluxo normal do documento
 
 ## Exemplos de uso
 
-Um exemplo classico de uso da técnica, é o envolvimento de texto ao redor de uma imagem ou outro elemento multimídia como um video, onde a imagem é flotuada e o texto usado para envolver a mesma.
+Um exemplo classico de uso da técnica, é o envolvimento de texto ao redor de uma imagem ou outro elemento multimídia como um video, onde a imagem é flutuada e o texto usado para envolver a mesma.
 Vejamos:
 
 ```html
-<link rel="stylesheet href="styles.css/>
+<link rel="stylesheet" href="styles.css/>
 
 <div class="container">
   <img src="https://placehold.co/150x150" alt="Imagem 150x150">
@@ -37,7 +37,9 @@ Como podes observar no exemplo a cima o container não envolve a imagem flutuant
 
 Ao usarmos `floats` é importante lidarmos com o problema do colapso dos elementos pai quando seus elementos filhos estão com `float`.
 
-A técnica `clearfix` é a solução que veremos agora aplicada a nossa div de class `container`.
+### A técnica **clearfix**
+
+A técnica `clearfix` costumava ser a melhor solução, e veremos o uso da mesma agora aplicada a nossa div de class `container`.
 
 ```html
 <link rel="stylesheet" href="styles.css">
@@ -54,7 +56,7 @@ A técnica `clearfix` é a solução que veremos agora aplicada a nossa div de c
 
 /*ClearFix CSS*/
 .container::after {
-  content= "";
+  content: "";
   display: block;
   clear: both; 
 }
@@ -78,3 +80,27 @@ img {
   No exemplo acima, adicionamos um novo elemento de parágrafo para tornar o colapso mais perceptível. Como o parágrafo permanece no fluxo normal do documento, o contêiner se expande o suficiente para envolvê-lo. Então, aplicamos a técnica clearfix para corrigir o colapso e fazer com que a borda do contêiner seja exibida corretamente. 
 
   A técnica clearfix garante que o elemento pai envolva corretamente seus filhos flutuantes. Clearfix força o contêiner pai a "ver" os elementos filhos flutuantes adicionando uma propriedade clear após o conteúdo flutuante.
+
+  Mas na verdade existe uma forma mais moderna de conseguir este mesmo exato resultado com muito menos código.
+
+### A Propriedade **display: flow-root;**
+
+Esta propriedade é o método mais recente e atualizado de lidar com o antigo problema, o mesmo que resolvemos no exemplo anterior, a grande diferença realmente está na simplicidade desta nova solução, que basta para isso apenas efetuar a adição da propriedade: **display: flow-root;** ao container do elemento float.
+Exemplo:
+
+```html
+<div class="container">
+  <img src="image.jpg" class="float-left">
+</div>
+```
+```css
+.container {
+  display: flow-root;
+}
+
+.float-left {
+  float: left;
+}
+```
+
+Aqui o `flow-root` cria um novo **Block Formating Context(BFC)**, fazendo com que o elemento pai reconheça corretamente a altura dos elementos flutuantes internos, sem necessidade do pseudo-elemento `::after`. Na grande maioria dos casos, pode substituir o tradicional `clearfix`, resultando num código mais simples e sem pseudo-elementos adicionais desnecessarios.
