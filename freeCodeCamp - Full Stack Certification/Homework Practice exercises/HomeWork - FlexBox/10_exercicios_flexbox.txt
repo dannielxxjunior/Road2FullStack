@@ -1,0 +1,63 @@
+1. Navbar Horizontal
+Cria um container .navbar com 4 links.
+Objetivo:
+- display: flex;
+- links alinhados horizontalmente;
+- espaço igual entre os links.
+
+2. Cartão Centrado
+Cria um container que ocupa toda a altura da janela.
+Objetivo:
+- centrar um cartão tanto na horizontal como na vertical usando Flexbox.
+
+3. Layout de 3 Colunas
+Cria um container com três divs.
+Objetivo:
+- as três colunas devem ter a mesma largura;
+- usar flexbox para distribuir o espaço.
+
+4. Sidebar + Conteúdo
+Cria uma sidebar e uma área principal.
+Objetivo:
+- sidebar com largura fixa;
+- conteúdo ocupa o restante espaço disponível.
+
+5. Galeria Responsiva
+Cria 8 caixas dentro de um container.
+Objetivo:
+- usar flex-wrap;
+- quando não houver espaço suficiente, os itens devem passar para a linha seguinte.
+
+6. Rodapé no Fundo
+Cria uma página com header, main e footer.
+Objetivo:
+- o footer deve permanecer no fundo da página mesmo com pouco conteúdo.
+
+7. Ordem dos Elementos
+Cria três caixas: A, B e C.
+Objetivo:
+- visualmente mostrar a ordem C, A, B usando propriedades Flexbox sem alterar o HTML.
+
+8. Menu Vertical
+Cria um menu lateral com 5 links.
+Objetivo:
+- usar flex-direction: column;
+- adicionar espaçamento uniforme entre os itens.
+
+9. Cartões com Alturas Diferentes
+Cria três cartões com quantidades diferentes de texto.
+Objetivo:
+- alinhar todos ao topo;
+- experimentar align-items: flex-start, center e stretch.
+
+10. Exercício Completo
+Cria uma secção com:
+- logo;
+- menu;
+- botão "Login".
+
+Objetivo:
+- tudo alinhado numa única linha;
+- logo à esquerda;
+- menu ao centro;
+- botão à direita.

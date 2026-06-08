@@ -1,0 +1,237 @@
+
+# 5. `hsl()` → melhor controlo visual da cor
+
+Muitos developers usam apenas HEX.
+Mas HSL é MUITO mais intuitivo.
+
+```css
+color: hsl(200, 80%, 50%);
+```
+
+Estrutura:
+
+* Hue → cor
+* Saturation → intensidade
+* Lightness → luminosidade
+
+É excelente para criar paletas.
+
+Exemplo:
+
+```css
+hsl(200, 80%, 30%)
+hsl(200, 80%, 50%)
+hsl(200, 80%, 70%)
+```
+
+Mesma cor → vários tons.
+
+---
+
+# 6. `oklch()` → o futuro das cores em CSS
+
+CSS moderno introduziu espaços de cor mais avançados.
+
+```css
+color: oklch(70% 0.15 250);
+```
+
+Vantagens:
+
+* gradientes mais bonitos
+* brilho mais consistente
+* melhores sistemas de design
+
+Grandes frameworks modernos estão a começar a usar isto.
+
+---
+
+# 7. Transparência com `/`
+
+Forma moderna:
+
+```css
+background: rgb(255 0 0 / 50%);
+```
+
+ou
+
+```css
+background: hsl(200 50% 50% / 0.5);
+```
+
+Muito mais limpa que `rgba()`.
+
+---
+
+# 8. Gradientes avançados
+
+Já conheces `linear-gradient()`, mas existem mais.
+
+## Radial
+
+```css
+background: radial-gradient(circle, red, blue);
+```
+
+## Conic
+
+```css
+background: conic-gradient(red, yellow, green, blue);
+```
+
+Ótimo para:
+
+* gráficos
+* loaders
+* efeitos modernos
+
+---
+
+# 9. `filter`
+
+Permite alterar cores visualmente.
+
+```css
+filter: grayscale(100%);
+filter: sepia(80%);
+filter: hue-rotate(90deg);
+```
+
+Muito usado para:
+
+* hover effects
+* temas
+* manipulação de imagens
+
+---
+
+# 10. `mix-blend-mode`
+
+Mistura elementos visualmente.
+
+```css
+mix-blend-mode: multiply;
+```
+
+ou
+
+```css
+mix-blend-mode: screen;
+```
+
+Cria efeitos quase tipo Photoshop diretamente no browser.
+
+---
+
+# 11. `background-clip: text`
+
+Truque famoso para texto com gradiente.
+
+```css
+.gradient-text {
+  background: linear-gradient(to right, blue, purple);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+```
+
+Resultado:
+texto preenchido com gradiente.
+
+Muito usado em landing pages modernas.
+
+---
+
+# 12. `accent-color`
+
+Controla a cor de elementos nativos do browser.
+
+```css
+input[type="checkbox"] {
+  accent-color: purple;
+}
+```
+
+Funciona em:
+
+* checkboxes
+* radio buttons
+* progress bars
+
+Muito útil e pouca gente conhece.
+
+---
+
+# 13. `caret-color`
+
+Muda a cor do cursor de escrita.
+
+```css
+input {
+  caret-color: red;
+}
+```
+
+---
+
+# 14. `text-shadow` para glow/neon
+
+```css
+text-shadow:
+  0 0 5px cyan,
+  0 0 10px cyan;
+```
+
+Muito usado em UI futurista/cyberpunk.
+
+---
+
+# 15. Truque profissional: usar HSL + variáveis
+
+Isto é MUITO poderoso.
+
+```css
+:root {
+  --hue: 220;
+}
+
+button {
+  background: hsl(var(--hue), 80%, 50%);
+}
+```
+
+Agora mudas toda a identidade visual alterando apenas:
+
+```css
+--hue: 340;
+```
+
+e tudo muda automaticamente.
+
+---
+
+# O que eu recomendaria aprender primeiro
+
+Ordem mais útil:
+
+1. `hsl()`
+2. variáveis CSS
+3. `color-mix()`
+4. gradientes
+5. `currentColor`
+6. `accent-color`
+7. `oklch()`
+
+Essas já te colocam muito acima da média em CSS moderno.
+
+---
+
+## Recursos úteis
+
+* [MDN CSS Colors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors?utm_source=chatgpt.com)
+* [MDN color-mix()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix?utm_source=chatgpt.com)
+* [MDN currentColor](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value?utm_source=chatgpt.com#currentcolor_keyword)
+* [OKLCH Color Picker](https://oklch.com?utm_source=chatgpt.com)
+* [Coolors Palette Generator](https://coolors.co?utm_source=chatgpt.com)
+
